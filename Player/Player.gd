@@ -1,10 +1,12 @@
-extends Area2D
+extends KinematicBody2D
 
 class_name Player
 
 const invalidPos:Vector2 = Vector2(9999, 9999)
 export var speed:float = 200
 enum {ROCK, PAPER, SCISSORS}
+export var type:int = ROCK
+
 var team:int
 var aimDir:Vector2 = Vector2(-1, 0)
 var moveDir:Vector2 = Vector2(-1, 0)
@@ -30,84 +32,22 @@ func movement(delta:float):
 		
 		if (nextRouter-position).length() <= nextMove:
 			nextMove -= (nextRouter-position).length()
+#			var collision = move_and_collide((nextRouter-position).length()*moveDir)
+#			if collision:
+#				return
+#			This needs work - Nedd to use move and collide in case there is a enemy inbetween router and player
+#			Breaks inside of small spaces for some reason
 			position = nextRouter
 			if aimDir in gridPath.pathRouters[nextRouter].keys():
 				moveDir = aimDir
 				currentRouter = nextRouter
 			elif moveDir in gridPath.pathRouters[nextRouter].keys():
 				currentRouter = nextRouter
-#			elif not moveDir in gridPath.pathRouters[nextRouter].keys():
-#				remainingMove = 0
 		
 		if (not moveDir in gridPath.pathRouters[nextRouter].keys()) and position == nextRouter:
 			nextMove = 0
 		
-		position += nextMove*moveDir
-	
-	
-#	if aimDir == moveDir*-1:
-#		moveDir = aimDir
-#
-#	var nextRouter:Vector2
-#
-#	if gridPath.pathRouters[currentRouter].has(moveDir):
-#		nextRouter = gridPath.pathRouters[currentRouter][moveDir]
-#
-#	var nextMove:Vector2 = speed*delta*moveDir
-#
-#	if (nextRouter-position).length() < nextMove.length():
-#		var remainingMove = nextMove.length()-(nextRouter-position).length()
-#		position = nextRouter
-#		currentRouter = position
-#		if aimDir in gridPath.pathRouters[nextRouter].keys():
-#			moveDir = aimDir
-#		elif not moveDir in gridPath.pathRouters[nextRouter].keys():
-#			remainingMove = 0
-#		position += moveDir*remainingMove
-#	else:
-#		position += nextMove
-	
-#	var nextRouter = gridPath.getClosestRouter(position, moveDir)
-#
-#	if nextRouter == invalidPos:
-#		if (gridPath.pathRouters.has(position)) and (aimDir in gridPath.pathRouters[position].directions):
-#			moveDir = aimDir
-#			nextRouter = gridPath.getClosestRouter(position, moveDir)
-#		else:
-#			return
-#
-#	var nextMove:Vector2 = speed*delta*moveDir
-#
-#	if (nextRouter-position).length() < nextMove.length():
-#		var remainingMove = nextMove.length()-(nextRouter-position).length()
-#		position = nextRouter
-#		if aimDir in gridPath.pathRouters[nextRouter].directions:
-#			moveDir = aimDir
-#		elif not moveDir in gridPath.pathRouters[nextRouter].directions:
-#			remainingMove = 0
-#		position += moveDir*remainingMove
-#	else:
-#		position += nextMove
-	
-	
-#	if nextRouter and aimDir in gridPath.pathRouters[nextRouter].directions:
-#		if (nextRouter-position).length() < nextMove.length():
-#			var remainingMove = nextMove.length()-(nextRouter-position).length()
-#			position = nextRouter
-#			moveDir = aimDir
-#			position += moveDir*remainingMove
-#		else:
-#			position += nextMove
-#	elif nextRouter and not moveDir in gridPath.pathRouters[nextRouter].directions:
-#		if (nextRouter-position).length() < nextMove.length():
-#			var remainingMove = nextMove.length()-(nextRouter-position).length()
-#			position = nextRouter
-#			position += moveDir*remainingMove
-#		else:
-#			position += nextMove
-#	else:
-#		position += nextMove
-	
+		var collision = move_and_collide(nextMove*moveDir)
 	
 	
 func _physics_process(delta: float) -> void:
@@ -118,3 +58,4 @@ func _physics_process(delta: float) -> void:
 	aimDir = newDir if newDir.length() > 0 else aimDir
 	
 	movement(delta)
+
