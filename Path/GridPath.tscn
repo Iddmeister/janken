@@ -23,17 +23,57 @@ default_color = Color( 0.439216, 1, 0.305882, 1 )
 
 [node name="Path2" type="Line2D" parent="Paths"]
 show_behind_parent = true
-points = PoolVector2Array( 264, -264, 216, -264, 176, -264, 176, -328 )
+points = PoolVector2Array( 264, -264, 224, -264, 176, -264, 176, -328 )
 default_color = Color( 0.439216, 1, 0.305882, 1 )
 
 [node name="Path3" type="Line2D" parent="Paths"]
 show_behind_parent = true
-points = PoolVector2Array( 312, -264, 360, -264, 400, -264, 400, -328 )
+points = PoolVector2Array( 312, -264, 352, -264, 400, -264, 400, -328 )
 default_color = Color( 0.439216, 1, 0.305882, 1 )
 
 [node name="Path4" type="Line2D" parent="Paths"]
 show_behind_parent = true
-points = PoolVector2Array( 472, -264, 400, -264, 400, -224, 400, -40, 312, -40, 312, 0, 264, 0, 264, -40, 176, -40, 176, -224, 176, -264 )
+points = PoolVector2Array( 472, -264, 400, -264, 400, -224, 400, -136, 400, -40, 352, -40, 312, -40, 312, 0, 264, 0, 264, -40, 224, -40, 176, -40, 176, -136, 176, -224, 176, -264, 104, -264 )
+default_color = Color( 0.439216, 1, 0.305882, 1 )
+
+[node name="Path5" type="Line2D" parent="Paths"]
+show_behind_parent = true
+points = PoolVector2Array( 400, -40, 472, -40, 472, 0, 440, 0, 440, 40, 472, 40, 472, 88, 312, 88, 264, 88, 104, 88, 104, 48, 136, 48, 136, 0, 104, 0, 104, -40, 176, -40 )
+default_color = Color( 0.439216, 1, 0.305882, 1 )
+
+[node name="Path6" type="Line2D" parent="Paths"]
+show_behind_parent = true
+points = PoolVector2Array( 176, -40, 176, 0, 224, 0, 224, 40, 264, 40, 264, 88, 312, 88, 312, 40, 352, 40, 352, 0, 400, 0, 400, -40 )
+default_color = Color( 0.439216, 1, 0.305882, 1 )
+
+[node name="Path7" type="Line2D" parent="Paths"]
+show_behind_parent = true
+points = PoolVector2Array( 440, 40, 400, 40, 400, 0, 352, 0, 312, 0, 264, 0, 224, 0, 176, 0, 176, 48, 136, 48 )
+default_color = Color( 0.439216, 1, 0.305882, 1 )
+
+[node name="Path8" type="Line2D" parent="Paths"]
+show_behind_parent = true
+points = PoolVector2Array( 352, -264, 352, -224, 312, -224, 312, -176, 352, -176, 352, -136, 352, -88, 224, -88, 224, -136, 224, -176, 264, -176, 264, -224, 224, -224, 224, -264 )
+default_color = Color( 0.439216, 1, 0.305882, 1 )
+
+[node name="Path9" type="Line2D" parent="Paths"]
+show_behind_parent = true
+points = PoolVector2Array( 352, -40, 352, -88, 224, -88, 224, -40 )
+default_color = Color( 0.439216, 1, 0.305882, 1 )
+
+[node name="Path10" type="Line2D" parent="Paths"]
+show_behind_parent = true
+points = PoolVector2Array( 400, -136, 352, -136 )
+default_color = Color( 0.439216, 1, 0.305882, 1 )
+
+[node name="Path11" type="Line2D" parent="Paths"]
+show_behind_parent = true
+points = PoolVector2Array( 224, -136, 176, -136 )
+default_color = Color( 0.439216, 1, 0.305882, 1 )
+
+[node name="Path12" type="Line2D" parent="Paths"]
+show_behind_parent = true
+points = PoolVector2Array( 264, -176, 312, -176 )
 default_color = Color( 0.439216, 1, 0.305882, 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
