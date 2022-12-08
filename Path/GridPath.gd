@@ -1,27 +1,40 @@
+tool
+
 extends Node2D
 
 class_name GridPath
 
+export var drawPath:bool = false setget setDrawPath
 const invalidPos:Vector2 = Vector2(9999, 9999)
-var pathRouters:Dictionary
-#
-#func _draw() -> void:
-#	for point in pathRouters.keys():
-#		if point == $Player.lastRouter:
-#			draw_circle(point, 10, Color(0, 0, 1, 1))
-#		elif point == $Player.nextRouter:
-#			draw_circle(point, 10, Color(1, 0, 0, 1))
-#		for dir in pathRouters[point].keys():
-#			draw_line(point, point+(dir*20), Color(1, 0, 0, 1), 5)
+var paths:Dictionary
+
+func setDrawPath(val):
+	if is_inside_tree():
+		drawPath = val
+		if drawPath:
+			updatePaths()
+		$Paths.visible = drawPath
+		update()
+
+func _draw() -> void:
+	if not drawPath:
+		return
+	for point in paths.keys():
+		draw_circle(point, 10, Color(1, 0, 0, 1))
+		for dir in paths[point].keys():
+			draw_line(point, point+(dir*20), Color(1, 0, 0, 1), 5)
 			
-func _physics_process(delta: float) -> void:
-	update()
-			
-func _ready() -> void:
+func updatePaths():
 	var routers:Array = []
 	for path in $Paths.get_children():
 		routers.append(generateRouters(path.points))
-	pathRouters = compoundRouters(routers)
+	paths = compoundRouters(routers)
+	
+func _ready() -> void:
+	if Engine.is_editor_hint():
+		return
+	updatePaths()
+
 
 func generateRouters(path:PoolVector2Array):
 	
@@ -60,29 +73,5 @@ func compoundRouters(allRouters:Array):
 				final[router] = routers[router]
 				
 	return final
-	
-func getClosestRouter(pos:Vector2, dir:Vector2=Vector2(0, 0)):
-	
-	if dir.length() == 0:
-		var closest:Vector2 = pathRouters.keys()[0]
-		for router in pathRouters.keys():
-			if (router-pos).length() < (closest-pos).length():
-				closest = router
-			
-		return closest
-		
-	var gotClosest:bool = false
-	var closest:Vector2
-	
-	for router in pathRouters.keys():
-		var rel = router-pos
-		if rel.normalized() == dir:
-			if (rel.length() < (closest-pos).length()) or not gotClosest:
-				closest = router
-				gotClosest = true
-		else:
-			continue
-		
-	return closest if gotClosest else invalidPos
 	
 	

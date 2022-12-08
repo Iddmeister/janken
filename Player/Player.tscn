@@ -1,9 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://Player/Scissors.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Player/Rock.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Player/Paper.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 8.0
@@ -16,13 +13,5 @@ script = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="Graphics" type="Node2D" parent="."]
-
-[node name="Scissors" parent="Graphics" instance=ExtResource( 2 )]
-
-[node name="Rock" parent="Graphics" instance=ExtResource( 3 )]
-visible = false
-
-[node name="Paper" parent="Graphics" instance=ExtResource( 4 )]
-visible = false
 
 [connection signal="area_entered" from="." to="." method="_on_Player_area_entered"]

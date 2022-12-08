@@ -2,11 +2,16 @@ extends Area2D
 
 class_name Player
 
+var Rock = preload("res://Player/Rock.tscn")
+var Paper = preload("res://Player/Paper.tscn")
+var Scissors = preload("res://Player/Scissors.tscn")
+
 const invalidPos:Vector2 = Vector2(9999, 9999)
 export var speed:float = 150
+enum exportTyes {ROCK, PAPER, SCISSORS}
 enum {ROCK, PAPER, SCISSORS}
 enum {WIN, LOSE, DRAW}
-export var type:int = ROCK
+export(exportTyes) var type:int = ROCK
 export var team:int
 var aimDir:Vector2 = Vector2(-1, 0)
 var moveDir:Vector2 = Vector2(-1, 0)
@@ -25,23 +30,21 @@ var nextRouter:Vector2
 
 onready var collision:CollisionShape2D = $Collision
 
-func getOutcome(ally:int, enemy:int) -> int:
-	
-	if ally == enemy:
-		return DRAW
-		
-	if (ally == SCISSORS and enemy == PAPER) or (ally == PAPER and enemy == ROCK) or (ally == ROCK and enemy == SCISSORS):
-		return WIN
-		
-	return LOSE
-
+func _ready() -> void:
+	match type:
+		ROCK:
+			$Graphics.add_child(Rock.instance())
+		PAPER:
+			$Graphics.add_child(Paper.instance())
+		SCISSORS:
+			$Graphics.add_child(Scissors.instance())
 
 func initialize():
 	pass
 
 func movement(delta:float):
 	
-	nextRouter = gridPath.pathRouters[lastRouter][moveDir]
+	nextRouter = gridPath.paths[lastRouter][moveDir]
 	
 	var nextMove:float
 	
@@ -60,28 +63,29 @@ func movement(delta:float):
 		if aimDir == moveDir*-1:
 			moveDir = aimDir
 			lastRouter = nextRouter
-			nextRouter = gridPath.pathRouters[lastRouter][moveDir]
+			nextRouter = gridPath.paths[lastRouter][moveDir]
+			global_rotation = moveDir.angle()
 	
 	if (nextRouter-position).length() <= nextMove:
 		nextMove -= (nextRouter-position).length()
 		position = nextRouter
 		
-		if (aimDir in gridPath.pathRouters[nextRouter].keys()) and not currentKnockSpeed > 0:
+		if (aimDir in gridPath.paths[nextRouter].keys()) and not currentKnockSpeed > 0:
 			moveDir = aimDir
-		if moveDir in gridPath.pathRouters[nextRouter].keys():
+		if moveDir in gridPath.paths[nextRouter].keys():
 			lastRouter = nextRouter
-			nextRouter = gridPath.pathRouters[lastRouter][moveDir]
+			nextRouter = gridPath.paths[lastRouter][moveDir]
 		else:
 			nextMove = 0
 			
 	position += nextMove*moveDir
 	
-	global_rotation = moveDir.angle()
+	global_rotation = lerp_angle(global_rotation, moveDir.angle(), 0.35*delta*60)
 	
 func attemptMove(vel:Vector2):
-	if aimDir in gridPath.pathRouters[lastRouter].keys():
+	if aimDir in gridPath.paths[lastRouter].keys():
 		moveDir = aimDir
-	if moveDir in gridPath.pathRouters[lastRouter].keys():
+	if moveDir in gridPath.paths[lastRouter].keys():
 		position += vel
 		
 
@@ -115,12 +119,25 @@ func knock(dir:Vector2, knocker=null):
 		lastRouter = nextRouter
 		aimDir = moveDir
 	elif position == nextRouter:
-		if dir in gridPath.pathRouters[nextRouter].keys():
+		if dir in gridPath.paths[nextRouter].keys():
 			moveDir = dir
 			aimDir = moveDir
 			lastRouter = nextRouter
 	
+func getOutcome(ally:int, enemy:int) -> int:
+	
+	if ally == enemy:
+		return DRAW
+		
+	if (ally == SCISSORS and enemy == PAPER) or (ally == PAPER and enemy == ROCK) or (ally == ROCK and enemy == SCISSORS):
+		return WIN
+		
+	return LOSE
+	
 func _on_Player_area_entered(area: Area2D) -> void:
+	
+	if not area.is_in_group("Player"):
+		return
 	
 	if not area.team == team:
 		
