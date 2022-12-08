@@ -7,7 +7,10 @@ var pathRouters:Dictionary
 
 func _draw() -> void:
 	for point in pathRouters.keys():
-		draw_circle(point, 10, Color(0, 0, 1, 1) if point == $Player.currentRouter else Color(1, 0, 0, 1))
+		if point == $Player.lastRouter:
+			draw_circle(point, 10, Color(0, 0, 1, 1))
+		elif point == $Player.nextRouter:
+			draw_circle(point, 10, Color(1, 0, 0, 1))
 		for dir in pathRouters[point].keys():
 			draw_line(point, point+(dir*20), Color(1, 0, 0, 1), 5)
 			

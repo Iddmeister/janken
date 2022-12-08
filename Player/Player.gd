@@ -3,22 +3,25 @@ extends Area2D
 class_name Player
 
 const invalidPos:Vector2 = Vector2(9999, 9999)
-export var speed:float = 200
-export var knockForce:float = 500
-export var knockDeceleration:float = 2000
+export var speed:float = 150
 enum {ROCK, PAPER, SCISSORS}
 enum {WIN, LOSE, DRAW}
 export var type:int = ROCK
 export var team:int
-export var radius:float = 16
 var aimDir:Vector2 = Vector2(-1, 0)
 var moveDir:Vector2 = Vector2(-1, 0)
+
+export var knockSpeed:float = 800
+export var knockDeceleration:float = 0.2
 var currentKnockSpeed:float = 0
 var knockedBy:Array = []
 
-onready var currentRouter:Vector2 = position
 
 onready var gridPath = get_parent()
+
+# Last router you passed through
+onready var lastRouter:Vector2 = position
+var nextRouter:Vector2
 
 onready var collision:CollisionShape2D = $Collision
 
@@ -37,56 +40,49 @@ func initialize():
 	pass
 
 func movement(delta:float):
-
-	if gridPath.pathRouters[currentRouter].has(moveDir):
+	
+	nextRouter = gridPath.pathRouters[lastRouter][moveDir]
+	
+	var nextMove:float
+	
+	if currentKnockSpeed > 0:
+		currentKnockSpeed = max(lerp(currentKnockSpeed, 0, knockDeceleration*delta*60), speed/2)
+		if currentKnockSpeed <= speed/2:
+			currentKnockSpeed = 0
+		nextMove = currentKnockSpeed*delta
+	else:
 		
-		var nextRouter:Vector2 = gridPath.pathRouters[currentRouter][moveDir]
-		
-		var nextMove:float = speed*delta
-		
-		if currentKnockSpeed > 0:
-			currentKnockSpeed = max(0, currentKnockSpeed-(knockDeceleration*delta))
-			nextMove = currentKnockSpeed*delta
-		else:
+		if not knockedBy.empty():
 			knockedBy.clear()
-			if aimDir == moveDir*-1:
-				moveDir = aimDir
-				currentRouter = nextRouter
-				nextRouter = gridPath.pathRouters[currentRouter][moveDir]
-	
-		if (nextRouter-position).length() <= nextMove:
-			var lastPos:Vector2 = position
-#			position += calculateVelocity((nextRouter-position).length()*moveDir, get_tree().get_nodes_in_group("Player"))
-			position += (nextRouter-position).length()*moveDir
-			nextMove -= (position-lastPos).length()
-			if (aimDir in gridPath.pathRouters[nextRouter].keys()) and not currentKnockSpeed > 0:
-				print("good to go")
-				moveDir = aimDir
-				currentRouter = nextRouter
-			elif moveDir in gridPath.pathRouters[nextRouter].keys():
-				currentRouter = nextRouter
 		
-		if (not moveDir in gridPath.pathRouters[nextRouter].keys()) and position == nextRouter:
+		nextMove = speed*delta
+	
+		if aimDir == moveDir*-1:
+			moveDir = aimDir
+			lastRouter = nextRouter
+			nextRouter = gridPath.pathRouters[lastRouter][moveDir]
+	
+	if (nextRouter-position).length() <= nextMove:
+		nextMove -= (nextRouter-position).length()
+		position = nextRouter
+		
+		if (aimDir in gridPath.pathRouters[nextRouter].keys()) and not currentKnockSpeed > 0:
+			moveDir = aimDir
+		if moveDir in gridPath.pathRouters[nextRouter].keys():
+			lastRouter = nextRouter
+			nextRouter = gridPath.pathRouters[lastRouter][moveDir]
+		else:
 			nextMove = 0
-		
-#		print(moveWithCollision(nextMove*moveDir, get_tree().get_nodes_in_group("Player")))
-#		position += calculateVelocity(nextMove*moveDir, get_tree().get_nodes_in_group("Player"))
-		position += nextMove*moveDir
-#		position += moveWithCollision(nextMove*moveDir, get_tree().get_nodes_in_group("Player"))
-		
-func calculateVelocity(original:Vector2, players:Array=[]):
-	var finalVel:Vector2 = original
-	for player in players:
-		if player == self:
-			continue
-		var dist:Vector2 = (((original.normalized()*-radius)+player.position)-(position+(original.normalized()*radius)))
-		
-		
-		if original.length() > dist.length():
-			if dist.length() < finalVel.length():
-				finalVel = dist.length()*original.normalized()
-	return finalVel
+			
+	position += nextMove*moveDir
 	
+func attemptMove(vel:Vector2):
+	if aimDir in gridPath.pathRouters[lastRouter].keys():
+		moveDir = aimDir
+	if moveDir in gridPath.pathRouters[lastRouter].keys():
+		position += vel
+		
+
 func _physics_process(delta: float) -> void:
 	
 	var newDir:Vector2
@@ -101,23 +97,24 @@ func _physics_process(delta: float) -> void:
 	
 	movement(delta)
 	
+func kill():
+	print("oof")
+	
 func knock(dir:Vector2, knocker=null):
 	
 	if knocker:
 		if knocker in knockedBy:
 			return
 		knockedBy.append(knocker)
+		
+	currentKnockSpeed = knockSpeed
 	
-	currentKnockSpeed = knockForce
-	if dir != moveDir:
-		var nextRouter:Vector2 = gridPath.pathRouters[currentRouter][moveDir]
-		currentRouter = nextRouter
-	moveDir = dir
-
+	if dir == moveDir*-1:
+		moveDir = dir
+		lastRouter = nextRouter
+		nextRouter = gridPath.pathRouters[lastRouter][moveDir]
+	aimDir = moveDir
 	
-func kill():
-	print("oof")
-
 func _on_Player_area_entered(area: Area2D) -> void:
 	
 	if not area.team == team:
@@ -129,5 +126,3 @@ func _on_Player_area_entered(area: Area2D) -> void:
 				area.kill()
 			DRAW:
 				area.knock((area.position-position).normalized(), self)
-	
-	
