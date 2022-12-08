@@ -76,6 +76,8 @@ func movement(delta:float):
 			
 	position += nextMove*moveDir
 	
+	global_rotation = moveDir.angle()
+	
 func attemptMove(vel:Vector2):
 	if aimDir in gridPath.pathRouters[lastRouter].keys():
 		moveDir = aimDir
@@ -108,12 +110,15 @@ func knock(dir:Vector2, knocker=null):
 		knockedBy.append(knocker)
 		
 	currentKnockSpeed = knockSpeed
-	
 	if dir == moveDir*-1:
 		moveDir = dir
 		lastRouter = nextRouter
-		nextRouter = gridPath.pathRouters[lastRouter][moveDir]
-	aimDir = moveDir
+		aimDir = moveDir
+	elif position == nextRouter:
+		if dir in gridPath.pathRouters[nextRouter].keys():
+			moveDir = dir
+			aimDir = moveDir
+			lastRouter = nextRouter
 	
 func _on_Player_area_entered(area: Area2D) -> void:
 	
@@ -125,4 +130,7 @@ func _on_Player_area_entered(area: Area2D) -> void:
 			WIN:
 				area.kill()
 			DRAW:
-				area.knock((area.position-position).normalized(), self)
+				var knockDir = (area.position-position).normalized().round()
+				if abs(knockDir.x) == abs(knockDir.y):
+					knockDir.y = 0
+				area.knock(knockDir, self)

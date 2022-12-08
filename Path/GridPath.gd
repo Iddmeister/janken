@@ -4,15 +4,15 @@ class_name GridPath
 
 const invalidPos:Vector2 = Vector2(9999, 9999)
 var pathRouters:Dictionary
-
-func _draw() -> void:
-	for point in pathRouters.keys():
-		if point == $Player.lastRouter:
-			draw_circle(point, 10, Color(0, 0, 1, 1))
-		elif point == $Player.nextRouter:
-			draw_circle(point, 10, Color(1, 0, 0, 1))
-		for dir in pathRouters[point].keys():
-			draw_line(point, point+(dir*20), Color(1, 0, 0, 1), 5)
+#
+#func _draw() -> void:
+#	for point in pathRouters.keys():
+#		if point == $Player.lastRouter:
+#			draw_circle(point, 10, Color(0, 0, 1, 1))
+#		elif point == $Player.nextRouter:
+#			draw_circle(point, 10, Color(1, 0, 0, 1))
+#		for dir in pathRouters[point].keys():
+#			draw_line(point, point+(dir*20), Color(1, 0, 0, 1), 5)
 			
 func _physics_process(delta: float) -> void:
 	update()
