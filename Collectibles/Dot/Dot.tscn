@@ -6,7 +6,8 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 5.0
 
-[node name="Dot" instance=ExtResource( 1 )]
+[node name="Dot" groups=["Dot"] instance=ExtResource( 1 )]
+points = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 shape = SubResource( 1 )

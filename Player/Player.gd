@@ -2,10 +2,14 @@ extends Area2D
 
 class_name Player
 
+signal died()
+
 var Rock = preload("res://Player/Rock.tscn")
 var Paper = preload("res://Player/Paper.tscn")
 var Scissors = preload("res://Player/Scissors.tscn")
+
 var Sparks = preload("res://Player/Sparks.tscn")
+var DeathDebris = preload("res://Player/DeathDebris.tscn")
 
 enum {ROCK, PAPER, SCISSORS}
 enum {WIN, LOSE, DRAW}
@@ -111,6 +115,10 @@ func _physics_process(delta: float) -> void:
 		syncPosition(delta)
 	
 puppetsync func kill():
+	emit_signal("died")
+	var d = DeathDebris.instance()
+	get_parent().add_child(d)
+	d.global_position = global_position
 	queue_free()
 	
 func knock(power:float, dir:Vector2):

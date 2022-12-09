@@ -6,10 +6,13 @@ export var regenTime:float = 3
 
 var players:Dictionary = {}
 
-func regenPlayer(player:String):
-	players[player] = regenTime
+puppetsync func regenPlayer(player:String):
+	if is_network_master():
+		players[player] = regenTime
 	
 func _process(delta: float) -> void:
+	if not is_network_master():
+		return
 	for player in players.keys():
 		players[player] -= delta
 		if players[player] <= 0:

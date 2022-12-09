@@ -5,6 +5,7 @@ class_name Game
 var playerKey:String
 var players:Dictionary = {}
 var playerIDs:Dictionary = {}
+var publicKeys:Dictionary = {}
 var isServer:bool = false
 var gameID:String
 var map:Map
@@ -28,6 +29,7 @@ remote func playerInput(dir:Vector2):
 func _ready() -> void:
 	
 	map = $MapContainer/Map
+	map.game = self
 	
 	if not OS.get_cmdline_args().empty():
 		match OS.get_cmdline_args()[0]:
@@ -36,8 +38,24 @@ func _ready() -> void:
 				gameID = OS.get_cmdline_args()[1]
 
 				for key in range(2, 8):
-					players[OS.get_cmdline_args()[key]] = {"id":-1, "type":Player.SCISSORS, "public":String(key-2)}
-				
+					players[OS.get_cmdline_args()[key]] = {"id":-1, "type":Player.SCISSORS, "public":String(key-2), "team":0 if key <= 4 else 1}
+					
+					match key:
+						2:
+							players[OS.get_cmdline_args()[key]].type = Player.ROCK
+						3:
+							players[OS.get_cmdline_args()[key]].type = Player.PAPER
+						4:
+							players[OS.get_cmdline_args()[key]].type = Player.SCISSORS
+						5:
+							players[OS.get_cmdline_args()[key]].type = Player.ROCK
+						6:
+							players[OS.get_cmdline_args()[key]].type = Player.PAPER
+						7:
+							players[OS.get_cmdline_args()[key]].type = Player.SCISSORS
+					
+					
+					publicKeys[String(key-2)] = OS.get_cmdline_args()[key]
 			"quickclient":
 				playerKey = OS.get_cmdline_args()[3]
 				joinServer(OS.get_cmdline_args()[1], int(OS.get_cmdline_args()[2]))
