@@ -51,6 +51,8 @@ run/main_scene="res://Game/Game.tscn"
 
 window/size/width=608
 window/size/height=608
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
 
 [input]
 
@@ -84,3 +86,7 @@ right={
 2d_physics/layer_1="Players"
 2d_physics/layer_2="Collectibles"
 2d_physics/layer_3="Monitors"
+
+[rendering]
+
+environment/default_clear_color=Color( 0, 0, 0, 1 )

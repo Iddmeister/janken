@@ -5,16 +5,17 @@ class_name Player
 var Rock = preload("res://Player/Rock.tscn")
 var Paper = preload("res://Player/Paper.tscn")
 var Scissors = preload("res://Player/Scissors.tscn")
+var Sparks = preload("res://Player/Sparks.tscn")
 
 enum {ROCK, PAPER, SCISSORS}
 enum {WIN, LOSE, DRAW}
 export(int, "Rock", "Paper", "Scissors") var type:int = ROCK
 export(int, "Team 1", "Team 2") var team:int
 export var startDirection:Vector2 = Vector2(-1, 0)
-var aimDir:Vector2 = startDirection
-var moveDir:Vector2 = startDirection
+onready var aimDir:Vector2 = startDirection
+onready var moveDir:Vector2 = startDirection
 export var speed:float = 150
-export var knockSpeed:float = 800
+export var drawKnockPower:float = 800
 export var knockDeceleration:float = 0.2
 var currentKnockSpeed:float = 0
 var knockedBy:Array = []
@@ -109,17 +110,12 @@ func _physics_process(delta: float) -> void:
 	else:
 		syncPosition(delta)
 	
-func kill():
-	print("oof")
+puppetsync func kill():
+	queue_free()
 	
-func knock(dir:Vector2, knocker=null):
+func knock(power:float, dir:Vector2):
 	
-	if knocker:
-		if knocker in knockedBy:
-			return
-		knockedBy.append(knocker)
-		
-	currentKnockSpeed = knockSpeed
+	currentKnockSpeed = power
 	if dir == moveDir*-1:
 		moveDir = dir
 		lastRouter = nextRouter
@@ -129,6 +125,11 @@ func knock(dir:Vector2, knocker=null):
 			moveDir = dir
 			aimDir = moveDir
 			lastRouter = nextRouter
+			
+puppet func knockEffects(pos:Vector2):
+		var s = Sparks.instance()
+		get_parent().add_child(s)
+		s.global_position = pos
 	
 func getOutcome(ally:int, enemy:int) -> int:
 	
@@ -142,6 +143,9 @@ func getOutcome(ally:int, enemy:int) -> int:
 	
 func _on_Player_area_entered(area: Area2D) -> void:
 	
+	if (not map.gameStarted) or (not is_network_master()):
+		return
+	
 	if not area.is_in_group("Player"):
 		return
 	
@@ -151,9 +155,14 @@ func _on_Player_area_entered(area: Area2D) -> void:
 		
 		match outcome:
 			WIN:
-				area.kill()
+				area.rpc("kill")
 			DRAW:
-				var knockDir = (area.position-position).normalized().round()
-				if abs(knockDir.x) == abs(knockDir.y):
-					knockDir.y = 0
-				area.knock(knockDir, self)
+				if not (area in knockedBy):
+					knockedBy.append(area)
+					var knockDir = (area.position-position).normalized().round()
+					if abs(knockDir.x) == abs(knockDir.y):
+						knockDir.y = 0
+					area.knock(drawKnockPower, knockDir)
+					
+					if area.team == 0:
+						rpc("knockEffects", global_position+((area.global_position-global_position)/2))

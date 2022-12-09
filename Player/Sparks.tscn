@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Misc/Circle.png" type="Texture" id=2]
+[ext_resource path="res://Misc/TempParticles/TempParticles.tscn" type="PackedScene" id=3]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.2, 1 ), -0.10084, -1.66667, 0, 1, Vector2( 0.8, 0 ), -1.66667, 0.0, 1, 0 ]
+
+[node name="Sparks" instance=ExtResource( 3 )]
+emitting = false
+amount = 10
+one_shot = true
+speed_scale = 2.5
+explosiveness = 1.0
+texture = ExtResource( 2 )
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 50.0
+initial_velocity_random = 0.8
+scale_amount = 0.05
+scale_amount_random = 0.05
+scale_amount_curve = SubResource( 1 )
+color = Color( 1, 0.72549, 0, 1 )
+hue_variation = -0.07
+hue_variation_random = 1.0
+__meta__ = {
+"_editor_description_": ""
+}

@@ -36,7 +36,7 @@ func _ready() -> void:
 				gameID = OS.get_cmdline_args()[1]
 
 				for key in range(2, 8):
-					players[OS.get_cmdline_args()[key]] = {"id":-1, "type":Player.SCISSORS, "public":String(key)}
+					players[OS.get_cmdline_args()[key]] = {"id":-1, "type":Player.SCISSORS, "public":String(key-2)}
 				
 			"quickclient":
 				playerKey = OS.get_cmdline_args()[3]

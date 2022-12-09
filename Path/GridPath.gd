@@ -4,7 +4,7 @@ extends Node2D
 
 class_name GridPath
 
-export var drawPath:bool = false setget setDrawPath
+export var drawPath:bool = true setget setDrawPath
 const invalidPos:Vector2 = Vector2(9999, 9999)
 var paths:Dictionary
 
@@ -17,17 +17,21 @@ func setDrawPath(val):
 		update()
 
 func _draw() -> void:
-	if not drawPath:
-		return
-	for point in paths.keys():
-		draw_circle(point, 10, Color(1, 0, 0, 1))
-		for dir in paths[point].keys():
-			draw_line(point, point+(dir*20), Color(1, 0, 0, 1), 5)
+#	if not drawPath:
+#		return
+#	for point in paths.keys():
+#		draw_circle(point, 10, Color(1, 0, 0, 1))
+#		for dir in paths[point].keys():
+#			draw_line(point, point+(dir*20), Color(1, 0, 0, 1), 5)
+	pass
 			
 func updatePaths():
 	var routers:Array = []
 	for path in get_children():
-		routers.append(generateRouters(path.points))
+		var points:Array = path.points
+		for p in range(points.size()):
+			points[p] = path.to_global(points[p])-global_position
+		routers.append(generateRouters(points))
 	paths = compoundRouters(routers)
 	
 func _ready() -> void:
