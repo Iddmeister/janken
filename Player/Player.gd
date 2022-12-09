@@ -6,31 +6,34 @@ var Rock = preload("res://Player/Rock.tscn")
 var Paper = preload("res://Player/Paper.tscn")
 var Scissors = preload("res://Player/Scissors.tscn")
 
-const invalidPos:Vector2 = Vector2(9999, 9999)
-export var speed:float = 150
-enum exportTyes {ROCK, PAPER, SCISSORS}
 enum {ROCK, PAPER, SCISSORS}
 enum {WIN, LOSE, DRAW}
-export(exportTyes) var type:int = ROCK
-export var team:int
-var aimDir:Vector2 = Vector2(-1, 0)
-var moveDir:Vector2 = Vector2(-1, 0)
-
+export(int, "Rock", "Paper", "Scissors") var type:int = ROCK
+export(int, "Team 1", "Team 2") var team:int
+export var startDirection:Vector2 = Vector2(-1, 0)
+var aimDir:Vector2 = startDirection
+var moveDir:Vector2 = startDirection
+export var speed:float = 150
 export var knockSpeed:float = 800
 export var knockDeceleration:float = 0.2
 var currentKnockSpeed:float = 0
 var knockedBy:Array = []
 
-
-onready var gridPath = get_parent()
+var gridPath
+var map
 
 # Last router you passed through
 onready var lastRouter:Vector2 = position
 var nextRouter:Vector2
 
-onready var collision:CollisionShape2D = $Collision
+#Puppet Properties
+onready var actualPos:Vector2 = global_position
+export var syncSpeed:float = 0.5
+
+var validMoveDirections = [Vector2(-1, 0), Vector2(1, 0), Vector2(0, 1), Vector2(0, -1)]
 
 func _ready() -> void:
+	global_rotation = startDirection.angle()
 	match type:
 		ROCK:
 			$Graphics.add_child(Rock.instance())
@@ -38,9 +41,11 @@ func _ready() -> void:
 			$Graphics.add_child(Paper.instance())
 		SCISSORS:
 			$Graphics.add_child(Scissors.instance())
-
-func initialize():
-	pass
+			
+			
+func changeAimDirection(dir:Vector2):
+	if dir in validMoveDirections:
+		aimDir = dir
 
 func movement(delta:float):
 	
@@ -82,26 +87,27 @@ func movement(delta:float):
 	
 	global_rotation = lerp_angle(global_rotation, moveDir.angle(), 0.35*delta*60)
 	
-func attemptMove(vel:Vector2):
-	if aimDir in gridPath.paths[lastRouter].keys():
-		moveDir = aimDir
-	if moveDir in gridPath.paths[lastRouter].keys():
-		position += vel
-		
+	
+puppet func updatePosition(pos:Vector2, dir:Vector2):
+	actualPos = pos
+	if dir == moveDir*-1:
+			global_rotation = dir.angle()
+	moveDir = dir
+	
+func syncPosition(delta:float):
+	global_position = global_position.linear_interpolate(actualPos, syncSpeed*delta*60)
+	global_rotation = lerp_angle(global_rotation, moveDir.angle(), 0.35*delta*60)
 
 func _physics_process(delta: float) -> void:
 	
-	var newDir:Vector2
-	if name == "Player":
-		newDir = Vector2(Input.get_action_strength("right")-Input.get_action_strength("left"), Input.get_action_strength("down")-Input.get_action_strength("up"))
+	if (not get_tree().network_peer) or (not map.gameStarted):
+		return
+	
+	if is_network_master():
+		movement(delta)
+		rpc_unreliable("updatePosition", global_position, moveDir)
 	else:
-		newDir = Vector2(Input.get_action_strength("test_right")-Input.get_action_strength("test_left"), Input.get_action_strength("test_down")-Input.get_action_strength("test_up"))
-	
-	if abs(newDir.x) == abs(newDir.y):
-		newDir.y = 0
-	aimDir = newDir if newDir.length() > 0 else aimDir
-	
-	movement(delta)
+		syncPosition(delta)
 	
 func kill():
 	print("oof")

@@ -13,7 +13,7 @@ func setDrawPath(val):
 		drawPath = val
 		if drawPath:
 			updatePaths()
-		$Paths.visible = drawPath
+		visible = drawPath
 		update()
 
 func _draw() -> void:
@@ -26,7 +26,7 @@ func _draw() -> void:
 			
 func updatePaths():
 	var routers:Array = []
-	for path in $Paths.get_children():
+	for path in get_children():
 		routers.append(generateRouters(path.points))
 	paths = compoundRouters(routers)
 	
