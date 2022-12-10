@@ -21,6 +21,7 @@ onready var moveDir:Vector2 = startDirection
 export var speed:float = 150
 export var drawKnockPower:float = 800
 export var knockDeceleration:float = 0.2
+export var enemyColour:Color = Color("ff2626")
 var currentKnockSpeed:float = 0
 var knockedBy:Array = []
 
@@ -46,6 +47,10 @@ func _ready() -> void:
 			$Graphics.add_child(Paper.instance())
 		SCISSORS:
 			$Graphics.add_child(Scissors.instance())
+			
+func setEnemy(isEnemy:bool=false):
+	modulate = enemyColour if isEnemy else Color(1, 1, 1, 1)
+	pass
 			
 			
 func changeAimDirection(dir:Vector2):
@@ -90,18 +95,18 @@ func movement(delta:float):
 			
 	position += nextMove*moveDir
 	
-	global_rotation = lerp_angle(global_rotation, moveDir.angle(), 0.35*delta*60)
+	rotation = lerp_angle(rotation, moveDir.angle(), 0.35*delta*60)
 	
 	
 puppet func updatePosition(pos:Vector2, dir:Vector2):
 	actualPos = pos
 	if dir == moveDir*-1:
-			global_rotation = dir.angle()
+			rotation = dir.angle()
 	moveDir = dir
 	
 func syncPosition(delta:float):
-	global_position = global_position.linear_interpolate(actualPos, syncSpeed*delta*60)
-	global_rotation = lerp_angle(global_rotation, moveDir.angle(), 0.35*delta*60)
+	position = position.linear_interpolate(actualPos, syncSpeed*delta*60)
+	rotation = lerp_angle(rotation, moveDir.angle(), 0.35*delta*60)
 
 func _physics_process(delta: float) -> void:
 	
@@ -110,7 +115,7 @@ func _physics_process(delta: float) -> void:
 	
 	if is_network_master():
 		movement(delta)
-		rpc_unreliable("updatePosition", global_position, moveDir)
+		rpc_unreliable("updatePosition", position, moveDir)
 	else:
 		syncPosition(delta)
 	

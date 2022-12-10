@@ -11,7 +11,7 @@ puppetsync func regenPlayer(player:String):
 		players[player] = regenTime
 	
 func _process(delta: float) -> void:
-	if not is_network_master():
+	if (not get_tree().network_peer) or (not is_network_master()):
 		return
 	for player in players.keys():
 		players[player] -= delta

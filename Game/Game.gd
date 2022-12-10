@@ -2,16 +2,23 @@ extends Node
 
 class_name Game
 
-var playerKey:String
+var privateKey:String
+var public:String
+
+var privateKeys:Dictionary = {}
 var players:Dictionary = {}
 var playerIDs:Dictionary = {}
-var publicKeys:Dictionary = {}
+
 var isServer:bool = false
 var gameID:String
-var map:Map
+var map
+
+var maps:Dictionary = {"main":"res://Maps/Main/MainMap.tscn"}
+
+var matchInfo:Dictionary = {}
 
 func _unhandled_input(event: InputEvent) -> void:
-	if ((not get_tree().network_peer) or (not is_network_master())) and map.gameStarted:
+	if ((not get_tree().network_peer) or (not is_network_master())) and map and map.gameStarted:
 		var newDir:Vector2 = Vector2(event.get_action_strength("right")-event.get_action_strength("left"),event.get_action_strength("down")-event.get_action_strength("up"))
 		if newDir == Vector2(0, 0):
 			return
@@ -22,42 +29,37 @@ func _unhandled_input(event: InputEvent) -> void:
 remote func playerInput(dir:Vector2):
 	if not get_tree().get_rpc_sender_id() in playerIDs:
 		return
-	var public:String = players[playerIDs[get_tree().get_rpc_sender_id()]].public
+	var public:String = playerIDs[get_tree().get_rpc_sender_id()]
 	map.playerInput(public, dir)
+	
+func loadMap(_map:String):
+	
+	var m = load(maps[_map]).instance()
+	m.game = self
+	$MapContainer.add_child(m)
+	map = m
+	
+	pass
 	
 
 func _ready() -> void:
 	
-	map = $MapContainer/Map
-	map.game = self
-	
+
 	if not OS.get_cmdline_args().empty():
 		match OS.get_cmdline_args()[0]:
 			"quickserver":
 				isServer = true
-				gameID = OS.get_cmdline_args()[1]
-
-				for key in range(2, 8):
-					players[OS.get_cmdline_args()[key]] = {"id":-1, "type":Player.SCISSORS, "public":String(key-2), "team":0 if key <= 4 else 1}
+				matchInfo.map = OS.get_cmdline_args()[1]
+				gameID = OS.get_cmdline_args()[2]
+				for key in range(0, 6):
+					players[String(key)] = {"id":-1, "team":0 if key <= 2 else 1}
+					players[String(key)].type = key if key <= 2 else key-3
+					privateKeys["abcdef"[key]] = String(key)
 					
-					match key:
-						2:
-							players[OS.get_cmdline_args()[key]].type = Player.ROCK
-						3:
-							players[OS.get_cmdline_args()[key]].type = Player.PAPER
-						4:
-							players[OS.get_cmdline_args()[key]].type = Player.SCISSORS
-						5:
-							players[OS.get_cmdline_args()[key]].type = Player.ROCK
-						6:
-							players[OS.get_cmdline_args()[key]].type = Player.PAPER
-						7:
-							players[OS.get_cmdline_args()[key]].type = Player.SCISSORS
-					
-					
-					publicKeys[String(key-2)] = OS.get_cmdline_args()[key]
+				loadMap(matchInfo.map)
+			
 			"quickclient":
-				playerKey = OS.get_cmdline_args()[3]
+				privateKey = OS.get_cmdline_args()[3]
 				joinServer(OS.get_cmdline_args()[1], int(OS.get_cmdline_args()[2]))
 				
 	if isServer:
@@ -96,7 +98,7 @@ func joinServer(address:String, port:int):
 	
 func connection_succeeded():
 	print("Connected to Server")
-	rpc("authorizePlayer", playerKey)
+	rpc("authorizePlayer", privateKey)
 	pass
 	
 func connection_failed():
@@ -111,9 +113,10 @@ remote func authorizePlayer(key:String):
 	
 	var id:int = get_tree().get_rpc_sender_id()
 	
-	if key in players.keys():
-		if not (players[key].id == -1 or players[key].id == -2):
-			print("Peer %s tried to connect to key %s but Peer %s is already connected" % [id, key, players[key].id])
+	if key in privateKeys.keys():
+		var player = privateKeys[key]
+		if not (players[player].id == -1 or players[player].id == -2):
+			print("Peer %s tried to connect to key %s but Peer %s is already connected" % [id, key, players[player].id])
 			get_tree().network_peer.disconnect_peer(id, true)
 			return
 		print("Peer %s authorized with key %s" % [id, key])
@@ -124,20 +127,36 @@ remote func authorizePlayer(key:String):
 		print("Disconnected Unauthorized Peer %s" % id)
 		
 func playerAuthorized(key:String, id:int):
-	
-	if players[key].id == -2:
+	var player = privateKeys[key]
+	if players[player].id == -2:
 		reconnectPlayer(key, id)
 	
-	players[key].id = id
-	playerIDs[id] = key
+	players[player].id = id
+	playerIDs[id] = player
+	
+	for playerID in playerIDs.keys():
+		rpc_id(playerID, "playerJoined", player, matchInfo if playerID == id else {}, players if playerID == id else {})
+	
 	var test:int = 0
-	for player in players.keys():
-#		if players[player].id == -1:
+	
+	for p in players.keys():
+#		if playerKeys[player].id == -1:
 #			return
-		if not players[player].id == -1:
+		if not players[p].id == -1:
 			test += 1
 	if test >= 2:
+		# This currently sends ids (may or may not want to do this but currently doesn' update on ids changing)
 		map.rpc("startGame")
+		
+puppet func playerJoined(player:String, _matchInfo:Dictionary={}, playerInfo:Dictionary={}):
+	if public.empty():
+		public = player
+	if players.empty():
+		players = playerInfo
+	if matchInfo.empty():
+		matchInfo = _matchInfo
+	if not map:
+		loadMap(matchInfo.map)
 		
 func reconnectPlayer(key:String, id:int):
 	#Sync world state

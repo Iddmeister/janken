@@ -16,12 +16,11 @@ func _ready() -> void:
 	
 	var placed:PoolVector2Array
 	
-	for player in $Players.get_children():
-		player.map = self
-		player.gridPath = gridPath
-		player.connect("died", self, "playerDied", [player.name, player.team])
-		placed.append(player.global_position)
+	for startPosition in $StartPositions.get_children():
+		placed.append(startPosition.global_position)
+		createPlayer(startPosition.name, startPosition.type, startPosition.team, startPosition.global_position, startPosition.startDirection)
 		
+	
 	for line in $GridPath.get_children():
 		for p in range(line.points.size()-1):
 			var start:Vector2 = line.to_global(line.points[p])
@@ -31,7 +30,7 @@ func _ready() -> void:
 				if not pos in placed:
 					placeDot(pos)
 					placed.append(pos)
-	
+					
 puppetsync func startGame():
 	gameStarted = true
 	
@@ -39,15 +38,19 @@ func playerInput(public:String, dir:Vector2):
 	if $Players.has_node(public):
 		$Players.get_node(public).changeAimDirection(dir)
 
-func createPlayer(public:String, type:int, team:int, pos:Vector2) -> Player:
+func createPlayer(public:String, type:int, team:int, pos:Vector2, dir:Vector2=Vector2(-1, 0)) -> Player:
 	var p:Player = PlayerScene.instance()
 	p.name = public
 	p.team = team
 	p.type = type
 	p.gridPath = $GridPath
 	p.map = self
+	p.startDirection = dir
 	p.global_position = pos
+	if get_tree().network_peer and (not is_network_master()):
+		p.setEnemy(not game.players[game.public].team == game.players[public].team)
 	$Players.add_child(p)
+	p.connect("died", self, "playerDied", [p.name, p.team])
 	return p
 	
 func playerDied(player:String, team:int):
@@ -55,12 +58,10 @@ func playerDied(player:String, team:int):
 	updatePoints()
 	regenChamber.regenPlayer(player)
 	
-puppetsync func respawnPlayer(public:String, type:int, team:int):
-	var player = createPlayer(public, type, team, regenChamber.get_node(String(team)).global_position)
-	player.map = self
-	player.gridPath = gridPath
-	player.connect("died", self, "playerDied", [player.name, player.team])
-	
+puppetsync func respawnPlayer(public:String):
+	print(public)
+	var player = createPlayer(public, game.players[public].type, game.players[public].team, regenChamber.get_node(String(game.players[public].team)).global_position)
+
 func updatePoints():
 	$UI/Info/VBoxContainer/Points.text = String(abs(teamInfo[0].points-teamInfo[1].points))
 	
@@ -78,5 +79,4 @@ func addPoints(team:int, points:int):
 	
 
 func _on_RegenChamber_respawnPlayer(player) -> void:
-	var info = game.players[game.publicKeys[player]]
-	rpc("respawnPlayer", player, info.type, info.team)
+	rpc("respawnPlayer", player)
