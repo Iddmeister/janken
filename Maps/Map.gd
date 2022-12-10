@@ -61,7 +61,6 @@ func playerDied(player:String, team:int):
 	regenChamber.regenPlayer(player)
 	
 puppetsync func respawnPlayer(public:String):
-	print(public)
 	var player = createPlayer(public, game.players[public].type, game.players[public].team, regenChamber.get_node(String(game.players[public].team)).global_position)
 
 func updatePoints():

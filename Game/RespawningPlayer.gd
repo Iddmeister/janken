@@ -21,10 +21,13 @@ func _physics_process(delta: float) -> void:
 		return
 	
 	if (path[0]-position).length() <= speed*delta:
+		var remainingDist:float = (speed*delta)-(path[0]-position).length()
 		position = path[0]
 		path.remove(0)
 		if path.empty():
 			emit_signal("finished")
+		else:
+			position += (path[0]-position).normalized()*remainingDist
 	else:
 		position += (path[0]-position).normalized()*speed*delta
 		rotation = lerp_angle(rotation, (path[0]-position).angle(), 0.3*delta*60)

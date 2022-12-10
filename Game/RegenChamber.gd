@@ -33,6 +33,8 @@ onready var lines = [
 			[Vector2(bounds.position.x+bounds.size.x, bounds.position.y+bounds.size.y), Vector2(bounds.position.x+bounds.size.x, bounds.position.y)],
 			[Vector2(bounds.position.x+bounds.size.x, bounds.position.y), bounds.position]
 			]
+			
+var time:float = 0
 
 puppetsync func regenPlayer(player:String):
 	if get_tree().network_peer and is_network_master():
@@ -42,9 +44,11 @@ puppetsync func regenPlayer(player:String):
 	var path = generateBouncePath(Vector2(0, -bounds.size.y/2), rand_range(PI/2-(deg2rad(angleRange/2)), PI/2+(deg2rad(angleRange/2))), moveSpeed, regenTime)
 	path.invert()
 	var p = respawningPlayer.instance()
+	p.speed = moveSpeed
 	p.path = path
 	p.position = path[0]
 	$Players.add_child(p)
+	time = 0
 	
 	if map:
 		p.setType(map.game.players[player].type)
@@ -53,8 +57,8 @@ puppetsync func regenPlayer(player:String):
 	
 	p.connect("finished", p, "queue_free")
 	
-	
 func _process(delta: float) -> void:
+	time += delta
 	if (not get_tree().network_peer) or (not is_network_master()):
 		return
 	for player in players.keys():
@@ -82,7 +86,7 @@ func generateBouncePath(startPos:Vector2, angle:float, speed:float, time:float):
 #			if (end-start).normalized() == (currentPosition-start).normalized():
 #				continue
 			
-			var i = Geometry.segment_intersects_segment_2d(currentPosition, currentPosition+(direction*10000), start, end)
+			var i = Geometry.segment_intersects_segment_2d(currentPosition, currentPosition+(direction*totalDistance), start, end)
 			if i:
 				intersection = i
 				direction = direction.bounce((end-start).normalized().tangent())
@@ -92,6 +96,7 @@ func generateBouncePath(startPos:Vector2, angle:float, speed:float, time:float):
 		if not intersection:
 			path.append(currentPosition+(direction*totalDistance))
 			return path
+			
 		path.append(intersection)
 		totalDistance -= (intersection-currentPosition).length()
 		currentPosition = intersection
