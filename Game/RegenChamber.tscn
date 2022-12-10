@@ -43,3 +43,8 @@ position = Vector2( 0, 80 )
 points = PoolVector2Array( 16, -36, 16, -48 )
 width = 2.0
 default_color = Color( 1, 1, 1, 1 )
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true

@@ -14,6 +14,8 @@ var game
 
 func _ready() -> void:
 	
+	regenChamber.map = self
+	
 	var placed:PoolVector2Array
 	
 	for startPosition in $StartPositions.get_children():
