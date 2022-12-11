@@ -200,3 +200,12 @@ startDirection = Vector2( 1, 0 )
 position = Vector2( 224, 448 )
 type = 2
 team = 1
+
+[node name="Line2D" type="Line2D" parent="DotExludes" index="0"]
+points = PoolVector2Array( 336, 256, 320, 256, 304, 256, 288, 256, 272, 256 )
+default_color = Color( 1, 1, 1, 0.435294 )
+
+[node name="Line2D2" type="Line2D" parent="DotExludes" index="1"]
+position = Vector2( 0, 96 )
+points = PoolVector2Array( 336, 256, 320, 256, 304, 256, 288, 256, 272, 256 )
+default_color = Color( 1, 1, 1, 0.435294 )

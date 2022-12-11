@@ -22,6 +22,9 @@ func _ready() -> void:
 		placed.append(startPosition.global_position)
 		createPlayer(startPosition.name, startPosition.type, startPosition.team, startPosition.global_position, startPosition.startDirection)
 		
+	for line in $DotExludes.get_children():
+		for point in line.points:
+			placed.append(line.to_global(point))
 	
 	for line in $GridPath.get_children():
 		for p in range(line.points.size()-1):
@@ -33,8 +36,16 @@ func _ready() -> void:
 					placeDot(pos)
 					placed.append(pos)
 					
+puppetsync func gameReady():
+	if is_network_master():
+		$StartStall.start()
+	$Loading.hide()
+	$Ready.show()
+	
 puppetsync func startGame():
+	$Ready.text = "Start"
 	gameStarted = true
+	$ReadyDelay.start()
 	
 func playerInput(public:String, dir:Vector2):
 	if $Players.has_node(public):
@@ -81,3 +92,11 @@ func addPoints(team:int, points:int):
 
 func _on_RegenChamber_respawnPlayer(player) -> void:
 	rpc("respawnPlayer", player)
+
+
+func _on_StartStall_timeout() -> void:
+	rpc("startGame")
+
+
+func _on_ReadyDelay_timeout() -> void:
+	$Ready.hide()

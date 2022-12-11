@@ -5,7 +5,7 @@ signal respawnPlayer(player)
 export var regenTime:float = 5
 export var moveSpeed:float = 150
 
-var angles:Array = [25, 45, 65, 115, 135, 155]
+var angles:Array = [25, 45, 115, 135]
 
 var players:Dictionary = {}
 export var bounds:Rect2 = Rect2(Vector2(-49, -16), Vector2(96, 32))
@@ -66,7 +66,8 @@ puppetsync func exitChamber(player:String):
 	var p = $Players.get_node(player)
 	var team = map.game.players[player].team
 	p.path = []
-	p.global_rotation = PI/2 if team == 1 else -PI/2
+	p.exiting = true
+	p.exitAngle = PI/2 if team == 1 else -PI/2
 	var t = create_tween().bind_node(self)
 	t.tween_property(p, "position", get_node(String(team)).position, 1)
 	if is_network_master():

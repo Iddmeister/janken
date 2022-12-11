@@ -146,7 +146,7 @@ func playerAuthorized(key:String, id:int):
 			test += 1
 	if test >= 2:
 		# This currently sends ids (may or may not want to do this but currently doesn' update on ids changing)
-		map.rpc("startGame")
+		map.rpc("gameReady")
 		
 puppet func playerJoined(player:String, _matchInfo:Dictionary={}, playerInfo:Dictionary={}):
 	if public.empty():

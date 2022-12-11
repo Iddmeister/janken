@@ -9,6 +9,9 @@ var graphics:Dictionary = {
 var speed:float = 200
 export var enemyColour:Color = Color("fe6d6d")
 
+var exiting:bool = false
+var exitAngle:float
+
 signal finished()
 
 var path:PoolVector2Array
@@ -21,6 +24,9 @@ func setType(type:int):
 	add_child(graphics[type].instance())
 
 func _physics_process(delta: float) -> void:
+	
+	if exiting:
+		rotation = lerp_angle(rotation, exitAngle, 0.3*delta*60)
 	
 	if path.empty():
 		return
