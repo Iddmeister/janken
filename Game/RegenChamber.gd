@@ -4,10 +4,11 @@ signal respawnPlayer(player)
 
 export var regenTime:float = 5
 export var moveSpeed:float = 150
-export var angleRange:float = 160
+
+var angles:Array = [25, 45, 65, 115, 135, 155]
 
 var players:Dictionary = {}
-var bounds:Rect2 = Rect2(Vector2(-49, -16), Vector2(96, 32))
+export var bounds:Rect2 = Rect2(Vector2(-49, -16), Vector2(96, 32))
 
 var respawningPlayer = preload("res://Game/RespawningPlayer.tscn")
 
@@ -34,38 +35,55 @@ onready var lines = [
 			[Vector2(bounds.position.x+bounds.size.x, bounds.position.y), bounds.position]
 			]
 			
-var time:float = 0
-
 puppetsync func regenPlayer(player:String):
 	if get_tree().network_peer and is_network_master():
 		players[player] = regenTime
 	
 	randomize()
-	var path = generateBouncePath(Vector2(0, -bounds.size.y/2), rand_range(PI/2-(deg2rad(angleRange/2)), PI/2+(deg2rad(angleRange/2))), moveSpeed, regenTime)
+	
+	angles.shuffle()
+	var angle = angles[0]
+	
+	var exitPos:Vector2 = Vector2(0, 0) #Vector2(0, bounds.size.y/2*(-1 if map.game.players[player].team == 0 else 1))
+	
+	var path = generateBouncePath(exitPos, deg2rad(angle), moveSpeed, regenTime)
 	path.invert()
 	var p = respawningPlayer.instance()
+	p.name = player
 	p.speed = moveSpeed
 	p.path = path
 	p.position = path[0]
+	if (not is_network_master()):
+		p.setEnemy(not (map.game.players[map.game.public].team == map.game.players[player].team))
 	$Players.add_child(p)
-	time = 0
 	
 	if map:
 		p.setType(map.game.players[player].type)
 	else:
 		p.setType(2)
 	
-	p.connect("finished", p, "queue_free")
+puppetsync func exitChamber(player:String):
+	var p = $Players.get_node(player)
+	var team = map.game.players[player].team
+	p.path = []
+	p.global_rotation = PI/2 if team == 1 else -PI/2
+	var t = create_tween().bind_node(self)
+	t.tween_property(p, "position", get_node(String(team)).position, 1)
+	if is_network_master():
+		t.tween_callback(self, "respawnPlayer", [player])
+	t.tween_callback(p, "queue_free")
+	
+func respawnPlayer(player:String):
+	emit_signal("respawnPlayer", player)
 	
 func _process(delta: float) -> void:
-	time += delta
 	if (not get_tree().network_peer) or (not is_network_master()):
 		return
 	for player in players.keys():
 		players[player] -= delta
 		if players[player] <= 0:
 			players.erase(player)
-			emit_signal("respawnPlayer", player)
+			rpc("exitChamber", player)
 			
 func generateBouncePath(startPos:Vector2, angle:float, speed:float, time:float):
 	var totalDistance:float = speed*time

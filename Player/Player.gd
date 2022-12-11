@@ -21,7 +21,7 @@ onready var moveDir:Vector2 = startDirection
 export var speed:float = 150
 export var drawKnockPower:float = 800
 export var knockDeceleration:float = 0.2
-export var enemyColour:Color = Color("ff2626")
+export var enemyColour:Color = Color("fe6d6d")
 var currentKnockSpeed:float = 0
 var knockedBy:Array = []
 

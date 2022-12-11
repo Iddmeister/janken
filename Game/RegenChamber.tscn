@@ -3,6 +3,7 @@
 [ext_resource path="res://Game/RegenChamber.gd" type="Script" id=2]
 
 [node name="RegenChamber" type="Node2D"]
+z_index = 5
 script = ExtResource( 2 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]

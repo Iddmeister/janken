@@ -7,10 +7,15 @@ var graphics:Dictionary = {
 }
 
 var speed:float = 200
+export var enemyColour:Color = Color("fe6d6d")
 
 signal finished()
 
 var path:PoolVector2Array
+
+func setEnemy(isEnemy:bool=false):
+	modulate = enemyColour if isEnemy else Color(1, 1, 1, 1)
+	pass
 
 func setType(type:int):
 	add_child(graphics[type].instance())
