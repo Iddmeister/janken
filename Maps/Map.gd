@@ -75,7 +75,8 @@ puppetsync func respawnPlayer(public:String):
 	var player = createPlayer(public, game.players[public].type, game.players[public].team, regenChamber.get_node(String(game.players[public].team)).global_position)
 
 func updatePoints():
-	$UI/Info/VBoxContainer/Points.text = String(abs(teamInfo[0].points-teamInfo[1].points))
+	var dif = teamInfo[game.players[game.public].team].points-teamInfo[0 if 1 == game.players[game.public].team else 1].points
+	$UI/Info/VBoxContainer/Points.text = String(dif)
 	
 var Dot = preload("res://Collectibles/Dot/Dot.tscn")
 	

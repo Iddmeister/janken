@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Maps/Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Collectibles/Strawberry/Strawberry.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Maps/StartPosition.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Collectibles/Orange/Orange.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Collectibles/Banana/Banana.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Collectibles/Cherries/Cherries.tscn" type="PackedScene" id=6]
 
 [node name="MainMap" instance=ExtResource( 1 )]
 
@@ -211,8 +214,26 @@ position = Vector2( 0, 96 )
 points = PoolVector2Array( 336, 256, 320, 256, 304, 256, 288, 256, 272, 256 )
 default_color = Color( 1, 1, 1, 0.435294 )
 
+[node name="Line2D3" type="Line2D" parent="DotExludes" index="2"]
+points = PoolVector2Array( 48, 288, 48, 304, 48, 320 )
+default_color = Color( 1, 1, 1, 0.435294 )
+
+[node name="Line2D4" type="Line2D" parent="DotExludes" index="3"]
+position = Vector2( 512, 0 )
+points = PoolVector2Array( 48, 288, 48, 304, 48, 320 )
+default_color = Color( 1, 1, 1, 0.435294 )
+
 [node name="Strawberry" parent="." index="15" instance=ExtResource( 2 )]
 position = Vector2( 560, 304 )
 
 [node name="Strawberry2" parent="." index="16" instance=ExtResource( 2 )]
 position = Vector2( 48, 304 )
+
+[node name="Orange" parent="." index="17" instance=ExtResource( 4 )]
+position = Vector2( 304, 256 )
+
+[node name="Banana" parent="." index="18" instance=ExtResource( 5 )]
+position = Vector2( 304, 352 )
+
+[node name="Cherries" parent="." index="19" instance=ExtResource( 6 )]
+position = Vector2( 328, 352 )

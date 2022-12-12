@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/StrawberryNoOutline.png-af8799ec87afa5c2d0d43d9f46d49070.stex"
+path="res://.import/Cherries.png-bf44ad672917c909bd429942a801d4d6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Collectibles/Strawberry/StrawberryNoOutline.png"
-dest_files=[ "res://.import/StrawberryNoOutline.png-af8799ec87afa5c2d0d43d9f46d49070.stex" ]
+source_file="res://Collectibles/Cherries/Cherries.png"
+dest_files=[ "res://.import/Cherries.png-bf44ad672917c909bd429942a801d4d6.stex" ]
 
 [params]
 

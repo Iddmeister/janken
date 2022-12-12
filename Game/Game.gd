@@ -44,7 +44,6 @@ func loadMap(_map:String):
 
 func _ready() -> void:
 	
-
 	if not OS.get_cmdline_args().empty():
 		match OS.get_cmdline_args()[0]:
 			"quickserver":
