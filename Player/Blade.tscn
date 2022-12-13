@@ -21,7 +21,7 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = SubResource( 1 )
-shader_param/hole_radius = 0.497
+shader_param/hole_radius = 0.5
 
 [node name="Blade" type="Node2D"]
 

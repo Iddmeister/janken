@@ -99,6 +99,7 @@ func movement(delta:float):
 	
 	
 puppet func updatePosition(pos:Vector2, dir:Vector2):
+	
 	actualPos = pos
 	if dir == moveDir*-1:
 			rotation = dir.angle()
