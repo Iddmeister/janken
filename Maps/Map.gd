@@ -2,18 +2,24 @@ extends Node2D
 
 class_name Map
 
+export var matchTime:float = 3
+
 var gameStarted:bool = false
+var gameFinished:bool = false
 var PlayerScene = preload("res://Player/Player.tscn")
 
 var teamInfo:Dictionary = {0:{"points":0}, 1:{"points":0}}
 
 onready var gridPath = $GridPath
 onready var regenChamber = $RegenChamber
+onready var pointContainer = $UI/Info/Points
+onready var clock = $UI/Info/Time
 
 var game
 
 func _ready() -> void:
 	
+	updateClock()
 	regenChamber.map = self
 	
 	var placed:PoolVector2Array
@@ -36,6 +42,8 @@ func _ready() -> void:
 					placeDot(pos)
 					placed.append(pos)
 					
+	get_tree().call_group("Collectible", "connect", "collected", self, "addPoints")
+					
 puppetsync func gameReady():
 	if is_network_master():
 		$StartStall.start()
@@ -46,8 +54,18 @@ puppetsync func startGame():
 	$Ready.text = "Start"
 	gameStarted = true
 	$ReadyDelay.start()
+	$Time.start()
+	
+puppetsync func endGame():
+	gameFinished = true
+	$Loading.hide()
+	$Ready.hide()
+	$GameOver.show()
+	#get_tree().paused = true
 	
 func playerInput(public:String, dir:Vector2):
+	if gameFinished:
+		return
 	if $Players.has_node(public):
 		$Players.get_node(public).changeAimDirection(dir)
 
@@ -75,8 +93,10 @@ puppetsync func respawnPlayer(public:String):
 	var player = createPlayer(public, game.players[public].type, game.players[public].team, regenChamber.get_node(String(game.players[public].team)).global_position)
 
 func updatePoints():
-	var dif = teamInfo[game.players[game.public].team].points-teamInfo[0 if 1 == game.players[game.public].team else 1].points
-	$UI/Info/VBoxContainer/Points.text = String(dif)
+	if not is_network_master():
+		var team:int = game.players[game.public].team
+		pointContainer.get_node("Ally").text = String(teamInfo[team].points)
+		pointContainer.get_node("Enemy").text = String(teamInfo[0 if team == 1 else 1].points)
 	
 var Dot = preload("res://Collectibles/Dot/Dot.tscn")
 	
@@ -84,7 +104,7 @@ func placeDot(pos:Vector2):
 	var d = Dot.instance()
 	d.global_position = pos
 	$Collectibles.add_child(d)
-	d.connect("collected", self, "addPoints")
+	#d.connect("collected", self, "addPoints")
 	
 func addPoints(team:int, points:int):
 	teamInfo[team].points += points
@@ -101,3 +121,14 @@ func _on_StartStall_timeout() -> void:
 
 func _on_ReadyDelay_timeout() -> void:
 	$Ready.hide()
+
+func updateClock():
+	clock.text = "%02d:%02d" % [floor(matchTime/60), matchTime-(60*floor(matchTime/60))]
+
+func _on_Time_tick() -> void:
+	matchTime -= 1
+	updateClock()
+	if matchTime <= 0:
+		$Time.stop()
+		if is_network_master():
+			rpc("endGame")

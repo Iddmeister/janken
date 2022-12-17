@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Rainbow.png" type="Texture" id=3]
-[ext_resource path="res://Player/Rock.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 8.0
@@ -36,7 +35,5 @@ shape = SubResource( 1 )
 
 [node name="Graphics" type="Node2D" parent="."]
 material = SubResource( 4 )
-
-[node name="Rock" parent="Graphics" instance=ExtResource( 4 )]
 
 [connection signal="area_entered" from="." to="." method="_on_Player_area_entered"]

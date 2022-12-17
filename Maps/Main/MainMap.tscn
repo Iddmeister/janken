@@ -176,6 +176,21 @@ width = 24.0
 default_color = Color( 0, 0, 0, 1 )
 joint_mode = 2
 
+[node name="Strawberry" parent="." index="1" instance=ExtResource( 2 )]
+position = Vector2( 560, 304 )
+
+[node name="Strawberry2" parent="." index="2" instance=ExtResource( 2 )]
+position = Vector2( 48, 304 )
+
+[node name="Orange" parent="." index="3" instance=ExtResource( 4 )]
+position = Vector2( 304, 256 )
+
+[node name="Banana" parent="." index="4" instance=ExtResource( 5 )]
+position = Vector2( 304, 352 )
+
+[node name="Cherries" parent="." index="5" instance=ExtResource( 6 )]
+position = Vector2( 328, 352 )
+
 [node name="0" parent="StartPositions" index="0" instance=ExtResource( 3 )]
 position = Vector2( 224, 160 )
 startDirection = Vector2( 0, 1 )
@@ -222,18 +237,3 @@ default_color = Color( 1, 1, 1, 0.435294 )
 position = Vector2( 512, 0 )
 points = PoolVector2Array( 48, 288, 48, 304, 48, 320 )
 default_color = Color( 1, 1, 1, 0.435294 )
-
-[node name="Strawberry" parent="." index="15" instance=ExtResource( 2 )]
-position = Vector2( 560, 304 )
-
-[node name="Strawberry2" parent="." index="16" instance=ExtResource( 2 )]
-position = Vector2( 48, 304 )
-
-[node name="Orange" parent="." index="17" instance=ExtResource( 4 )]
-position = Vector2( 304, 256 )
-
-[node name="Banana" parent="." index="18" instance=ExtResource( 5 )]
-position = Vector2( 304, 352 )
-
-[node name="Cherries" parent="." index="19" instance=ExtResource( 6 )]
-position = Vector2( 328, 352 )

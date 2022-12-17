@@ -4,8 +4,12 @@
 [ext_resource path="res://Collectibles/Strawberry/Strawberry.png" type="Texture" id=2]
 
 [node name="Strawberry" instance=ExtResource( 1 )]
+points = 100
 
 [node name="Sprite" parent="." index="0"]
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 2 )
 offset = Vector2( 0, -10 )
+
+[node name="Points" parent="." index="3"]
+modulate = Color( 0.992157, 0.160784, 0.160784, 1 )

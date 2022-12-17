@@ -111,7 +111,7 @@ func syncPosition(delta:float):
 
 func _physics_process(delta: float) -> void:
 	
-	if (not get_tree().network_peer) or (not map.gameStarted):
+	if (not get_tree().network_peer) or (not map.gameStarted) or map.gameFinished:
 		return
 	
 	if is_network_master():
@@ -157,7 +157,7 @@ func getOutcome(ally:int, enemy:int) -> int:
 	
 func _on_Player_area_entered(area: Area2D) -> void:
 	
-	if (not map.gameStarted) or (not is_network_master()):
+	if (not map.gameStarted) or (not is_network_master()) or map.gameFinished:
 		return
 	
 	if not area.is_in_group("Player"):
