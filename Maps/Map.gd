@@ -2,7 +2,7 @@ extends Node2D
 
 class_name Map
 
-export var matchTime:float = 3
+export var matchTime:int = 120
 
 var gameStarted:bool = false
 var gameFinished:bool = false
@@ -27,11 +27,25 @@ func _ready() -> void:
 	for startPosition in $StartPositions.get_children():
 		placed.append(startPosition.global_position)
 		createPlayer(startPosition.name, startPosition.type, startPosition.team, startPosition.global_position, startPosition.startDirection)
-		
+
+	spawnDots(placed)
+	
+	get_tree().set_group("Spawner", "map", self)
+	get_tree().call_group("Collectible", "connect", "collected", self, "addPoints")
+					
+puppetsync func spawnDots(exlude:PoolVector2Array=[]):
+	
+	var number:int = get_tree().get_nodes_in_group("Dot").size()
+	var placed:PoolVector2Array = exlude
+	
+	for dot in get_tree().get_nodes_in_group("Dot"):
+		placed.append(dot.global_position)
 	for line in $DotExludes.get_children():
 		for point in line.points:
 			placed.append(line.to_global(point))
-	
+	for spawner in get_tree().get_nodes_in_group("Spawner"):
+		placed.append(spawner.position)
+			
 	for line in $GridPath.get_children():
 		for p in range(line.points.size()-1):
 			var start:Vector2 = line.to_global(line.points[p])
@@ -39,10 +53,10 @@ func _ready() -> void:
 			for d in range(0, (end-start).length(), 16):
 				var pos:Vector2 = start + (end-start).normalized()*d
 				if not pos in placed:
-					placeDot(pos)
+					placeDot(pos, String(number))
+					number += 1
 					placed.append(pos)
 					
-	get_tree().call_group("Collectible", "connect", "collected", self, "addPoints")
 					
 puppetsync func gameReady():
 	if is_network_master():
@@ -100,8 +114,9 @@ func updatePoints():
 	
 var Dot = preload("res://Collectibles/Dot/Dot.tscn")
 	
-func placeDot(pos:Vector2):
+func placeDot(pos:Vector2, n:String=""):
 	var d = Dot.instance()
+	d.name = n if not n == "" else d.name
 	d.global_position = pos
 	$Collectibles.add_child(d)
 	#d.connect("collected", self, "addPoints")
@@ -125,8 +140,13 @@ func _on_ReadyDelay_timeout() -> void:
 func updateClock():
 	clock.text = "%02d:%02d" % [floor(matchTime/60), matchTime-(60*floor(matchTime/60))]
 
+func tick():
+	pass
+
 func _on_Time_tick() -> void:
 	matchTime -= 1
+	if is_network_master():
+		tick()
 	updateClock()
 	if matchTime <= 0:
 		$Time.stop()
