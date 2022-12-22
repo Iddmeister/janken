@@ -1,0 +1,16 @@
+{
+  "name": "janken_server",
+  "version": "0.1.0",
+  "description": "Major server for Janken game, spawns minor servers for actual games",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node index.js debug"
+  },
+  "keywords": [],
+  "author": "Iddmeister",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}

@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://Collectibles/Collectible.gd" type="Script" id=1]
-
-[node name="Collectible" type="Area2D" groups=["Collectible"]]
-collision_layer = 2
-script = ExtResource( 1 )
-
-[connection signal="area_entered" from="." to="." method="_on_Collectible_area_entered"]

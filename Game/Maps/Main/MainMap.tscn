@@ -1,0 +1,312 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Maps/Map.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Collectibles/Strawberry/Strawberry.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Maps/StartPosition.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Collectibles/CollectibleSpawner.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Collectibles/Orange/Orange.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Collectibles/Cherries/Cherries.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Maps/Main/MainMap.gd" type="Script" id=7]
+
+[node name="MainMap" instance=ExtResource( 1 )]
+script = ExtResource( 7 )
+
+[node name="Line2" type="Line2D" parent="GridPath" index="0"]
+show_behind_parent = true
+points = PoolVector2Array( 224, 256, 256, 256, 304, 256, 352, 256, 384, 256, 384, 304, 384, 352, 352, 352, 304, 352, 256, 352, 224, 352, 224, 304, 224, 256 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+end_cap_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line3" type="Line2D" parent="GridPath" index="1"]
+show_behind_parent = true
+points = PoolVector2Array( 352, 256, 352, 208, 384, 208, 384, 160, 480, 160, 560, 160, 560, 80, 480, 80, 480, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line4" type="Line2D" parent="GridPath" index="2"]
+show_behind_parent = true
+points = PoolVector2Array( 256, 256, 256, 208, 224, 208, 224, 160, 128, 160, 48, 160, 48, 80, 128, 80, 128, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line5" type="Line2D" parent="GridPath" index="3"]
+show_behind_parent = true
+points = PoolVector2Array( 128, 80, 224, 80, 224, 48, 384, 48, 384, 80, 480, 80 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line6" type="Line2D" parent="GridPath" index="4"]
+show_behind_parent = true
+points = PoolVector2Array( 224, 80, 288, 80, 288, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line7" type="Line2D" parent="GridPath" index="5"]
+show_behind_parent = true
+points = PoolVector2Array( 384, 80, 320, 80, 320, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line8" type="Line2D" parent="GridPath" index="6"]
+show_behind_parent = true
+points = PoolVector2Array( 384, 160, 320, 160, 304, 160, 288, 160, 224, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line9" type="Line2D" parent="GridPath" index="7"]
+show_behind_parent = true
+position = Vector2( 0, 608 )
+scale = Vector2( 1, -1 )
+points = PoolVector2Array( 352, 256, 352, 208, 384, 208, 384, 160, 480, 160, 560, 160, 560, 80, 480, 80, 480, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line10" type="Line2D" parent="GridPath" index="8"]
+show_behind_parent = true
+position = Vector2( 0, 608 )
+scale = Vector2( 1, -1 )
+points = PoolVector2Array( 256, 256, 256, 208, 224, 208, 224, 160, 128, 160, 48, 160, 48, 80, 128, 80, 128, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line11" type="Line2D" parent="GridPath" index="9"]
+show_behind_parent = true
+position = Vector2( 0, 608 )
+scale = Vector2( 1, -1 )
+points = PoolVector2Array( 128, 80, 224, 80, 224, 48, 384, 48, 384, 80, 480, 80 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line12" type="Line2D" parent="GridPath" index="10"]
+show_behind_parent = true
+position = Vector2( 0, 608 )
+scale = Vector2( 1, -1 )
+points = PoolVector2Array( 224, 80, 288, 80, 288, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line13" type="Line2D" parent="GridPath" index="11"]
+show_behind_parent = true
+position = Vector2( 0, 608 )
+scale = Vector2( 1, -1 )
+points = PoolVector2Array( 384, 80, 320, 80, 320, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line14" type="Line2D" parent="GridPath" index="12"]
+show_behind_parent = true
+position = Vector2( 0, 608 )
+scale = Vector2( 1, -1 )
+points = PoolVector2Array( 384, 160, 320, 160, 304, 160, 288, 160, 224, 160 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line15" type="Line2D" parent="GridPath" index="13"]
+show_behind_parent = true
+points = PoolVector2Array( 128, 160, 128, 208, 128, 256, 128, 304, 128, 352, 128, 400, 128, 448 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line16" type="Line2D" parent="GridPath" index="14"]
+show_behind_parent = true
+position = Vector2( 352, 0 )
+points = PoolVector2Array( 128, 160, 128, 208, 128, 256, 128, 304, 128, 352, 128, 400, 128, 448 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line17" type="Line2D" parent="GridPath" index="15"]
+show_behind_parent = true
+points = PoolVector2Array( 128, 256, 48, 256, 48, 352, 128, 352 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line18" type="Line2D" parent="GridPath" index="16"]
+show_behind_parent = true
+position = Vector2( 608, 0 )
+scale = Vector2( -1, 1 )
+points = PoolVector2Array( 128, 256, 48, 256, 48, 352, 128, 352 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line19" type="Line2D" parent="GridPath" index="17"]
+show_behind_parent = true
+scale = Vector2( -1, 1 )
+points = PoolVector2Array( -480, 304, -432, 304, -384, 304 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line20" type="Line2D" parent="GridPath" index="18"]
+show_behind_parent = true
+scale = Vector2( -1, 1 )
+points = PoolVector2Array( -224, 304, -176, 304, -128, 304 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line21" type="Line2D" parent="GridPath" index="19"]
+show_behind_parent = true
+points = PoolVector2Array( 128, 208, 176, 208, 176, 304, 176, 400, 128, 400 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line22" type="Line2D" parent="GridPath" index="20"]
+show_behind_parent = true
+position = Vector2( 608, 0 )
+scale = Vector2( -1, 1 )
+points = PoolVector2Array( 128, 208, 176, 208, 176, 304, 176, 400, 128, 400 )
+width = 24.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Spawners" type="Node2D" parent="." index="1"]
+
+[node name="StrawberryLeft" parent="Spawners" index="0" instance=ExtResource( 4 )]
+position = Vector2( 48, 304 )
+collectible = ExtResource( 2 )
+customColour = Color( 0.992157, 0.160784, 0.160784, 1 )
+
+[node name="StrawberryRight" parent="Spawners" index="1" instance=ExtResource( 4 )]
+position = Vector2( 560, 304 )
+collectible = ExtResource( 2 )
+customColour = Color( 0.992157, 0.160784, 0.160784, 1 )
+
+[node name="OrangeBottom" parent="Spawners" index="2" instance=ExtResource( 4 )]
+position = Vector2( 304, 560 )
+collectible = ExtResource( 5 )
+customColour = Color( 0.996078, 0.427451, 0.0823529, 1 )
+
+[node name="OrangeTop" parent="Spawners" index="3" instance=ExtResource( 4 )]
+position = Vector2( 304, 48 )
+collectible = ExtResource( 5 )
+customColour = Color( 0.996078, 0.427451, 0.0823529, 1 )
+
+[node name="CherriesBottom" parent="Spawners" index="4" instance=ExtResource( 4 )]
+position = Vector2( 480, 448 )
+collectible = ExtResource( 6 )
+customColour = Color( 0.996078, 0.105882, 0.247059, 1 )
+
+[node name="CherriesTop" parent="Spawners" index="5" instance=ExtResource( 4 )]
+position = Vector2( 128, 160 )
+collectible = ExtResource( 6 )
+customColour = Color( 0.996078, 0.105882, 0.247059, 1 )
+
+[node name="0" parent="StartPositions" index="0" instance=ExtResource( 3 )]
+position = Vector2( 224, 160 )
+startDirection = Vector2( 0, 1 )
+
+[node name="1" parent="StartPositions" index="1" instance=ExtResource( 3 )]
+position = Vector2( 304, 160 )
+type = 1
+
+[node name="2" parent="StartPositions" index="2" instance=ExtResource( 3 )]
+position = Vector2( 384, 160 )
+type = 2
+startDirection = Vector2( 1, 0 )
+
+[node name="3" parent="StartPositions" index="3" instance=ExtResource( 3 )]
+position = Vector2( 384, 448 )
+team = 1
+startDirection = Vector2( 0, -1 )
+
+[node name="4" parent="StartPositions" index="4" instance=ExtResource( 3 )]
+position = Vector2( 304, 448 )
+type = 1
+team = 1
+startDirection = Vector2( 1, 0 )
+
+[node name="5" parent="StartPositions" index="5" instance=ExtResource( 3 )]
+position = Vector2( 224, 448 )
+type = 2
+team = 1
+
+[node name="Line2D" type="Line2D" parent="DotExludes" index="0"]
+points = PoolVector2Array( 336, 256, 320, 256, 304, 256, 288, 256, 272, 256 )
+default_color = Color( 1, 1, 1, 0.435294 )
+
+[node name="Line2D2" type="Line2D" parent="DotExludes" index="1"]
+position = Vector2( 0, 96 )
+points = PoolVector2Array( 336, 256, 320, 256, 304, 256, 288, 256, 272, 256 )
+default_color = Color( 1, 1, 1, 0.435294 )
