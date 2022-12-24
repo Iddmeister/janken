@@ -1,10 +1,14 @@
 const {spawn} = require("child_process")
-var crypto = require('crypto');
+const crypto = require('crypto');
+const ws = require("ws")
+
 const debugServerBinary = "GameServer/debug_server.64"
 const serverBinary = "GameServer/server"
 const serverPCK = "GameServer/server.pck"
 const runArgs = process.argv.slice(2);
 const debug = (runArgs.length > 0 && runArgs[0] == "debug")
+
+const PORT = 5072
 
 function generateGameID() {
     let id = crypto.randomBytes(16).toString('base64')
@@ -54,4 +58,11 @@ async function spawnGame(port, id) {
 
 }
 
-spawnGame(5072, "0")
+var server = new ws.Server({port:PORT})
+console.log(`Server Listening on ${PORT}`)
+
+server.on("connection", client => {
+
+    
+
+})

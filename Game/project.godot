@@ -47,6 +47,10 @@ _global_script_class_icons={
 config/name="Janken"
 run/main_scene="res://Game/Game.tscn"
 
+[autoload]
+
+Network="*res://Singletons/Network.gd"
+
 [display]
 
 window/size/width=608
