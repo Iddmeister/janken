@@ -63,6 +63,31 @@ console.log(`Server Listening on ${PORT}`)
 
 server.on("connection", client => {
 
-    
+    client.sendData = function(data) {
+        client.send(JSON.stringify(data))
+    }
+
+    client.on("message", raw => {
+
+        //Production code should be wrapped in a try catch statement
+
+            let data = JSON.parse(raw)
+
+            console.log(data)
+            
+            //Requests that don't require a private id
+
+            switch (data.type) {
+
+                case "info":
+                    if (data.info.includes("playersOnline")) {
+                        client.sendData({type:"update", playersOnline:server.clients.size})
+                    }
+
+                    break;
+
+            }
+    })
+
 
 })

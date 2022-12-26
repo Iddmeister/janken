@@ -3,6 +3,7 @@ extends Node
 export var serverURL = "127.0.0.1:5072"
 
 var client = WebSocketClient.new()
+var connected:bool = false
 
 signal data_recieved(data)
 signal connection_established()
@@ -32,15 +33,19 @@ func connectToServer():
 	
 	
 func connection_error():
+	connected = false
 	print("Unable to connect to server - %s" % serverURL)
 	emit_signal("connection_failed")
 
 func connection_closed(was_clean = false):
+	connected = false
 	print("Closed, clean: ", was_clean)
 	emit_signal("connection_lost")
 	set_process(false)
 
 func connection_established(_proto = ""):
+	
+	connected = true
 	
 	print("Connected to Web Server")
 	

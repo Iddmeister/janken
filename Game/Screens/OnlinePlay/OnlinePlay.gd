@@ -1,10 +1,14 @@
 extends Control
 
 onready var connectionStatus: Label = $Connecting/CenterContainer/VBoxContainer/ConnectionStatus
+onready var joinQueue: Button = $VBoxContainer/Options/MarginContainer/JoinQueue
+onready var queueStatus: Label = $VBoxContainer/Options/MarginContainer/JoinQueue/HBoxContainer/Status
+onready var numPlayersOnline: Label = $VBoxContainer/Options/MarginContainer/JoinQueue/HBoxContainer/NumPlayer/Number
 
 func _ready() -> void:
 	Network.connect("connection_established", self, "connectionSucceeded")
 	Network.connect("connection_failed", self, "connectionFailed")
+	Network.connect("data_recieved", self, "dataRecieved")
 
 func connectToServer():
 	$Connecting.show()
@@ -15,11 +19,18 @@ func connectToServer():
 	
 func connectionSucceeded():
 	$Connecting.hide()
+	updateNetworkInfo()
 	
 func connectionFailed():
 	connectionStatus.text = "Failed to Connect to Server"
 	$Connecting/CenterContainer/VBoxContainer/Retry.show()
 	$Connecting/CenterContainer/VBoxContainer/Back.show()
+	
+func dataRecieved(data:Dictionary):
+	match data.type:
+		"update":
+			numPlayersOnline.text = String(int(data.get("playersOnline", numPlayersOnline.text))-1)
+	
 
 func retryConnection() -> void:
 	connectToServer()
@@ -27,3 +38,16 @@ func retryConnection() -> void:
 
 func returnToMenu() -> void:
 	hide()
+
+
+
+func _on_JoinQueue_toggled(button_pressed: bool) -> void:
+	queueStatus.text = "SEARCH" if button_pressed else "PLAY"
+
+
+func _on_RequestUpdate_timeout() -> void:
+	updateNetworkInfo()
+		
+func updateNetworkInfo():
+	if Network.connected:
+		Network.sendData({"type":"info", "info":["playersOnline"]})
