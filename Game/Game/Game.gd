@@ -44,7 +44,6 @@ func loadMap(_map:String):
 	$MapContainer.add_child(m)
 	map = m
 	print("Loaded Map %s" % _map)
-	
 
 func _ready() -> void:
 	
@@ -55,15 +54,17 @@ func _ready() -> void:
 		if OS.get_cmdline_args()[0] == "--server":
 				print("Starting Server")
 				isServer = true
-				gameID = OS.get_cmdline_args()[2]
-				port = int(OS.get_cmdline_args()[1])
+				gameID = OS.get_cmdline_args()[1]
 				
-				matchInfo.map = "main"
-				
-				for key in range(0, 6):
-					players[String(key)] = {"id":-1, "team":0 if key <= 2 else 1}
-					players[String(key)].type = key if key <= 2 else key-3
-					privateKeys["abcdef"[key]] = String(key)
+#				for key in range(0, 6):
+#					players[String(key)] = {"id":-1, "team":0 if key <= 2 else 1}
+#					players[String(key)].type = key if key <= 2 else key-3
+#					privateKeys["abcdef"[key]] = String(key)
+				print("Attempting to Connect to Server")
+				Network.connect("data_recieved", self, "dataRecieved")
+				Network.connect("connection_established", self, "authenticateServer")
+				Network.connectToServer()
+	
 				
 		else:
 		
@@ -77,14 +78,33 @@ func _ready() -> void:
 						players[String(key)] = {"id":-1, "team":0 if key <= 2 else 1}
 						players[String(key)].type = key if key <= 2 else key-3
 						privateKeys["abcdef"[key]] = String(key)
+					loadMap(matchInfo.map)
+					hostServer(port)
 				
 				"quickclient":
 					privateKey = OS.get_cmdline_args()[3]
 					joinServer(OS.get_cmdline_args()[1], int(OS.get_cmdline_args()[2]))
-					
-	if isServer:
-		loadMap(matchInfo.map)
-		hostServer(port)
+					return
+	
+func authenticateServer():
+	print("Authenticating Server")
+	Network.sendData({"type":"serverConnect", "id":gameID})
+	
+func dataRecieved(data:Dictionary):
+	print(data)
+	match data.type:
+		"matchInfo":
+			matchInfo = data.matchInfo
+			
+			var matchPlayers = data.matchInfo.players
+			for player in matchPlayers:
+				
+				var public = "%s%s" % [matchPlayers[player].type, matchPlayers[player].team]
+				players[public] = {"team":matchPlayers[player].team, "type":matchPlayers[player].type}
+				privateKeys[player] = public
+			
+			loadMap(matchInfo.map)
+			hostServer(port)
 
 func hostServer(port:int):
 	var peer = NetworkedMultiplayerENet.new()
@@ -183,3 +203,9 @@ func reconnectPlayer(key:String, id:int):
 	#Sync world state
 	pass
 	
+
+
+func _on_OnlinePlay_joinedGame(key:String, address:String, port:int) -> void:
+	privateKey = key
+	joinServer(address, port)
+	$Menu.hide()

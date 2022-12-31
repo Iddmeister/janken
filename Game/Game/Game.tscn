@@ -9,3 +9,7 @@ script = ExtResource( 1 )
 [node name="MapContainer" type="Node2D" parent="."]
 
 [node name="Menu" parent="." instance=ExtResource( 2 )]
+
+[connection signal="joinedGame" from="Menu/OnlinePlay" to="." method="_on_OnlinePlay_joinedGame"]
+
+[editable path="Menu"]

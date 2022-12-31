@@ -5,10 +5,13 @@ onready var joinQueue: Button = $VBoxContainer/Options/MarginContainer/JoinQueue
 onready var queueStatus: Label = $VBoxContainer/Options/MarginContainer/JoinQueue/HBoxContainer/Status
 onready var numPlayersOnline: Label = $VBoxContainer/Options/MarginContainer/JoinQueue/HBoxContainer/NumPlayer/Number
 
+signal joinedGame(key, address, port)
+
 func _ready() -> void:
-	Network.connect("connection_established", self, "connectionSucceeded")
-	Network.connect("connection_failed", self, "connectionFailed")
-	Network.connect("data_recieved", self, "dataRecieved")
+	if not Network.isServer:
+		Network.connect("connection_established", self, "connectionSucceeded")
+		Network.connect("connection_failed", self, "connectionFailed")
+		Network.connect("data_recieved", self, "dataRecieved")
 
 func connectToServer():
 	$Connecting.show()
@@ -19,6 +22,7 @@ func connectToServer():
 	
 func connectionSucceeded():
 	$Connecting.hide()
+	Network.sendData({"type":"playerConnect"})
 	updateNetworkInfo()
 	
 func connectionFailed():
@@ -29,7 +33,9 @@ func connectionFailed():
 func dataRecieved(data:Dictionary):
 	match data.type:
 		"update":
-			numPlayersOnline.text = String(int(data.get("playersOnline", numPlayersOnline.text))-1)
+			numPlayersOnline.text = String(max(int(data.get("playersOnline", numPlayersOnline.text))-1, 0))
+		"gameFound":
+			emit_signal("joinedGame", data.get("key", "a"), "127.0.0.1", 5072)
 	
 
 func retryConnection() -> void:
@@ -43,11 +49,15 @@ func returnToMenu() -> void:
 
 func _on_JoinQueue_toggled(button_pressed: bool) -> void:
 	queueStatus.text = "SEARCH" if button_pressed else "PLAY"
+	if button_pressed:
+		Network.sendData({"type":"createTeam"})
+		Network.sendData({"type":"changeType", "newType":0})
+		Network.sendData({"type":"changeReady", "ready":true})
 
 
 func _on_RequestUpdate_timeout() -> void:
 	updateNetworkInfo()
 		
 func updateNetworkInfo():
-	if Network.connected:
+	if Network.connected and not Network.isServer:
 		Network.sendData({"type":"info", "info":["playersOnline"]})

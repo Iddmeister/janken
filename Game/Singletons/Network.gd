@@ -4,6 +4,7 @@ export var serverURL = "127.0.0.1:5072"
 
 var client = WebSocketClient.new()
 var connected:bool = false
+var isServer:bool = false
 
 signal data_recieved(data)
 signal connection_established()
@@ -11,6 +12,10 @@ signal connection_failed()
 signal connection_lost()
 
 func _ready():
+	
+	if not OS.get_cmdline_args().empty():
+		if OS.get_cmdline_args()[0] == "--server":
+				isServer = true
 	
 	pause_mode = Node.PAUSE_MODE_PROCESS
 	

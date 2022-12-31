@@ -472,3 +472,178 @@ Unable to connect to server - 127.0.0.1:5072
 Unable to connect to server - 127.0.0.1:5072
 Unable to connect to server - 127.0.0.1:5072
 Connected to Web Server
+ERROR: Invalid URL scheme:  https://.
+   at: _parse_url (scene/main/http_request.cpp:57)
+ERROR: Invalid URL scheme:  https://.
+   at: _parse_url (scene/main/http_request.cpp:57)
+ERROR: Invalid URL scheme:  https://.
+   at: _parse_url (scene/main/http_request.cpp:57)
+ERROR: Invalid URL scheme:  https://.
+   at: _parse_url (scene/main/http_request.cpp:57)
+ERROR: Invalid URL scheme:  https://.
+   at: _parse_url (scene/main/http_request.cpp:57)
+bug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 171041 --position 336,56
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Closed, clean: False
+SCRIPT ERROR: Parse Error: Expected block in pattern branch
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:37)
+SCRIPT ERROR: Parse Error: The identifier "privateKey" isn't declared in the current scope.
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:34)
+SCRIPT ERROR: Parse Error: The identifier "privateKey" isn't declared in the current scope.
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:34)
+SCRIPT ERROR: Parse Error: The identifier "privateKey" isn't declared in the current scope.
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:34)
+SCRIPT ERROR: Parse Error: The identifier "privateKey" isn't declared in the current scope.
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:34)
+SCRIPT ERROR: Parse Error: The method "joinServer" isn't declared in the current class.
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:34)
+SCRIPT ERROR: Parse Error: Expected block in pattern branch
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:36)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+SCRIPT ERROR: Parse Error: Expression expected
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:36)
+SCRIPT ERROR: Parse Error: Expected ',' or ')'
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:39)
+SCRIPT ERROR: Parse Error: Too few arguments for "add_child()" call. Expected at least 1.
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:37)
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Closed, clean: False
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Closed, clean: False
+Failed to connect to server
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Connected to Server
+Loading Map main
+Loaded Map main
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+ 
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 207603 --position 336,56
+Target 'x-special/gnome-copied-files' not supported.
+Target 'x-special/gnome-copied-files' not supported.
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 207603 --position 336,56
+Target 'x-special/gnome-copied-files' not supported.
+Target 'x-special/gnome-copied-files' not supported.
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 207603 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 207603 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 207603 --position 336,56
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 207603 --position 336,56
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Unable to connect to server - 127.0.0.1:5072
+Unable to connect to server - 127.0.0.1:5072
+Connected to Web Server
+SCRIPT ERROR: Parse Error: Expected indented pattern matching block after "match".
+          at: GDScript::reload (res://Game/Game.gd:98)
+SCRIPT ERROR: Parse Error: ':' expected at end of line.
+          at: GDScript::reload (res://Game/Game.gd:97)
+SCRIPT ERROR: Parse Error: ':' expected at end of line.
+          at: GDScript::reload (res://Game/Game.gd:97)
+SCRIPT ERROR: Parse Error: Expected block in pattern branch
+          at: GDScript::reload (res://Game/Game.gd:95)
+SCRIPT ERROR: Parse Error: Error parsing expression, misplaced: else
+          at: GDScript::reload (res://Game/Game.gd:72)
+SCRIPT ERROR: Parse Error: The identifier "isServer" isn't declared in the current scope.
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:11)
+SCRIPT ERROR: Parse Error: Expected an indented block after "if".
+          at: GDScript::reload (res://Singletons/Network.gd:18)
+SCRIPT ERROR: Parse Error: The identifier "gameID" isn't declared in the current scope.
+          at: GDScript::reload (res://Singletons/Network.gd:21)
+SCRIPT ERROR: Parse Error: Expected an indented block after "if".
+          at: GDScript::reload (res://Game/Game.gd:94)
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+ 
+Running: /usr/local/bin/godot --path /home/iddmeister/Projects/janken/Game --remote-debug 127.0.0.1:6007 --allow_focus_steal_pid 272743 --position 336,56
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+SCRIPT ERROR: Parse Error: Error parsing expression, misplaced: '\n'
+          at: GDScript::reload (res://Game/Game.gd:100)
+SCRIPT ERROR: Parse Error: Error parsing expression, misplaced: '\n'
+          at: GDScript::reload (res://Game/Game.gd:100)
+SCRIPT ERROR: Parse Error: The identifier "key" isn't declared in the current scope.
+          at: GDScript::reload (res://Game/Game.gd:101)
+SCRIPT ERROR: Parse Error: Parse error: Unexpected EOL at String.
+          at: GDScript::reload (res://Game/Game.gd:101)
+SCRIPT ERROR: Parse Error: The identifier "key" isn't declared in the current scope.
+          at: GDScript::reload (res://Game/Game.gd:101)
+SCRIPT ERROR: Parse Error: Expected ',' or ')'
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:53)
+SCRIPT ERROR: Parse Error: Expected ',' or ')'
+          at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:53)
+SCRIPT ERROR: Parse Error: Unexpected indentation.
+          at: GDScript::reload (res://Game/Game.gd:66)

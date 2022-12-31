@@ -1,0 +1,6 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+huh
+Starting Server
+SCRIPT ERROR: Invalid get index '2' (on base: 'PoolStringArray').
+   at: Game._ready (res://Game/Game.gdc:57) - Invalid get index '2' (on base: 'PoolStringArray').

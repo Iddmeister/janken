@@ -273,31 +273,31 @@ position = Vector2( 128, 160 )
 collectible = ExtResource( 6 )
 customColour = Color( 0.996078, 0.105882, 0.247059, 1 )
 
-[node name="0" parent="StartPositions" index="0" instance=ExtResource( 3 )]
+[node name="00" parent="StartPositions" index="0" instance=ExtResource( 3 )]
 position = Vector2( 224, 160 )
 startDirection = Vector2( 0, 1 )
 
-[node name="1" parent="StartPositions" index="1" instance=ExtResource( 3 )]
+[node name="10" parent="StartPositions" index="1" instance=ExtResource( 3 )]
 position = Vector2( 304, 160 )
 type = 1
 
-[node name="2" parent="StartPositions" index="2" instance=ExtResource( 3 )]
+[node name="20" parent="StartPositions" index="2" instance=ExtResource( 3 )]
 position = Vector2( 384, 160 )
 type = 2
 startDirection = Vector2( 1, 0 )
 
-[node name="3" parent="StartPositions" index="3" instance=ExtResource( 3 )]
+[node name="01" parent="StartPositions" index="3" instance=ExtResource( 3 )]
 position = Vector2( 384, 448 )
 team = 1
 startDirection = Vector2( 0, -1 )
 
-[node name="4" parent="StartPositions" index="4" instance=ExtResource( 3 )]
+[node name="11" parent="StartPositions" index="4" instance=ExtResource( 3 )]
 position = Vector2( 304, 448 )
 type = 1
 team = 1
 startDirection = Vector2( 1, 0 )
 
-[node name="5" parent="StartPositions" index="5" instance=ExtResource( 3 )]
+[node name="21" parent="StartPositions" index="5" instance=ExtResource( 3 )]
 position = Vector2( 224, 448 )
 type = 2
 team = 1
