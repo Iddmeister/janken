@@ -647,3 +647,49 @@ SCRIPT ERROR: Parse Error: Expected ',' or ')'
           at: GDScript::reload (res://Screens/OnlinePlay/OnlinePlay.gd:53)
 SCRIPT ERROR: Parse Error: Unexpected indentation.
           at: GDScript::reload (res://Game/Game.gd:66)
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+SCRIPT ERROR: Parse Error: Unexpected indentation.
+          at: GDScript::reload (res://Game/Game.gd:87)
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Closed, clean: False
+SCRIPT ERROR: Parse Error: Unexpected indentation.
+          at: GDScript::reload (res://Game/Game.gd:144)
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Closed, clean: False
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Failed to connect to server
+Closed, clean: False
+SCRIPT ERROR: Parse Error: The identifier "port" isn't declared in the current scope.
+          at: GDScript::reload (res://Game/Game.gd:72)
+SCRIPT ERROR: Parse Error: The identifier "port" isn't declared in the current scope.
+          at: GDScript::reload (res://Game/Game.gd:96)
+SCRIPT ERROR: Parse Error: The identifier "port" isn't declared in the current scope.
+          at: GDScript::reload (res://Game/Game.gd:96)
+SCRIPT ERROR: Parse Error: The identifier "port" isn't declared in the current scope.
+          at: GDScript::reload (res://Game/Game.gd:105)
+SCRIPT ERROR: Parse Error: Error parsing expression, misplaced: match
+          at: GDScript::reload (res://Game/Game.gd:96)

@@ -32,10 +32,13 @@ func connectionFailed():
 	
 func dataRecieved(data:Dictionary):
 	match data.type:
+		"playerConnected":
+			Network.privateKey = data.id
 		"update":
 			numPlayersOnline.text = String(max(int(data.get("playersOnline", numPlayersOnline.text))-1, 0))
-		"gameFound":
-			emit_signal("joinedGame", data.get("key", "a"), "127.0.0.1", 5072)
+		"gameCreated":
+			print(data.port)
+			emit_signal("joinedGame", Network.privateKey, data.address, data.port)
 	
 
 func retryConnection() -> void:

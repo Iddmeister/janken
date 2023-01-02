@@ -1,0 +1,10 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+Connected to Web Server
+Authenticating Server
+{matchInfo:{map:main, players:{MPB7Q54z9dtKv8zAjm53Fg==:{team:1, type:0}, dUlAcuDyfmIFumzb7TLbzw==:{team:0, type:0}, undefined:{team:1}}, port:10000}, type:matchInfo}
+SCRIPT ERROR: Invalid get index 'type' (on base: 'Dictionary').
+   at: Game.dataRecieved (res://Game/Game.gdc:99) - Invalid get index 'type' (on base: 'Dictionary').

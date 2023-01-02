@@ -5,7 +5,17 @@ Starting Server
 Attempting to Connect to Server
 Connected to Web Server
 Authenticating Server
-{matchInfo:{map:main, players:{7ZNbJg3pLISvx8dwuC8O4w==:{team:0, type:0}, lRegj0GqLuq7m+awhiuyGg==:{team:1, type:0}}, port:10000}, type:matchInfo}
+{matchInfo:{map:main, players:{RoDluN5yiK5S4eW8ehGMsQ==:{team:0, type:0}, XbQHpnnT8R0hAZ1VeAModA==:{team:1, type:0}, debug17EL70JC8UAO=:{team:0, type:1}, debug1OY06U9PKGXW=:{team:1, type:1}, debug27EL70JC8UAO=:{team:0, type:2}, debug2OY06U9PKGXW=:{team:1, type:2}}, port:10000}, type:matchInfo}
 Loading Map main
 Loaded Map main
-Created server on port 0
+Created server on port 10000
+Peer 1089145959 Connected
+Peer 459439521 Connected
+Attempting to Authorize Player XbQHpnnT8R0hAZ1VeAModA==
+Peer 1089145959 authorized with key XbQHpnnT8R0hAZ1VeAModA==
+huh1
+Attempting to Authorize Player RoDluN5yiK5S4eW8ehGMsQ==
+Peer 459439521 authorized with key RoDluN5yiK5S4eW8ehGMsQ==
+huh1
+Peer 1089145959 Disconnected
+Peer 459439521 Disconnected

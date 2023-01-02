@@ -1,0 +1,11 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+Connected to Web Server
+Authenticating Server
+{matchInfo:{map:main, players:{320r+dBgp4ta/F7mEU5gcA==:{team:0, type:0}, xYgSxnT91aSC8aPpHKPNnQ==:{team:1, type:0}}, port:10000}, type:matchInfo}
+Loading Map main
+Loaded Map main
+Created server on port 0

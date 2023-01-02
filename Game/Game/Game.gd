@@ -11,7 +11,6 @@ var playerIDs:Dictionary = {}
 
 var isServer:bool = false
 var gameID:String
-var port:int
 var map
 
 var maps:Dictionary = {"main":"res://Maps/Main/MainMap.tscn"}
@@ -70,7 +69,6 @@ func _ready() -> void:
 		
 			match OS.get_cmdline_args()[0]:
 				"quickserver":
-					port = 5072
 					isServer = true
 					matchInfo.map = OS.get_cmdline_args()[1]
 					gameID = OS.get_cmdline_args()[2]
@@ -79,7 +77,7 @@ func _ready() -> void:
 						players[String(key)].type = key if key <= 2 else key-3
 						privateKeys["abcdef"[key]] = String(key)
 					loadMap(matchInfo.map)
-					hostServer(port)
+					hostServer(5072)
 				
 				"quickclient":
 					privateKey = OS.get_cmdline_args()[3]
@@ -95,16 +93,15 @@ func dataRecieved(data:Dictionary):
 	match data.type:
 		"matchInfo":
 			matchInfo = data.matchInfo
-			
+			print(matchInfo)
 			var matchPlayers = data.matchInfo.players
 			for player in matchPlayers:
-				
 				var public = "%s%s" % [matchPlayers[player].type, matchPlayers[player].team]
-				players[public] = {"team":matchPlayers[player].team, "type":matchPlayers[player].type}
+				players[public] = {"team":matchPlayers[player].team, "type":matchPlayers[player].type, "id":-1}
 				privateKeys[player] = public
 			
 			loadMap(matchInfo.map)
-			hostServer(port)
+			hostServer(matchInfo.port)
 
 func hostServer(port:int):
 	var peer = NetworkedMultiplayerENet.new()
@@ -130,8 +127,12 @@ func peer_disconnected(id:int):
 		playerIDs.erase(id)
 	
 func joinServer(address:String, port:int):
+	print("Attempting to Connect to Game Server at %s on port %s" % [address, port])
 	var peer = NetworkedMultiplayerENet.new()
-	peer.create_client(address, port)
+	var err = peer.create_client(address, port)
+	if err != OK:
+		print("Failed to Connect to Game")
+		return
 	peer.connect("connection_succeeded", self, "connection_succeeded")
 	peer.connect("connection_failed", self, "connection_failed")
 	peer.connect("server_disconnected", self, "server_disconnected")
@@ -151,6 +152,8 @@ func server_disconnected():
 	pass
 	
 remote func authorizePlayer(key:String):
+	
+	print("Attempting to Authorize Player %s" % key)
 	
 	var id:int = get_tree().get_rpc_sender_id()
 	
@@ -186,7 +189,7 @@ func playerAuthorized(key:String, id:int):
 		if not players[p].id == -1:
 			test += 1
 	if test >= 2:
-		# This currently sends ids (may or may not want to do this but currently doesn' update on ids changing)
+		# This currently sends ids (may or may not want to do this but currently doesn't update on ids changing)
 		map.rpc("gameReady")
 		
 puppet func playerJoined(player:String, _matchInfo:Dictionary={}, playerInfo:Dictionary={}):

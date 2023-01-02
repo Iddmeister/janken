@@ -48,9 +48,19 @@ class TeamObject {
         this.inQueue = false
     }
 
+    //Debug
+    fillTeam() {
+        for (let index = Object.keys(this.players).length; index < 3; index++) {
+            this.players[`debug${index}${this.code}`] = {empty:true, type:index}
+        }
+        console.log(this.players)
+    }
+
     sendData(data) {
         for (let player of Object.keys(this.players)) {
-            this.players[player].object.client.sendData(data)
+            if (!this.players[player].empty) {
+                this.players[player].object.client.sendData(data)
+            }
         }
     }
 
@@ -116,7 +126,7 @@ class TeamObject {
         if (Object.keys(this.players).length >= 3) {
             return false
         }
-        this.players[player.id] = {object:player, ready:false, type:"rock?"}
+        this.players[player.id] = {object:player, ready:false, type:0}
         player.team = this
         if (Object.keys(this.players).length >= 3) {
             this.full = true
@@ -176,12 +186,12 @@ class GameObject {
 
             this.server = game
 
-            console.log(`Successfully Spawned Game ${id} on port ${port}`)
+            console.log(`Successfully Spawned Game ${id} on port ${this.port}`)
 
             return game
 
         } catch(err) {
-            console.log(`Error spawning game ${id} on port ${port}`)
+            console.log(`Error spawning game ${id} on port ${this.port}`)
             console.log(err)
             return false
         }
@@ -227,6 +237,11 @@ function reserveGamePort() {
 
 async function createGame(team1, team2) {
 
+    if (debug) {
+        team1.fillTeam()
+        team2.fillTeam()
+    }
+
     team1.leaveQueue()
     team2.leaveQueue()
     let game = new GameObject(generateGameID(), team1, team2, "main", reserveGamePort())
@@ -234,6 +249,10 @@ async function createGame(team1, team2) {
     console.log(`Attempting to Spawn Game ${game.id} on port ${game.port}`)
     let server = game.spawnGame()
     if (server) {
+
+        team1.sendData({type:"gameCreated", address:"127.0.0.1", port:game.port})
+        team2.sendData({type:"gameCreated", address:"127.0.0.1", port:game.port})
+
         return game.id
     }
     return false
@@ -364,9 +383,10 @@ server.on("connection", client => {
 
                     case "playerConnect":
 
-                        let player = new PlayerObject(generatePlayerID(), client)  
+                        let player = new PlayerObject(generatePlayerID(), client)
                         client.player = player
                         players[player.id] = player
+                        client.sendData({type:"playerConnected", id:player.id})
 
                     break;
 
