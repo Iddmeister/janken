@@ -1,7 +1,0 @@
-Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
- 
-Running
-Starting Server
-ERROR: Condition "!is_connected_to_host()" is true. Returned: FAILED
-   at: put_packet (modules/websocket/wsl_peer.cpp:243) - Condition "!is_connected_to_host()" is true. Returned: FAILED
-Connected to Web Server
