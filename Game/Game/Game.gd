@@ -86,7 +86,7 @@ func _ready() -> void:
 	
 func authenticateServer():
 	print("Authenticating Server")
-	Network.sendData({"type":"serverConnect", "id":gameID})
+	Network.sendData({"type":"gameConnect", "id":gameID})
 	
 func dataRecieved(data:Dictionary):
 	print(data)
@@ -98,7 +98,9 @@ func dataRecieved(data:Dictionary):
 			for player in matchPlayers:
 				var public = "%s%s" % [matchPlayers[player].type, matchPlayers[player].team]
 				players[public] = {"team":matchPlayers[player].team, "type":matchPlayers[player].type, "id":-1}
-				privateKeys[player] = public
+				privateKeys[matchPlayers[player].key] = public
+				print(players)
+				print(privateKeys)
 			
 			loadMap(matchInfo.map)
 			hostServer(matchInfo.port)

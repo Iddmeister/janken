@@ -6,6 +6,8 @@ var {Game, Team, Player, Queue} = require("./objects")
 const runArgs = process.argv.slice(2);
 const debug = (runArgs.length > 0 && runArgs[0] == "debug")
 
+if (debug) console.log("Running in Debug Mode")
+
 const PORT = 5072
 const minPort = 10000
 const maxPort = 60000
@@ -53,10 +55,10 @@ function connectPlayer(username, client) {
 
 async function createGame(team1, team2) {
 
-    if (debug) {
-        team1.fillTeam()
-        team2.fillTeam()
-    }
+    // if (debug) {
+    //     team1.fillTeam()
+    //     team2.fillTeam()
+    // }
 
     let game = new Game(generateGameID(), team1, team2, "main", reserveGamePort())
     games[game.id] = game
@@ -64,8 +66,12 @@ async function createGame(team1, team2) {
     let server = game.spawnGame()
     if (server) {
 
-        team1.sendData({type:"gameCreated", address:"127.0.0.1", port:game.port})
-        team2.sendData({type:"gameCreated", address:"127.0.0.1", port:game.port})
+        team1.sendIndividualData((player) => {
+            return {type:"gameCreated", address:"127.0.0.1", port:game.port, key:game.players[player.username].key}
+        })
+        team2.sendIndividualData((player) => {
+            return {type:"gameCreated", address:"127.0.0.1", port:game.port, key:game.players[player.username].key}
+        })
 
         return game.id
     }

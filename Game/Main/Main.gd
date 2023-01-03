@@ -7,34 +7,36 @@ func _ready() -> void:
 	Network.connect("connection_failed", self, "connectionFailed")
 
 func connectedToServer():
-	$Loading.hide()
-	$Login.show()
+	$Screens/Loading.hide()
+	$Screens/Login.show()
 	
 func connectionFailed():
-	$Loading.failed()
+	$Screens/Loading.failed()
 	
 func connectionClosed():
-	$OnlinePlay.hide()
-	$Login.hide()
-	$Loading.failed()
-	$Loading.show()
+	$Screens/OnlinePlay.hide()
+	$Screens/Login.hide()
+	$Screens/Loading.failed()
+	$Screens/Loading.show()
 	
 
 func _on_Menu_playOnline() -> void:
 	Network.connectToServer()
-	$Loading.show()
+	$Screens/Loading.show()
 
 func _on_Login_loggedIn(username) -> void:
-	$Login.hide()
-	$OnlinePlay.loggedIn(username)
-	$OnlinePlay.show()
+	$Screens/Login.hide()
+	$Screens/OnlinePlay.loggedIn(username)
+	$Screens/OnlinePlay.show()
 
 
 func _on_OnlinePlay_logout() -> void:
 	Network.sendData({"type":"logout"})
-	$OnlinePlay.hide()
-	$Login.show()
+	$Screens/OnlinePlay.hide()
+	$Screens/Login.show()
 
 
-func _on_OnlinePlay_gameCreated(address, port) -> void:
-	pass # Replace with function body.
+func _on_OnlinePlay_gameCreated(address, port, key) -> void:
+	$Screens.hide()
+	$Game.privateKey = key
+	$Game.joinServer(address, port)

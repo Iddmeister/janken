@@ -1,3 +1,4 @@
+const crypto = require("crypto")
 const {spawn} = require("child_process");
 //const { timeStamp } = require("console");
 //const { writeHeapSnapshot } = require("v8");
@@ -12,6 +13,16 @@ const debug = (runArgs.length > 0 && runArgs[0] == "debug")
 
 class Game {
 
+    generatePlayerKey() {
+        let id = crypto.randomBytes(16).toString('base64')
+        for (let player of Object.keys(this.players)) {
+            if (this.players[player].key == id) {
+                return this.generatePlayerKey()
+            }
+        }
+        return id
+    }
+
     constructor(id, team1, team2, map, port) {
         this.id = id
         this.team1 = team1
@@ -21,10 +32,10 @@ class Game {
         this.players = {}
 
         for (let player of Object.keys(team1.players)) {
-            this.players[player] = {type:team1.players[player].type, team:0}
+            this.players[player] = {type:team1.players[player].type, team:0, key:this.generatePlayerKey()}
         }
         for (let player of Object.keys(team2.players)) {
-            this.players[player] = {type:team2.players[player].type, team:1}
+            this.players[player] = {type:team2.players[player].type, team:1, key:this.generatePlayerKey()}
         }
 
         this.map = map
@@ -129,7 +140,7 @@ class Team {
     sendIndividualData(dataFunction) {
         for (let player of Object.keys(this.players)) {
             if (!this.players[player].empty) {
-                this.players[player].object.client.sendData(dataFunction(player.object))
+                this.players[player].object.client.sendData(dataFunction(this.players[player].object))
             }
         }
     }

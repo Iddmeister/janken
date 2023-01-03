@@ -10,20 +10,22 @@
 [node name="Main" type="Node"]
 script = ExtResource( 1 )
 
-[node name="Menu" parent="." instance=ExtResource( 2 )]
+[node name="Screens" type="CanvasLayer" parent="."]
 
-[node name="Login" parent="." instance=ExtResource( 4 )]
+[node name="Menu" parent="Screens" instance=ExtResource( 2 )]
+
+[node name="Login" parent="Screens" instance=ExtResource( 4 )]
 visible = false
 
-[node name="OnlinePlay" parent="." instance=ExtResource( 3 )]
+[node name="OnlinePlay" parent="Screens" instance=ExtResource( 3 )]
 visible = false
 
-[node name="Loading" parent="." instance=ExtResource( 6 )]
+[node name="Loading" parent="Screens" instance=ExtResource( 6 )]
 visible = false
 
 [node name="Game" parent="." instance=ExtResource( 5 )]
 
-[connection signal="playOnline" from="Menu" to="." method="_on_Menu_playOnline"]
-[connection signal="loggedIn" from="Login" to="." method="_on_Login_loggedIn"]
-[connection signal="gameCreated" from="OnlinePlay" to="." method="_on_OnlinePlay_gameCreated"]
-[connection signal="logout" from="OnlinePlay" to="." method="_on_OnlinePlay_logout"]
+[connection signal="playOnline" from="Screens/Menu" to="." method="_on_Menu_playOnline"]
+[connection signal="loggedIn" from="Screens/Login" to="." method="_on_Login_loggedIn"]
+[connection signal="gameCreated" from="Screens/OnlinePlay" to="." method="_on_OnlinePlay_gameCreated"]
+[connection signal="logout" from="Screens/OnlinePlay" to="." method="_on_OnlinePlay_logout"]

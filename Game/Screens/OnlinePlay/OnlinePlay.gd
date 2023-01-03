@@ -2,7 +2,7 @@ extends Control
 
 onready var userBox: PanelContainer = $User
 
-signal gameCreated(address, port)
+signal gameCreated(address, port, key)
 signal logout()
 
 func _ready() -> void:
@@ -12,8 +12,7 @@ func dataRecieved(data:Dictionary):
 	
 	match data.type:
 		"gameCreated":
-			emit_signal("gameCreated", data.address, data.port)
-	
+			emit_signal("gameCreated", data.address, data.port, data.key)
 
 func loggedIn(username):
 	userBox.get_node("MarginContainer/VBoxContainer/Username").text = username
