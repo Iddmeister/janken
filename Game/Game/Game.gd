@@ -206,9 +206,3 @@ func reconnectPlayer(key:String, id:int):
 	#Sync world state
 	pass
 	
-
-
-func _on_OnlinePlay_joinedGame(key:String, address:String, port:int) -> void:
-	privateKey = key
-	joinServer(address, port)
-	$Menu.hide()

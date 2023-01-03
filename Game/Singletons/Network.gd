@@ -5,7 +5,6 @@ export var serverURL = "127.0.0.1:5072"
 var client = WebSocketClient.new()
 var connected:bool = false
 var isServer:bool = false
-var privateKey:String
 
 signal data_recieved(data)
 signal connection_established()

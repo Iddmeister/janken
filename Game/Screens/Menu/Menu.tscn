@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Misc/Fonts/Crackman.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Misc/Fonts/SquarleyEdited.otf" type="DynamicFontData" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Player/Paper.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player/Rock.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Screens/Menu/Menu.gd" type="Script" id=6]
-[ext_resource path="res://Screens/OnlinePlay/OnlinePlay.tscn" type="PackedScene" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -109,9 +108,6 @@ margin_right = 328.0
 margin_bottom = 110.0
 size_flags_horizontal = 4
 text = "QUIT"
-
-[node name="OnlinePlay" parent="." instance=ExtResource( 7 )]
-visible = false
 
 [connection signal="pressed" from="Main/VBoxContainer/Buttons/PlayOnline" to="." method="_on_PlayOnline_pressed"]
 [connection signal="pressed" from="Main/VBoxContainer/Buttons/Quit" to="." method="_on_Quit_pressed"]
