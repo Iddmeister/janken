@@ -29,3 +29,4 @@ visible = false
 [connection signal="loggedIn" from="Screens/Login" to="." method="_on_Login_loggedIn"]
 [connection signal="gameCreated" from="Screens/OnlinePlay" to="." method="_on_OnlinePlay_gameCreated"]
 [connection signal="logout" from="Screens/OnlinePlay" to="." method="_on_OnlinePlay_logout"]
+[connection signal="gameEnded" from="Game" to="." method="_on_Game_gameEnded"]

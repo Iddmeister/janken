@@ -192,9 +192,14 @@ one_shot = true
 wait_time = 2.0
 one_shot = true
 
+[node name="EndDelay" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
 [node name="Time" type="Timer" parent="."]
 
 [connection signal="respawnPlayer" from="RegenChamber" to="." method="_on_RegenChamber_respawnPlayer"]
 [connection signal="timeout" from="StartStall" to="." method="_on_StartStall_timeout"]
 [connection signal="timeout" from="ReadyDelay" to="." method="_on_ReadyDelay_timeout"]
+[connection signal="timeout" from="EndDelay" to="." method="_on_EndDelay_timeout"]
 [connection signal="timeout" from="Time" to="." method="_on_Time_tick"]

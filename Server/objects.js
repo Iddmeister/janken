@@ -43,6 +43,28 @@ class Game {
         this.server = null
         this.client = null
     }
+
+    async endGame() {
+        //Need to remove players from game - update clients
+        this.killGame()
+    }
+
+    async killGame() {
+
+        if (!this.server) {
+            return
+        }
+
+        let okay = this.server.kill()
+        if (okay) {
+            console.log(`Killed Game ${this.id}`)
+            this.server = null
+            return true
+        } else {
+            console.log(`Error ${okay} when killing game ${this.id}`)
+            return false
+        }
+    }
     
     async spawnGame(port=this.port, id=this.id) {
 

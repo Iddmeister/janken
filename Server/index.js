@@ -146,6 +146,19 @@ server.on("connection", client => {
 
         } else if (client.game) {
             //Game Requests
+            switch (data.type) {
+
+                case "endGame":
+
+                    console.log(`Ending game ${client.game.id}`)
+                    client.game.endGame()
+                    availablePorts.push(client.game.port)
+                    delete games[client.game.id]
+
+                    break;
+
+            }
+
         } else {
 
             switch (data.type) {

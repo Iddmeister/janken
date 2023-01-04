@@ -42,3 +42,7 @@ func _on_OnlinePlay_gameCreated(address, port, key) -> void:
 	$Screens.hide()
 	$Game.privateKey = key
 	$Game.joinServer(address, port)
+
+
+func _on_Game_gameEnded() -> void:
+	pass # Replace with function body.

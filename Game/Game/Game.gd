@@ -2,6 +2,8 @@ extends Node
 
 class_name Game
 
+signal gameEnded()
+
 var privateKey:String
 var me:String
 
@@ -42,7 +44,12 @@ func loadMap(_map:String):
 	m.game = self
 	$MapContainer.add_child(m)
 	map = m
-	print("Loaded Map %s" % _map)
+	map.connect("gameEnded", self, "closeGame")
+	print("Success")
+	
+func removeMap():
+	if $MapContainer.get_child_count() > 0:
+		$MapContainer.get_child(0).queue_free()
 
 func _ready() -> void:
 	
@@ -193,4 +200,12 @@ puppet func playerJoined(player:String, data:Dictionary={}):
 func reconnectPlayer(key:String, id:int):
 	#Sync world state
 	pass
+	
+func closeGame(clean:bool=true):
+	if is_network_master():
+		Network.sendData({"type":"endGame", "clean":clean})
+		get_tree().paused = true
+	else:
+		emit_signal("gameEnded")
+		removeMap()
 	

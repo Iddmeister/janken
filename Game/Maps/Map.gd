@@ -17,6 +17,8 @@ onready var clock = $UI/Info/Time
 
 var game
 
+signal gameEnded()
+
 func _ready() -> void:
 	
 	updateClock()
@@ -81,6 +83,7 @@ puppetsync func endGame():
 	$Loading.hide()
 	$Ready.hide()
 	$GameOver.show()
+	$EndDelay.start()
 	#get_tree().paused = true
 	
 func playerInput(username:String, dir:Vector2):
@@ -158,3 +161,7 @@ func _on_Time_tick() -> void:
 		$Time.stop()
 		if is_network_master():
 			rpc("endGame")
+
+
+func _on_EndDelay_timeout() -> void:
+	emit_signal("gameEnded")
