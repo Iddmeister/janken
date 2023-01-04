@@ -5,28 +5,15 @@ Starting Server
 Attempting to Connect to Server
 Connected to Web Server
 Authenticating Server
-{matchInfo:{map:main, players:{f:{key:waVmLL87rGPX8Nfor6yS/g==, team:0, type:0}, gg:{key:rL0qfN7GGA++voCs28kmmg==, team:1, type:0}}, port:10000}, type:matchInfo}
-{map:main, players:{f:{key:waVmLL87rGPX8Nfor6yS/g==, team:0, type:0}, gg:{key:rL0qfN7GGA++voCs28kmmg==, team:1, type:0}}, port:10000}
-{00:{id:-1, team:0, type:0}}
-{waVmLL87rGPX8Nfor6yS/g==:00}
-{00:{id:-1, team:0, type:0}, 01:{id:-1, team:1, type:0}}
-{rL0qfN7GGA++voCs28kmmg==:01, waVmLL87rGPX8Nfor6yS/g==:00}
 Loading Map main
 Loaded Map main
 Created server on port 10000
-Peer 176178236 Connected
-Attempting to Authorize Player rL0qfN7GGA++voCs28kmmg==
-Peer 176178236 authorized with key rL0qfN7GGA++voCs28kmmg==
-Peer 1060222978 Connected
-Attempting to Authorize Player waVmLL87rGPX8Nfor6yS/g==
-Peer 1060222978 authorized with key waVmLL87rGPX8Nfor6yS/g==
-SCRIPT ERROR: Invalid get index '21' (on base: 'Dictionary').
-   at: regenPlayer (res://Game/RegenChamber.gdc:62) - Invalid get index '21' (on base: 'Dictionary').
-SCRIPT ERROR: Invalid get index '21' (on base: 'Dictionary').
-   at: exitChamber (res://Game/RegenChamber.gdc:67) - Invalid get index '21' (on base: 'Dictionary').
-SCRIPT ERROR: Invalid get index '20' (on base: 'Dictionary').
-   at: regenPlayer (res://Game/RegenChamber.gdc:62) - Invalid get index '20' (on base: 'Dictionary').
-SCRIPT ERROR: Invalid get index '20' (on base: 'Dictionary').
-   at: exitChamber (res://Game/RegenChamber.gdc:67) - Invalid get index '20' (on base: 'Dictionary').
-Peer 1060222978 Disconnected
-Peer 176178236 Disconnected
+Peer 2067712172 Connected
+Attempting to Authorize Player v3dVSkEUrvmxyDu4BgC3Uw==
+Peer 2067712172 authorized with key v3dVSkEUrvmxyDu4BgC3Uw==
+Peer 976823435 Connected
+Attempting to Authorize Player SA598KXbH9b/VKqvK8sTvQ==
+Peer 976823435 authorized with key SA598KXbH9b/VKqvK8sTvQ==
+Game Started
+Peer 2067712172 Disconnected
+Peer 976823435 Disconnected

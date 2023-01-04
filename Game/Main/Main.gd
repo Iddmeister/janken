@@ -27,7 +27,9 @@ func _on_Menu_playOnline() -> void:
 func _on_Login_loggedIn(username) -> void:
 	$Screens/Login.hide()
 	$Screens/OnlinePlay.loggedIn(username)
+	$Game.me = username
 	$Screens/OnlinePlay.show()
+	
 
 
 func _on_OnlinePlay_logout() -> void:

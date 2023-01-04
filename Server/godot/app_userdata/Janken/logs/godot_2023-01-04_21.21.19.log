@@ -1,0 +1,19 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+Connected to Web Server
+Authenticating Server
+{matchInfo:{map:main, players:{d:{key:a/iSjwM8/Lzl0bCkaaEIjQ==, team:0, type:0}, f:{key:+KsjcBCf4SoU/o71rbeAzQ==, team:1, type:0}}, port:10000}, type:matchInfo}
+Loading Map main
+Loaded Map main
+Created server on port 10000
+Peer 818119030 Connected
+Peer 875912226 Connected
+Attempting to Authorize Player a/iSjwM8/Lzl0bCkaaEIjQ==
+Peer 818119030 authorized with key a/iSjwM8/Lzl0bCkaaEIjQ==
+Attempting to Authorize Player +KsjcBCf4SoU/o71rbeAzQ==
+Peer 875912226 authorized with key +KsjcBCf4SoU/o71rbeAzQ==
+Peer 875912226 Disconnected
+Peer 818119030 Disconnected

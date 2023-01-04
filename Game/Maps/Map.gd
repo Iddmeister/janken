@@ -26,13 +26,18 @@ func _ready() -> void:
 	
 	for startPosition in $StartPositions.get_children():
 		placed.append(startPosition.global_position)
-		createPlayer(startPosition.name, startPosition.type, startPosition.team, startPosition.global_position, startPosition.startDirection)
 
 	spawnDots(placed)
 	
 	get_tree().set_group("Spawner", "map", self)
 	get_tree().call_group("Collectible", "connect", "collected", self, "addPoints")
-					
+	
+func spawnPlayers():
+	for player in game.players.keys():
+		var startPosition = $StartPositions.get_node("%s%s" % [game.players[player].type, game.players[player].team])
+		createPlayer(player, startPosition.type, game.players[player].team, startPosition.global_position, startPosition.startDirection)
+
+
 puppetsync func spawnDots(exlude:PoolVector2Array=[]):
 	
 	var number:int = get_tree().get_nodes_in_group("Dot").size()
@@ -65,6 +70,7 @@ puppetsync func gameReady():
 	$Ready.show()
 	
 puppetsync func startGame():
+	print("Game Started")
 	$Ready.text = "Start"
 	gameStarted = true
 	$ReadyDelay.start()
@@ -77,15 +83,15 @@ puppetsync func endGame():
 	$GameOver.show()
 	#get_tree().paused = true
 	
-func playerInput(public:String, dir:Vector2):
+func playerInput(username:String, dir:Vector2):
 	if gameFinished:
 		return
-	if $Players.has_node(public):
-		$Players.get_node(public).changeAimDirection(dir)
+	if $Players.has_node(username):
+		$Players.get_node(username).changeAimDirection(dir)
 
-func createPlayer(public:String, type:int, team:int, pos:Vector2, dir:Vector2=Vector2(-1, 0)) -> Player:
+func createPlayer(username:String, type:int, team:int, pos:Vector2, dir:Vector2=Vector2(-1, 0)) -> Player:
 	var p:Player = PlayerScene.instance()
-	p.name = public
+	p.name = username
 	p.team = team
 	p.type = type
 	p.gridPath = $GridPath
@@ -93,7 +99,7 @@ func createPlayer(public:String, type:int, team:int, pos:Vector2, dir:Vector2=Ve
 	p.startDirection = dir
 	p.global_position = pos
 	if get_tree().network_peer and (not is_network_master()):
-		p.setEnemy(not game.players[game.public].team == game.players[public].team)
+		p.setEnemy(not game.players[game.me].team == game.players[username].team)
 	$Players.add_child(p)
 	p.connect("died", self, "playerDied", [p.name, p.team])
 	return p
@@ -103,12 +109,12 @@ func playerDied(player:String, team:int):
 	updatePoints()
 	regenChamber.regenPlayer(player)
 	
-puppetsync func respawnPlayer(public:String):
-	var player = createPlayer(public, game.players[public].type, game.players[public].team, regenChamber.get_node(String(game.players[public].team)).global_position)
+puppetsync func respawnPlayer(username:String):
+	var player = createPlayer(username, game.players[username].type, game.players[username].team, regenChamber.get_node(String(game.players[username].team)).global_position)
 
 func updatePoints():
 	if not is_network_master():
-		var team:int = game.players[game.public].team
+		var team:int = game.players[game.me].team
 		pointContainer.get_node("Ally").text = String(teamInfo[team].points)
 		pointContainer.get_node("Enemy").text = String(teamInfo[0 if team == 1 else 1].points)
 	

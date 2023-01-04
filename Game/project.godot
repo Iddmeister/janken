@@ -51,6 +51,15 @@ run/main_scene="res://Main/Main.tscn"
 
 Network="*res://Singletons/Network.gd"
 
+[debug]
+
+gdscript/warnings/unassigned_variable=false
+gdscript/warnings/unused_argument=false
+gdscript/warnings/void_assignment=false
+gdscript/warnings/function_may_yield=false
+gdscript/warnings/unused_signal=false
+gdscript/warnings/return_value_discarded=false
+
 [display]
 
 window/size/width=608
