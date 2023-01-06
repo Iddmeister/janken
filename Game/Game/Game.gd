@@ -44,12 +44,13 @@ func loadMap(_map:String):
 	m.game = self
 	$MapContainer.add_child(m)
 	map = m
-	map.connect("gameEnded", self, "closeGame")
+	map.connect("gameEnded", self, "closeGame", [true])
 	print("Success")
 	
 func removeMap():
 	if $MapContainer.get_child_count() > 0:
 		$MapContainer.get_child(0).queue_free()
+	map = null
 
 func _ready() -> void:
 	
@@ -201,11 +202,16 @@ func reconnectPlayer(key:String, id:int):
 	#Sync world state
 	pass
 	
-func closeGame(clean:bool=true):
+func closeGame(stats:Dictionary={}, clean:bool=true):
+	print("Game Ended")
 	if is_network_master():
-		Network.sendData({"type":"endGame", "clean":clean})
+		Network.sendData({"type":"endGame", "clean":clean, "stats":stats})
 		get_tree().paused = true
 	else:
 		emit_signal("gameEnded")
+		get_tree().network_peer.call_deferred("close_connection")
 		removeMap()
+		players = {}
+		playerIDs = {}
+		matchInfo = {}
 	

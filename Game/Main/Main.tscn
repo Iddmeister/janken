@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Main/Main.gd" type="Script" id=1]
 [ext_resource path="res://Screens/Menu/Menu.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Screens/Login/Login.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Game/Game.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Screens/Loading/Loading.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Screens/EndScreen/EndScreen.tscn" type="PackedScene" id=7]
 
 [node name="Main" type="Node"]
 script = ExtResource( 1 )
@@ -20,6 +21,9 @@ visible = false
 [node name="OnlinePlay" parent="Screens" instance=ExtResource( 3 )]
 visible = false
 
+[node name="EndScreen" parent="Screens" instance=ExtResource( 7 )]
+visible = false
+
 [node name="Loading" parent="Screens" instance=ExtResource( 6 )]
 visible = false
 
@@ -29,4 +33,5 @@ visible = false
 [connection signal="loggedIn" from="Screens/Login" to="." method="_on_Login_loggedIn"]
 [connection signal="gameCreated" from="Screens/OnlinePlay" to="." method="_on_OnlinePlay_gameCreated"]
 [connection signal="logout" from="Screens/OnlinePlay" to="." method="_on_OnlinePlay_logout"]
+[connection signal="returnToLobby" from="Screens/EndScreen" to="." method="_on_EndScreen_returnToLobby"]
 [connection signal="gameEnded" from="Game" to="." method="_on_Game_gameEnded"]

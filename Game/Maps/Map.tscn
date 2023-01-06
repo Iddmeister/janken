@@ -90,7 +90,7 @@ text = "0"
 align = 2
 valign = 1
 
-[node name="Time" type="Label" parent="UI/Info/Points"]
+[node name="vs" type="Label" parent="UI/Info/Points"]
 margin_left = 296.0
 margin_top = 6.0
 margin_right = 312.0

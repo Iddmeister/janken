@@ -17,7 +17,7 @@ onready var clock = $UI/Info/Time
 
 var game
 
-signal gameEnded()
+signal gameEnded(stats)
 
 func _ready() -> void:
 	
@@ -164,4 +164,4 @@ func _on_Time_tick() -> void:
 
 
 func _on_EndDelay_timeout() -> void:
-	emit_signal("gameEnded")
+	emit_signal("gameEnded", {0:teamInfo[0].points, 1:teamInfo[1].points})

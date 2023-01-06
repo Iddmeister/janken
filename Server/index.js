@@ -153,6 +153,11 @@ server.on("connection", client => {
                     console.log(`Ending game ${client.game.id}`)
                     client.game.endGame()
                     availablePorts.push(client.game.port)
+
+                    if (data.clean) {
+                        client.game.sendStatistics(data.stats)
+                    }
+
                     delete games[client.game.id]
 
                     break;

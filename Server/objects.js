@@ -44,6 +44,13 @@ class Game {
         this.client = null
     }
 
+    sendStatistics(stats) {
+
+        this.team1.sendData({type:"matchStats", allyPoints:stats[0], enemyPoints:stats[1], rankChange:10, newRank:500})
+        this.team2.sendData({type:"matchStats", allyPoints:stats[1], enemyPoints:stats[0], rankChange:10, newRank:500})
+
+    }
+
     async endGame() {
         //Need to remove players from game - update clients
         this.killGame()
@@ -120,7 +127,7 @@ class Player {
                         this.team.removePlayer(this)
                     }
                     
-                    client.sendData({type:"leftTeam"})
+                    this.client.sendData({type:"leftTeam"})
 
                     break;
 
