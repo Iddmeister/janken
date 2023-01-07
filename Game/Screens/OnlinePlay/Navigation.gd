@@ -12,7 +12,7 @@ func dataRecieved(data:Dictionary):
 		"joinedTeam":
 			$JoinDialog.hide()
 			$Lobby.show()
-			$Lobby.joinedTeam(data.code, data.get("players", {}))
+			$Lobby.joinedTeam(data.code)
 		"joinError":
 			joinStatus.show()
 			joinStatus.text = data.error

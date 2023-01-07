@@ -16,6 +16,7 @@ func dataRecieved(data:Dictionary):
 
 func loggedIn(username):
 	userBox.get_node("MarginContainer/VBoxContainer/Username").text = username
+	$Navigation/Lobby.myUsername = username
 
 func returnToMenu() -> void:
 	hide()

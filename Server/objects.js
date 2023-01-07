@@ -124,7 +124,7 @@ class Player {
                 case "leaveTeam":
 
                     if (this.team) {
-                        this.team.removePlayer(this)
+                        this.team.removePlayer(this.username)
                     }
                     
                     this.client.sendData({type:"leftTeam"})
@@ -150,12 +150,13 @@ class Player {
 
 class Team {
 
-    constructor(code, queue) {
+    constructor(code, queue, deleteCallback) {
         this.code = code
         this.players = {}
         this.full = false
         this.inQueue = false
         this.queue = queue
+        this.deleteCallback = deleteCallback
     }
 
     //Debug
@@ -168,17 +169,16 @@ class Team {
 
     sendIndividualData(dataFunction) {
         for (let player of Object.keys(this.players)) {
-            if (!this.players[player].empty) {
-                this.players[player].object.client.sendData(dataFunction(this.players[player].object))
+            let data = dataFunction(this.players[player].object)
+            if (data) {
+                this.players[player].object.client.sendData(data)
             }
         }
     }
 
     sendData(data) {
         for (let player of Object.keys(this.players)) {
-            if (!this.players[player].empty) {
-                this.players[player].object.client.sendData(data)
-            }
+            this.players[player].object.client.sendData(data)
         }
     }
 
@@ -215,17 +215,20 @@ class Team {
     playerChangeType(player, type) {
         if (this.players[player]) {
             this.players[player].type = type
-            this.sendData({type:"playerChangedType", player:this.players[player].object.publicID, newType:type})
+            this.sendData({type:"playerChangedType", player:player, newType:type})
         }
     }
 
     deleteTeam() {
-        if (teams[this.code]) {
-            delete teams[this.code]
-        }
+        this.deleteCallback()
     }
 
     removePlayer(username) {
+
+        if (!Object.keys(this.players).includes(username)) {
+            return false
+        }
+
         this.full = false
         if (this.players[username]) {
             this.players[username].team = null
@@ -234,14 +237,35 @@ class Team {
         if (Object.keys(this.players).length <= 0) {
             this.deleteTeam()
         }
+
+        this.sendData({type:"playerLeft", player:username})
+
     }
 
-    addPlayer(player) {
+    addPlayer(newPlayer) {
+
+        if (Object.keys(this.players).includes(newPlayer.username)) {
+            return false
+        }
+
         if (Object.keys(this.players).length >= 3) {
             return false
         }
-        this.players[player.username] = {object:player, ready:false, type:0}
-        player.team = this
+        this.players[newPlayer.username] = {object:newPlayer, ready:false, type:0}
+        newPlayer.team = this
+
+        newPlayer.client.sendData({type:"joinedTeam", code:this.code})
+
+        newPlayer.client.sendData({type:"playerJoined", player:newPlayer.username, ready:false, newType:0})
+
+        for (let player of Object.keys(this.players)) {
+            if (player !== newPlayer.username) {
+                let playerObj = this.players[player]
+                playerObj.object.client.sendData({type:"playerJoined", player:newPlayer.username, ready:false, newType:0})
+                newPlayer.client.sendData({type:"playerJoined", player:player, ready:playerObj.ready, newType:playerObj.type})
+            }
+        }
+
         if (Object.keys(this.players).length >= 3) {
             this.full = true
         }

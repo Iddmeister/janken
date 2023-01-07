@@ -79,7 +79,7 @@ async function createGame(team1, team2) {
 }
 
 function createTeam(code) {
-    let team = new Team(code, queue)
+    let team = new Team(code, queue, ()=>{if (teams[code]) delete teams[code]})
     teams[code] = team
     return team
 }
@@ -125,7 +125,6 @@ server.on("connection", client => {
 
                     if (teams[data.code]) {
                         teams[data.code].addPlayer(client.player)
-                        client.sendData({type:"joinedTeam", code:data.code})
                     } else {
                         client.sendData({type:"joinError", error:"Team Does Not Exist"})
                     }
