@@ -113,7 +113,9 @@ server.on("connection", client => {
 
             default:
 
-                console.log(data)
+                if (debug) {
+                    console.log(data)
+                }
 
                 if (client.player) {
 
