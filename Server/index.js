@@ -8,6 +8,7 @@ const debug = (runArgs.length > 0 && runArgs[0] == "debug")
 
 if (debug) console.log("Running in Debug Mode")
 
+const SERVER_IP = "139.162.200.140"
 const PORT = 5072
 const minPort = 10000
 const maxPort = 60000
@@ -62,10 +63,10 @@ async function createGame(team1, team2) {
     if (server) {
 
         team1.sendIndividualData((player) => {
-            return {type:"gameCreated", address:"127.0.0.1", port:game.port, key:game.players[player.username].key}
+            return {type:"gameCreated", address:SERVER_IP, port:game.port, key:game.players[player.username].key}
         })
         team2.sendIndividualData((player) => {
-            return {type:"gameCreated", address:"127.0.0.1", port:game.port, key:game.players[player.username].key}
+            return {type:"gameCreated", address:SERVER_IP, port:game.port, key:game.players[player.username].key}
         })
 
         return game.id

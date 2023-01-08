@@ -1,6 +1,7 @@
 extends Node
 
-export var serverURL = "127.0.0.1:5072"
+export var serverURL = "139.162.200.140:5072"
+export var localServerUrl = "127.0.0.1:5072"
 
 var client = WebSocketClient.new()
 var connected:bool = false
@@ -27,10 +28,10 @@ func _ready():
 	
 	set_process(false)
 
-func connectToServer():
-	var err = client.connect_to_url(serverURL)
+func connectToServer(url:String=serverURL):
+	var err = client.connect_to_url(url)
 	if err != OK:
-		print("Unable to connect to server - %s" % serverURL)
+		print("Unable to connect to server - %s" % url)
 		set_process(false)
 	else:
 		set_process(true)

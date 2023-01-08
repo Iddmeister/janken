@@ -65,7 +65,7 @@ func _ready() -> void:
 				print("Attempting to Connect to Server")
 				Network.connect("data_recieved", self, "dataRecieved")
 				Network.connect("connection_established", self, "authenticateServer")
-				Network.connectToServer()
+				Network.connectToServer(Network.localServerUrl)
 	
 func authenticateServer():
 	print("Authenticating Server")
