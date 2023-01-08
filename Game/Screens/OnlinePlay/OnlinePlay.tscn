@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Misc/Fonts/SquarleyEdited.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Screens/OnlinePlay/OnlinePlay.gd" type="Script" id=2]
@@ -65,6 +65,37 @@ bg_color = Color( 1, 0.74902, 0, 1 )
 
 [sub_resource type="StyleBoxFlat" id=14]
 bg_color = Color( 0.52549, 0.52549, 0.52549, 1 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 1, 1, 1, 1 )
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxEmpty" id=24]
+
+[sub_resource type="DynamicFont" id=25]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=26]
+default_font = SubResource( 25 )
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.941176, 0.941176, 0.941176, 1 )
+Button/colors/font_color_hover = Color( 1, 0.74902, 0, 1 )
+Button/colors/font_color_pressed = Color( 1, 0.74902, 0, 1 )
+Button/constants/hseparation = 2
+Button/styles/disabled = SubResource( 24 )
+Button/styles/focus = SubResource( 24 )
+Button/styles/hover = SubResource( 24 )
+Button/styles/normal = SubResource( 24 )
+Button/styles/pressed = SubResource( 24 )
 
 [sub_resource type="StyleBoxFlat" id=16]
 bg_color = Color( 0, 0, 0, 1 )
@@ -192,15 +223,47 @@ margin_bottom = 304.0
 custom_constants/separation = 40
 alignment = 1
 
-[node name="Ready" type="Button" parent="Navigation/Lobby"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Navigation/Lobby"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -120.0
-margin_top = -103.0
+margin_top = -80.0
 margin_right = 120.0
-margin_bottom = -23.0
+margin_bottom = -20.0
+grow_vertical = 0
+
+[node name="Status" type="HBoxContainer" parent="Navigation/Lobby/VBoxContainer"]
+margin_right = 240.0
+margin_bottom = 26.0
+alignment = 1
+
+[node name="Queue" type="Label" parent="Navigation/Lobby/VBoxContainer/Status"]
+visible = false
+margin_left = 31.0
+margin_right = 116.0
+margin_bottom = 26.0
+text = "In queue -"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="PlayerCount" type="Label" parent="Navigation/Lobby/VBoxContainer/Status"]
+unique_name_in_owner = true
+margin_left = 84.0
+margin_right = 156.0
+margin_bottom = 26.0
+text = "0 Online"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="Ready" type="Button" parent="Navigation/Lobby/VBoxContainer"]
+unique_name_in_owner = true
+margin_top = 30.0
+margin_right = 240.0
+margin_bottom = 110.0
 rect_min_size = Vector2( 240, 80 )
 focus_mode = 0
 size_flags_horizontal = 4
@@ -219,40 +282,44 @@ text = "READY"
 anchor_right = 1.0
 
 [node name="Panel" type="PanelContainer" parent="Navigation/Lobby/TeamCode"]
-margin_left = 297.0
+margin_left = 301.0
 margin_top = 34.0
-margin_right = 311.0
-margin_bottom = 48.0
+margin_right = 307.0
+margin_bottom = 40.0
+custom_styles/panel = SubResource( 23 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Navigation/Lobby/TeamCode/Panel"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 149.0
-margin_bottom = 75.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 145.0
+margin_bottom = 71.0
+custom_constants/separation = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Navigation/Lobby/TeamCode/Panel/VBoxContainer"]
 margin_right = 142.0
-margin_bottom = 32.0
+margin_bottom = 34.0
 
 [node name="Code" type="Label" parent="Navigation/Lobby/TeamCode/Panel/VBoxContainer/HBoxContainer"]
-margin_top = 3.0
+margin_top = 4.0
 margin_right = 86.0
-margin_bottom = 29.0
+margin_bottom = 30.0
 text = "Team Code"
 uppercase = true
 
 [node name="Copy" type="Button" parent="Navigation/Lobby/TeamCode/Panel/VBoxContainer/HBoxContainer"]
 margin_left = 90.0
 margin_right = 142.0
-margin_bottom = 32.0
+margin_bottom = 34.0
+theme = SubResource( 26 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "COPY"
 
 [node name="LeaveTeam" type="Button" parent="Navigation/Lobby/TeamCode/Panel/VBoxContainer"]
-margin_top = 36.0
+margin_top = 34.0
 margin_right = 142.0
 margin_bottom = 68.0
+theme = SubResource( 26 )
 custom_colors/font_color = Color( 1, 0.121569, 0.121569, 1 )
-custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
 text = "LEAVE TEAM"
 
 [node name="User" type="PanelContainer" parent="."]
@@ -299,12 +366,16 @@ custom_styles/disabled = SubResource( 17 )
 custom_styles/normal = SubResource( 17 )
 text = "LOGOUT"
 
+[node name="UpdateInfo" type="Timer" parent="."]
+autostart = true
+
 [connection signal="pressed" from="Navigation/TeamOptions/VBoxContainer/CreateTeam" to="Navigation" method="_on_CreateTeam_pressed"]
 [connection signal="pressed" from="Navigation/TeamOptions/VBoxContainer/JoinTeam" to="Navigation" method="_on_JoinTeam_pressed"]
 [connection signal="text_entered" from="Navigation/JoinDialog/CenterContainer/VBoxContainer/Code" to="Navigation" method="_on_Code_text_entered"]
 [connection signal="pressed" from="Navigation/JoinDialog/CenterContainer/VBoxContainer/HBoxContainer/Cancel" to="Navigation" method="_on_Cancel_pressed"]
 [connection signal="pressed" from="Navigation/JoinDialog/CenterContainer/VBoxContainer/HBoxContainer/Join" to="Navigation" method="_on_Join_pressed"]
-[connection signal="toggled" from="Navigation/Lobby/Ready" to="Navigation/Lobby" method="_on_Ready_toggled"]
+[connection signal="toggled" from="Navigation/Lobby/VBoxContainer/Ready" to="Navigation/Lobby" method="_on_Ready_toggled"]
 [connection signal="pressed" from="Navigation/Lobby/TeamCode/Panel/VBoxContainer/HBoxContainer/Copy" to="Navigation/Lobby" method="_on_Copy_pressed"]
 [connection signal="pressed" from="Navigation/Lobby/TeamCode/Panel/VBoxContainer/LeaveTeam" to="Navigation/Lobby" method="_on_LeaveTeam_pressed"]
 [connection signal="pressed" from="User/MarginContainer/VBoxContainer/Logout" to="." method="_on_Logout_pressed"]
+[connection signal="timeout" from="UpdateInfo" to="." method="_on_UpdateInfo_timeout"]

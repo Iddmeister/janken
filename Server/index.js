@@ -105,96 +105,110 @@ server.on("connection", client => {
 
         let data = JSON.parse(raw)
 
-        console.log(data)
+        switch (data.type) {
 
-        if (client.player) {
+            case "playerCount":
 
-            client.player.clientRequest(data)
+                client.sendData({type:"playerCount", count:Object.keys(players).length})
 
-            switch (data.type) {
+                break;
 
-                case "createTeam":
+            default:
 
-                    let team = createTeam(generateTeamCode())
-                    team.addPlayer(client.player)
-                    client.sendData({type:"joinedTeam", code:team.code})
+                console.log(data)
 
-                    break;
+                if (client.player) {
 
-                case "joinTeam":
+                    client.player.clientRequest(data)
 
-                    if (teams[data.code]) {
-                        teams[data.code].addPlayer(client.player)
-                    } else {
-                        client.sendData({type:"joinError", error:"Team Does Not Exist"})
+                    switch (data.type) {
+
+                        case "createTeam":
+
+                            let team = createTeam(generateTeamCode())
+                            team.addPlayer(client.player)
+                            client.sendData({type:"joinedTeam", code:team.code})
+
+                            break;
+
+                        case "joinTeam":
+
+                            if (teams[data.code]) {
+                                teams[data.code].addPlayer(client.player)
+                            } else {
+                                client.sendData({type:"joinError", error:"Team Does Not Exist"})
+                            }
+
+                            break;
+
+                        case "logout":
+
+
+                        if (client.player && players[client.player.username]) {
+                            delete players[client.player.username]
+                            client.player = undefined
+                        }
+
+                            break;
+
                     }
 
-                    break;
+                } else if (client.game) {
+                    //Game Requests
+                    switch (data.type) {
 
-                case "logout":
+                        case "endGame":
+
+                            console.log(`Ending game ${client.game.id}`)
+                            client.game.endGame()
+                            availablePorts.push(client.game.port)
+
+                            if (data.clean) {
+                                client.game.sendStatistics(data.stats)
+                            }
+
+                            delete games[client.game.id]
+
+                            break;
+
+                    }
+
+                } else {
+
+                    switch (data.type) {
+
+                        case "login":
+
+                            if (accounts.loginPlayer(data.username, data.password)) {
+                                connectPlayer(data.username, client)
+                            } else {
+                                client.sendData({type:"loginError", error:"Invalid Login Details"})
+                            }
+
+                            break;
+
+                        case "register":
+                            //lol
+                            break;
 
 
-                if (client.player && players[client.player.username]) {
-                    delete players[client.player.username]
-                    client.player = undefined
+                        case "gameConnect":
+
+                            if (data.id && data.id in games) {
+                                let game = games[data.id]
+                                game.client = client
+                                client.game = game
+                                client.sendData({type:"matchInfo", matchInfo:{map:game.map, port:game.port, players:game.players}})
+                            }
+
+                            break;
+
+                        
+                    }
+
                 }
 
-                    break;
-
-            }
-
-        } else if (client.game) {
-            //Game Requests
-            switch (data.type) {
-
-                case "endGame":
-
-                    console.log(`Ending game ${client.game.id}`)
-                    client.game.endGame()
-                    availablePorts.push(client.game.port)
-
-                    if (data.clean) {
-                        client.game.sendStatistics(data.stats)
-                    }
-
-                    delete games[client.game.id]
-
-                    break;
-
-            }
-
-        } else {
-
-            switch (data.type) {
-
-                case "login":
-
-                    if (accounts.loginPlayer(data.username, data.password)) {
-                        connectPlayer(data.username, client)
-                    } else {
-                        client.sendData({type:"loginError", error:"Invalid Login Details"})
-                    }
-
-                    break;
-
-                case "register":
-                    //lol
-                    break;
-
-
-                case "gameConnect":
-
-                    if (data.id && data.id in games) {
-                        let game = games[data.id]
-                        game.client = client
-                        client.game = game
-                        client.sendData({type:"matchInfo", matchInfo:{map:game.map, port:game.port, players:game.players}})
-                    }
-
-                    break;
-
-                
-             }
+            break;
 
         }
 

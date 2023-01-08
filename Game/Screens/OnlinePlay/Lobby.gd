@@ -3,6 +3,7 @@ extends Panel
 var PlayerIcon = preload("res://Screens/OnlinePlay/PlayerIcon.tscn")
 
 onready var playersContainer: HBoxContainer = $CenterContainer/Players
+onready var queueStatus: HBoxContainer = $VBoxContainer/Status
 
 var myUsername:String
 
@@ -15,6 +16,7 @@ func dataRecieved(data:Dictionary):
 		
 		"playerLeft":
 			removePlayer(data.player)
+			queueStatus.get_node("Queue").hide()
 			
 		"playerJoined":
 			addPlayer(data.player, data.ready, data.newType)
@@ -26,6 +28,13 @@ func dataRecieved(data:Dictionary):
 		"playerChangedReady":
 			if playersContainer.has_node(data.player):
 				playersContainer.get_node(data.player).changeReady(data.ready)
+				
+				for player in playersContainer.get_children():
+					if not player.ready:
+						queueStatus.get_node("Queue").hide()
+						return
+						
+				queueStatus.get_node("Queue").show()
 
 func addPlayer(username:String, ready:bool=false, type:int=0):
 	var p = PlayerIcon.instance()
@@ -48,6 +57,7 @@ func joinedTeam(code:String):
 	$TeamCode/Panel/VBoxContainer/HBoxContainer/Code.text = code
 
 func _on_Ready_toggled(button_pressed: bool) -> void:
+	$"%Ready".text = "CANCEL" if button_pressed else "READY"
 	Network.sendData({"type":"changeReady", "ready":button_pressed})
 
 
@@ -56,9 +66,10 @@ func _on_Copy_pressed() -> void:
 
 
 func _on_LeaveTeam_pressed() -> void:
-	
 	for player in playersContainer.get_children():
 		player.queue_free()
-	
+	queueStatus.get_node("Queue").hide()
+	$"%Ready".pressed = false
+	$"%Ready".text = "READY"
 	Network.sendData({"type":"leaveTeam"})
 	hide()

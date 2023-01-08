@@ -51,3 +51,9 @@ func _on_Game_gameEnded() -> void:
 
 func _on_EndScreen_returnToLobby() -> void:
 	$Screens/EndScreen.hide()
+
+
+func _on_Login_cancelled() -> void:
+	$Screens/Login.hide()
+	Network.disconnectFromServer()
+	

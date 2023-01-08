@@ -47,7 +47,6 @@ func _on_Register_pressed() -> void:
 		Network.sendData({"type":"register", "username":usernameBox.text, "password":passwordBox.text})
 
 func _on_Cancel_pressed() -> void:
-	hide()
 	emit_signal("cancelled")
 
 

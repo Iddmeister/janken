@@ -11,25 +11,25 @@
 size = 64
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxEmpty" id=4]
+[sub_resource type="StyleBoxEmpty" id=24]
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=25]
 size = 32
 font_data = ExtResource( 2 )
 
 [sub_resource type="Theme" id=3]
-default_font = SubResource( 5 )
+default_font = SubResource( 25 )
 Button/colors/font_color = Color( 1, 1, 1, 1 )
 Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 Button/colors/font_color_focus = Color( 0.941176, 0.941176, 0.941176, 1 )
 Button/colors/font_color_hover = Color( 1, 0.74902, 0, 1 )
 Button/colors/font_color_pressed = Color( 1, 0.74902, 0, 1 )
 Button/constants/hseparation = 2
-Button/styles/disabled = SubResource( 4 )
-Button/styles/focus = SubResource( 4 )
-Button/styles/hover = SubResource( 4 )
-Button/styles/normal = SubResource( 4 )
-Button/styles/pressed = SubResource( 4 )
+Button/styles/disabled = SubResource( 24 )
+Button/styles/focus = SubResource( 24 )
+Button/styles/hover = SubResource( 24 )
+Button/styles/normal = SubResource( 24 )
+Button/styles/pressed = SubResource( 24 )
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0

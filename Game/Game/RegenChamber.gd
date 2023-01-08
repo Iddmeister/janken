@@ -54,7 +54,7 @@ puppetsync func regenPlayer(player:String):
 	p.path = path
 	p.position = path[0]
 	if (not is_network_master()):
-		p.setEnemy(not (map.game.players[map.game.public].team == map.game.players[player].team))
+		p.setEnemy(not (map.game.players[map.game.me].team == map.game.players[player].team))
 	$Players.add_child(p)
 	
 	if map:

@@ -20,7 +20,7 @@ var maps:Dictionary = {"main":"res://Maps/Main/MainMap.tscn"}
 var matchInfo:Dictionary = {}
 
 func _unhandled_input(event: InputEvent) -> void:
-	if ((not get_tree().network_peer) or (not is_network_master())) and map and map.gameStarted:
+	if get_tree().network_peer and (not is_network_master()) and map and map.gameStarted:
 		var newDir:Vector2 = Vector2(event.get_action_strength("right")-event.get_action_strength("left"),event.get_action_strength("down")-event.get_action_strength("up"))
 		if newDir == Vector2(0, 0):
 			return
@@ -210,6 +210,7 @@ func closeGame(stats:Dictionary={}, clean:bool=true):
 	else:
 		emit_signal("gameEnded")
 		get_tree().network_peer.call_deferred("close_connection")
+		get_tree().network_peer = null
 		removeMap()
 		players = {}
 		playerIDs = {}

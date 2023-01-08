@@ -36,6 +36,10 @@ func connectToServer():
 		set_process(true)
 	return err
 	
+func disconnectFromServer():
+	if connected:
+		client.disconnect_from_host()
+	
 	
 func connection_error():
 	connected = false

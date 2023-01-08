@@ -30,6 +30,7 @@ visible = false
 [node name="Game" parent="." instance=ExtResource( 5 )]
 
 [connection signal="playOnline" from="Screens/Menu" to="." method="_on_Menu_playOnline"]
+[connection signal="cancelled" from="Screens/Login" to="." method="_on_Login_cancelled"]
 [connection signal="loggedIn" from="Screens/Login" to="." method="_on_Login_loggedIn"]
 [connection signal="gameCreated" from="Screens/OnlinePlay" to="." method="_on_OnlinePlay_gameCreated"]
 [connection signal="logout" from="Screens/OnlinePlay" to="." method="_on_OnlinePlay_logout"]
