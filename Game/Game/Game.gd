@@ -108,6 +108,12 @@ func peer_disconnected(id:int):
 		print("Peer %s Disconnected" % id)
 		players[playerIDs[id]].id = -2
 		playerIDs.erase(id)
+	if map and map.gameStarted:
+		if playerIDs.keys().size() <= 0 and not map.gameFinished:
+			$DisconnectDelay.start()
+		else:
+			$DisconnectDelay.stop()
+			
 	
 func joinServer(address:String, port:int):
 	print("Attempting to Connect to Game Server at %s on port %s" % [address, port])
@@ -216,3 +222,7 @@ func closeGame(stats:Dictionary={}, clean:bool=true):
 		playerIDs = {}
 		matchInfo = {}
 	
+
+
+func _on_DisconnectDelay_timeout() -> void:
+	closeGame({}, false)

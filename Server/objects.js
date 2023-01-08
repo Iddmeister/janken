@@ -159,14 +159,6 @@ class Team {
         this.deleteCallback = deleteCallback
     }
 
-    //Debug
-    fillTeam() {
-        for (let index = Object.keys(this.players).length; index < 3; index++) {
-            this.players[`debug${index}${this.code}`] = {empty:true, type:index}
-        }
-        console.log(this.players)
-    }
-
     sendIndividualData(dataFunction) {
         for (let player of Object.keys(this.players)) {
             let data = dataFunction(this.players[player].object)
@@ -188,7 +180,8 @@ class Team {
 
     leaveQueue() {
         if (this.inQueue) {
-            this.queue.removeTeam(this)
+            this.queue.removeTeam(this.code)
+            this.inQueue = false
         }
     }
 
@@ -230,6 +223,7 @@ class Team {
         }
 
         this.full = false
+
         if (this.players[username]) {
             this.players[username].team = null
             delete this.players[username]
@@ -248,9 +242,10 @@ class Team {
             return false
         }
 
-        if (Object.keys(this.players).length >= 3) {
+        if (this.full) {
             return false
         }
+
         this.players[newPlayer.username] = {object:newPlayer, ready:false, type:0}
         newPlayer.team = this
 
@@ -282,8 +277,8 @@ class Queue {
                 let team1 = Object.keys(this.queue)[0]
                 let team2 = Object.keys(this.queue)[1]
                 gameFoundCallback(this.queue[team1].team, this.queue[team2].team)
-                this.removeTeam(team1)
-                this.removeTeam(team2)
+                this.queue[team1].team.leaveQueue()
+                this.queue[team2].team.leaveQueue()
 
             }
 
@@ -299,7 +294,6 @@ class Queue {
     }
 
     removeTeam(code) {
-
         if (this.queue[code]) delete this.queue[code]
     }
 }

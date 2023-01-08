@@ -55,11 +55,6 @@ function connectPlayer(username, client) {
 
 async function createGame(team1, team2) {
 
-    // if (debug) {
-    //     team1.fillTeam()
-    //     team2.fillTeam()
-    // }
-
     let game = new Game(generateGameID(), team1, team2, "main", reserveGamePort())
     games[game.id] = game
     console.log(`Attempting to Spawn Game ${game.id} on port ${game.port}`)
@@ -93,8 +88,10 @@ server.on("connection", client => {
     }
 
     client.on("close", () => {
-        //Need to leave teams as well
         if (client.player && players[client.player.username]) {
+            if (client.player.team) {
+                client.player.team.removePlayer(client.player.username)
+            }
             delete players[client.player.username]
             client.player = undefined
         }
@@ -134,7 +131,9 @@ server.on("connection", client => {
                         case "joinTeam":
 
                             if (teams[data.code]) {
-                                teams[data.code].addPlayer(client.player)
+                                if (!teams[data.code].addPlayer(client.player)) {
+                                    client.sendData({type:"joinError", error:"Team Is Full"})
+                                }
                             } else {
                                 client.sendData({type:"joinError", error:"Team Does Not Exist"})
                             }
@@ -180,7 +179,11 @@ server.on("connection", client => {
                         case "login":
 
                             if (accounts.loginPlayer(data.username, data.password)) {
-                                connectPlayer(data.username, client)
+                                if (players[data.username]) {
+                                    client.sendData({type:"loginError", error:"Username is Taken"})
+                                } else {
+                                    connectPlayer(data.username, client)
+                                }
                             } else {
                                 client.sendData({type:"loginError", error:"Invalid Login Details"})
                             }

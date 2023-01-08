@@ -1,0 +1,20 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+Connected to Web Server
+Authenticating Server
+Loading Map main
+Success
+Created server on port 10000
+Peer 1026153027 Connected
+Attempting to Authorize Player m7FpkkkICy2wuCM7bk6TSg==
+Peer 1026153027 authorized with key m7FpkkkICy2wuCM7bk6TSg==
+Peer 1050817672 Connected
+Attempting to Authorize Player SnrEh3RlVN+uNHvYcrjnLA==
+Peer 1050817672 authorized with key SnrEh3RlVN+uNHvYcrjnLA==
+Game Started
+Peer 1026153027 Disconnected
+Peer 1050817672 Disconnected
+Game Ended

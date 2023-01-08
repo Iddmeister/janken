@@ -6,3 +6,9 @@
 script = ExtResource( 1 )
 
 [node name="MapContainer" type="Node2D" parent="."]
+
+[node name="DisconnectDelay" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="DisconnectDelay" to="." method="_on_DisconnectDelay_timeout"]
