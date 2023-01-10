@@ -32,7 +32,6 @@ func _ready() -> void:
 	spawnDots(placed)
 	
 	get_tree().set_group("Spawner", "map", self)
-	get_tree().call_group("Collectible", "connect", "collected", self, "addPoints")
 	
 func spawnPlayers():
 	for player in game.players.keys():
@@ -128,7 +127,7 @@ func placeDot(pos:Vector2, n:String=""):
 	d.name = n if not n == "" else d.name
 	d.global_position = pos
 	$Collectibles.add_child(d)
-	#d.connect("collected", self, "addPoints")
+	d.connect("collected", self, "addPoints")
 	
 func addPoints(team:int, points:int):
 	teamInfo[team].points += points

@@ -5,6 +5,7 @@ func _ready() -> void:
 		return
 	Network.connect("connection_established", self, "connectedToServer")
 	Network.connect("connection_failed", self, "connectionFailed")
+	Network.connect("connection_lost", self, "connectionLost")
 
 func connectedToServer():
 	$Screens/Loading.hide()
@@ -13,7 +14,7 @@ func connectedToServer():
 func connectionFailed():
 	$Screens/Loading.failed()
 	
-func connectionClosed():
+func connectionLost():
 	$Screens/OnlinePlay.hide()
 	$Screens/Login.hide()
 	$Screens/Loading.failed()

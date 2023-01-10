@@ -17,6 +17,8 @@ func _ready():
 	if not OS.get_cmdline_args().empty():
 		if OS.get_cmdline_args()[0] == "--server":
 				isServer = true
+		else:
+			serverURL = OS.get_cmdline_args()[0]
 	
 	pause_mode = Node.PAUSE_MODE_PROCESS
 	
