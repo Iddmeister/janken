@@ -6,6 +6,7 @@ export var localServerUrl = "127.0.0.1:5072"
 var client = WebSocketClient.new()
 var connected:bool = false
 var isServer:bool = false
+var disconnecting:bool = false
 
 signal data_recieved(data)
 signal connection_established()
@@ -41,6 +42,7 @@ func connectToServer(url:String=serverURL):
 	
 func disconnectFromServer():
 	if connected:
+		disconnecting = true
 		client.disconnect_from_host()
 	
 	
@@ -52,8 +54,10 @@ func connection_error():
 func connection_closed(was_clean = false):
 	connected = false
 	print("Closed, clean: ", was_clean)
-	emit_signal("connection_lost")
+	if not disconnecting:
+		emit_signal("connection_lost")
 	set_process(false)
+	disconnecting = false
 
 func connection_established(_proto = ""):
 	
