@@ -19,6 +19,8 @@ var queue = new Queue(1000, createGame)
 var games = {}
 var availablePorts = []
 
+console.log(generateTeamCode())
+
 function generateGameID() {
     let id = crypto.randomBytes(16).toString('base64')
     if (games[id]){
@@ -29,7 +31,7 @@ function generateGameID() {
 }
 
 function generateTeamCode() {
-    let code = crypto.randomBytes(8).toString('base64').toUpperCase()
+    let code = crypto.randomBytes(3).toString('hex').toUpperCase()
     if (teams[code]) {
         return generateTeamCode()
     } else {
@@ -180,21 +182,22 @@ server.on("connection", client => {
                     switch (data.type) {
 
                         case "login":
-
-                            if (accounts.loginPlayer(data.username, data.password)) {
-                                if (players[data.username]) {
-                                    client.sendData({type:"loginError", error:"Username is Taken"})
-                                } else {
-                                    connectPlayer(data.username, client)
-                                }
-                            } else {
-                                client.sendData({type:"loginError", error:"Invalid Login Details"})
-                            }
+                            accounts.loginPlayer(data.username, data.password).then(() => {
+                                console.log("what")
+                                connectPlayer(data.username, client)
+                                client.sendData({type:"loggedIn", username:data.username})
+                            }).catch((err) => {
+                                client.sendData({type:"loginError", error:err})
+                            })
 
                             break;
 
                         case "register":
-                            //lol
+                            accounts.registerPlayer(data.username, data.password).then(() => {
+                                client.sendData({type:"registered"})
+                            }).catch(err => {
+                                client.sendData({type:"loginError", error:err})
+                            })
                             break;
 
 
@@ -221,3 +224,4 @@ server.on("connection", client => {
     })
 
 })
+ 

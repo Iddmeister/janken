@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Misc/Fonts/SquarleyEdited.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Screens/OnlinePlay/OnlinePlay.gd" type="Script" id=2]
@@ -73,9 +73,13 @@ border_width_top = 3
 border_width_right = 3
 border_width_bottom = 3
 border_color = Color( 1, 1, 1, 1 )
-expand_margin_left = 6.0
-expand_margin_right = 6.0
+expand_margin_left = 8.0
+expand_margin_right = 8.0
 expand_margin_bottom = 2.0
+
+[sub_resource type="DynamicFont" id=27]
+size = 32
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxEmpty" id=24]
 
@@ -291,32 +295,35 @@ custom_styles/panel = SubResource( 23 )
 [node name="VBoxContainer" type="VBoxContainer" parent="Navigation/Lobby/TeamCode/Panel"]
 margin_left = 3.0
 margin_top = 3.0
-margin_right = 145.0
+margin_right = 181.0
 margin_bottom = 71.0
 custom_constants/separation = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Navigation/Lobby/TeamCode/Panel/VBoxContainer"]
-margin_right = 142.0
+margin_right = 178.0
 margin_bottom = 34.0
+custom_constants/separation = 10
 
 [node name="Code" type="Label" parent="Navigation/Lobby/TeamCode/Panel/VBoxContainer/HBoxContainer"]
-margin_top = 4.0
-margin_right = 86.0
-margin_bottom = 30.0
+margin_right = 116.0
+margin_bottom = 34.0
+custom_colors/font_color = Color( 0.733333, 0.733333, 0.733333, 1 )
+custom_fonts/font = SubResource( 27 )
 text = "Team Code"
 uppercase = true
 
 [node name="Copy" type="Button" parent="Navigation/Lobby/TeamCode/Panel/VBoxContainer/HBoxContainer"]
-margin_left = 90.0
-margin_right = 142.0
+margin_left = 126.0
+margin_right = 178.0
 margin_bottom = 34.0
 theme = SubResource( 26 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.156863, 1, 0.227451, 1 )
 text = "COPY"
 
 [node name="LeaveTeam" type="Button" parent="Navigation/Lobby/TeamCode/Panel/VBoxContainer"]
 margin_top = 34.0
-margin_right = 142.0
+margin_right = 178.0
 margin_bottom = 68.0
 theme = SubResource( 26 )
 custom_colors/font_color = Color( 1, 0.121569, 0.121569, 1 )
