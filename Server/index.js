@@ -1,3 +1,4 @@
+require('dotenv').config();
 const crypto = require('crypto');
 const ws = require("ws")
 var accounts = require("./accounts")
@@ -18,8 +19,6 @@ var teams = {}
 var queue = new Queue(1000, createGame)
 var games = {}
 var availablePorts = []
-
-console.log(generateTeamCode())
 
 function generateGameID() {
     let id = crypto.randomBytes(16).toString('base64')

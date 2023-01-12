@@ -3,8 +3,8 @@ var mysql = require("mysql")
 var database = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "password?",
-    database: "mydb"
+    password: process.env.DBPASS,
+    database: "janken"
   });
 
 function retrieveAccount(username) {
