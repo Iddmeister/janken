@@ -182,7 +182,6 @@ server.on("connection", client => {
 
                         case "login":
                             accounts.loginPlayer(data.username, data.password).then(() => {
-                                console.log("what")
                                 connectPlayer(data.username, client)
                                 client.sendData({type:"loggedIn", username:data.username})
                             }).catch((err) => {
