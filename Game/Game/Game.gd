@@ -20,10 +20,22 @@ var maps:Dictionary = {"main":"res://Maps/Main/MainMap.tscn"}
 var matchInfo:Dictionary = {}
 
 func _unhandled_input(event: InputEvent) -> void:
+	
 	if get_tree().network_peer and (not is_network_master()) and map and map.gameStarted:
+		
 		var newDir:Vector2 = Vector2(event.get_action_strength("right")-event.get_action_strength("left"),event.get_action_strength("down")-event.get_action_strength("up"))
+		
+		if newDir == Vector2(0, 0):
+			if event is InputEventScreenDrag:
+				var drag = event.relative.normalized()
+				if abs(drag.x) > abs(drag.y):
+					newDir = Vector2(ceil(drag.x), 0)
+				else:
+					newDir = Vector2(0, ceil(drag.y))
+				
 		if newDir == Vector2(0, 0):
 			return
+			
 		if newDir.abs().length() > 1:
 			newDir.y = 0
 		rpc_unreliable("playerInput", newDir)
