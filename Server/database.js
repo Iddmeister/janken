@@ -59,6 +59,47 @@ async function loginPlayer(username, password) {
 
 }
 
+async function retrievePlayerStats(username) {
+    return new Promise((resolve, reject) => {
+        database.query(`SELECT * FROM accounts WHERE username = ${mysql.escape(username)}`, (err, result) => {
+            if (err) throw err;
+            if (result.length <= 0) {
+                reject()
+            } else {
+                let account = result[0]
+                resolve(account)
+            }
+        })
+    })
+}
+
+async function retrievePlayersGames(username, start=0, end=5) {
+
+    return new Promise ((resolve, reject) => {
+
+        database.query(`SELECT * FROM games WHERE
+        
+        (team1Rock = ${mysql.escape(username)}) OR
+        (team1Paper = ${mysql.escape(username)}) OR
+        (team1Scissors = ${mysql.escape(username)}) OR
+        (team2Rock = ${mysql.escape(username)}) OR
+        (team2Paper = ${mysql.escape(username)}) OR
+        (team2Scissors = ${mysql.escape(username)})
+
+        ORDER BY endTime DESC LIMIT ${start},${end};
+        
+        `, (err, result) => {
+            if (err) {
+                reject(err)
+            }
+            resolve(result)
+
+        })
+
+    })
+
+}
+
 async function saveGame(map, team1Score, team2Score, players) {
 
     return new Promise((resolve, reject) => {
@@ -147,7 +188,13 @@ database.connect(function(err) {
             console.log("Database Setup Complete")
         })
 
+        retrievePlayersGames("d").then(result => {
+            console.log(result)
+        }).catch(err => {
+            console.log(err)
+        })
+
     }
   });
 
-module.exports = {loginPlayer, registerPlayer, saveGame}
+module.exports = {loginPlayer, registerPlayer, saveGame, retrievePlayerStats}

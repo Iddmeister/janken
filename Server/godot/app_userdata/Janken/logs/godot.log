@@ -7,14 +7,14 @@ Connected to Web Server
 Authenticating Server
 Loading Map 0
 Success
-Created server on port 10000
-Peer 1502090004 Connected
-Peer 1920337126 Connected
-Attempting to Authorize Player QHrtpwwqe05lV51AFIdd2g==
-Peer 1502090004 authorized with key QHrtpwwqe05lV51AFIdd2g==
-Attempting to Authorize Player ndwD+R0bB1CUTq9cyTobaA==
-Peer 1920337126 authorized with key ndwD+R0bB1CUTq9cyTobaA==
+Created server on port 10003
+Peer 1778563355 Connected
+Peer 162099579 Connected
+Attempting to Authorize Player 5Xeyv6A0A6ncmW81lzDAow==
+Peer 1778563355 authorized with key 5Xeyv6A0A6ncmW81lzDAow==
+Attempting to Authorize Player elosfvFtA7AquIypYT5zfA==
+Peer 162099579 authorized with key elosfvFtA7AquIypYT5zfA==
 Game Started
-Peer 1920337126 Disconnected
-Peer 1502090004 Disconnected
+Peer 1778563355 Disconnected
+Peer 162099579 Disconnected
 Game Ended

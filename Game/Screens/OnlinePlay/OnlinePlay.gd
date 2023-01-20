@@ -1,9 +1,12 @@
 extends Control
 
 onready var userBox: PanelContainer = $User
+onready var infoPopup: Button = $InfoPopup
 
 signal gameCreated(address, port, key)
 signal logout()
+
+var myUsername:String
 
 func _ready() -> void:
 	Network.connect("data_recieved", self, "dataRecieved")
@@ -21,6 +24,7 @@ func dataRecieved(data:Dictionary):
 func loggedIn(username):
 	userBox.get_node("MarginContainer/VBoxContainer/Username").text = username
 	$Navigation/Lobby.myUsername = username
+	myUsername = username
 
 func returnToMenu() -> void:
 	hide()
@@ -32,3 +36,10 @@ func _on_Logout_pressed() -> void:
 func _on_UpdateInfo_timeout() -> void:
 	if Network.connected:
 		Network.sendData({"type":"playerCount"})
+
+func _on_Stats_pressed() -> void:
+	infoPopup.requestPlayerStats(myUsername)
+
+
+func _on_BattleLog_pressed() -> void:
+	pass # Replace with function body.

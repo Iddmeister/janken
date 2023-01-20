@@ -1,10 +1,12 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://Misc/Fonts/SquarleyEdited.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Screens/OnlinePlay/OnlinePlay.gd" type="Script" id=2]
 [ext_resource path="res://Screens/OnlinePlay/Lobby.gd" type="Script" id=3]
 [ext_resource path="res://Misc/Fonts/coolvetica rg.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://Screens/OnlinePlay/Navigation.gd" type="Script" id=5]
+[ext_resource path="res://PlayerStats.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Screens/OnlinePlay/Popup.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -101,6 +103,26 @@ Button/styles/hover = SubResource( 24 )
 Button/styles/normal = SubResource( 24 )
 Button/styles/pressed = SubResource( 24 )
 
+[sub_resource type="StyleBoxEmpty" id=30]
+
+[sub_resource type="DynamicFont" id=31]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=34]
+default_font = SubResource( 31 )
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.941176, 0.941176, 0.941176, 1 )
+Button/colors/font_color_hover = Color( 1, 0.74902, 0, 1 )
+Button/colors/font_color_pressed = Color( 1, 0.74902, 0, 1 )
+Button/constants/hseparation = 2
+Button/styles/disabled = SubResource( 30 )
+Button/styles/focus = SubResource( 30 )
+Button/styles/hover = SubResource( 30 )
+Button/styles/normal = SubResource( 30 )
+Button/styles/pressed = SubResource( 30 )
+
 [sub_resource type="StyleBoxFlat" id=16]
 bg_color = Color( 0, 0, 0, 1 )
 border_width_left = 3
@@ -114,12 +136,42 @@ expand_margin_bottom = 2.0
 [sub_resource type="StyleBoxFlat" id=17]
 bg_color = Color( 0, 0, 0, 1 )
 
+[sub_resource type="StyleBoxFlat" id=33]
+bg_color = Color( 0, 0, 0, 0.54902 )
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 1, 1, 1, 1 )
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="Theme" id=32]
+default_font = SubResource( 31 )
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.941176, 0.941176, 0.941176, 1 )
+Button/colors/font_color_hover = Color( 1, 0.74902, 0, 1 )
+Button/colors/font_color_pressed = Color( 1, 0.74902, 0, 1 )
+Button/constants/hseparation = 2
+Button/styles/disabled = SubResource( 30 )
+Button/styles/focus = SubResource( 30 )
+Button/styles/hover = SubResource( 30 )
+Button/styles/normal = SubResource( 30 )
+Button/styles/pressed = SubResource( 30 )
+
 [node name="OnlinePlay" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 theme = SubResource( 2 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 77.0 ]
+}
 
 [node name="Back" type="Panel" parent="."]
 anchor_right = 1.0
@@ -287,9 +339,8 @@ anchor_right = 1.0
 
 [node name="Panel" type="PanelContainer" parent="Navigation/Lobby/TeamCode"]
 margin_left = 301.0
-margin_top = 34.0
 margin_right = 307.0
-margin_bottom = 40.0
+margin_bottom = 6.0
 custom_styles/panel = SubResource( 23 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Navigation/Lobby/TeamCode/Panel"]
@@ -329,9 +380,32 @@ theme = SubResource( 26 )
 custom_colors/font_color = Color( 1, 0.121569, 0.121569, 1 )
 text = "LEAVE TEAM"
 
+[node name="Options" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -40.0
+margin_top = 5.0
+margin_right = -10.0
+margin_bottom = 40.0
+grow_horizontal = 0
+theme = SubResource( 34 )
+
+[node name="Stats" type="Button" parent="Options"]
+margin_right = 150.0
+margin_bottom = 34.0
+text = "PLAYER STATS"
+align = 2
+
+[node name="BattleLog" type="Button" parent="Options"]
+margin_top = 38.0
+margin_right = 150.0
+margin_bottom = 72.0
+text = "BATTLE LOG"
+align = 2
+
 [node name="User" type="PanelContainer" parent="."]
 margin_right = 119.0
-margin_bottom = 62.0
+margin_bottom = 74.0
 size_flags_horizontal = 8
 custom_styles/panel = SubResource( 16 )
 
@@ -339,19 +413,21 @@ custom_styles/panel = SubResource( 16 )
 margin_left = 3.0
 margin_top = 3.0
 margin_right = 116.0
-margin_bottom = 59.0
+margin_bottom = 71.0
 custom_constants/margin_right = 5
 custom_constants/margin_left = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="User/MarginContainer"]
 margin_left = 5.0
 margin_right = 108.0
-margin_bottom = 56.0
+margin_bottom = 68.0
 custom_constants/separation = 0
+alignment = 1
 
 [node name="Username" type="Label" parent="User/MarginContainer/VBoxContainer"]
+margin_top = 8.0
 margin_right = 103.0
-margin_bottom = 26.0
+margin_bottom = 34.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "username"
 align = 1
@@ -359,9 +435,9 @@ valign = 1
 uppercase = true
 
 [node name="Logout" type="Button" parent="User/MarginContainer/VBoxContainer"]
-margin_top = 26.0
+margin_top = 34.0
 margin_right = 103.0
-margin_bottom = 52.0
+margin_bottom = 60.0
 focus_mode = 0
 custom_colors/font_color = Color( 1, 0.121569, 0.121569, 1 )
 custom_colors/font_color_hover = Color( 1, 0.74902, 0, 1 )
@@ -376,6 +452,40 @@ text = "LOGOUT"
 [node name="UpdateInfo" type="Timer" parent="."]
 autostart = true
 
+[node name="InfoPopup" type="Button" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/hover = SubResource( 33 )
+custom_styles/pressed = SubResource( 33 )
+custom_styles/focus = SubResource( 33 )
+custom_styles/disabled = SubResource( 33 )
+custom_styles/normal = SubResource( 33 )
+script = ExtResource( 7 )
+
+[node name="PanelContainer" type="PanelContainer" parent="InfoPopup"]
+anchor_left = 0.1
+anchor_top = 0.2
+anchor_right = 0.9
+anchor_bottom = 0.8
+custom_styles/panel = SubResource( 28 )
+
+[node name="Control" type="Control" parent="InfoPopup/PanelContainer"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 483.4
+margin_bottom = 361.8
+
+[node name="PlayerStats" parent="InfoPopup/PanelContainer/Control" instance=ExtResource( 6 )]
+visible = false
+
+[node name="Back" type="Button" parent="InfoPopup/PanelContainer/Control"]
+margin_left = 10.0
+margin_right = 62.0
+margin_bottom = 34.0
+theme = SubResource( 32 )
+text = "BACK"
+
 [connection signal="pressed" from="Navigation/TeamOptions/VBoxContainer/CreateTeam" to="Navigation" method="_on_CreateTeam_pressed"]
 [connection signal="pressed" from="Navigation/TeamOptions/VBoxContainer/JoinTeam" to="Navigation" method="_on_JoinTeam_pressed"]
 [connection signal="text_entered" from="Navigation/JoinDialog/CenterContainer/VBoxContainer/Code" to="Navigation" method="_on_Code_text_entered"]
@@ -384,5 +494,9 @@ autostart = true
 [connection signal="toggled" from="Navigation/Lobby/VBoxContainer/Ready" to="Navigation/Lobby" method="_on_Ready_toggled"]
 [connection signal="pressed" from="Navigation/Lobby/TeamCode/Panel/VBoxContainer/HBoxContainer/Copy" to="Navigation/Lobby" method="_on_Copy_pressed"]
 [connection signal="pressed" from="Navigation/Lobby/TeamCode/Panel/VBoxContainer/LeaveTeam" to="Navigation/Lobby" method="_on_LeaveTeam_pressed"]
+[connection signal="pressed" from="Options/Stats" to="." method="_on_Stats_pressed"]
+[connection signal="pressed" from="Options/BattleLog" to="." method="_on_BattleLog_pressed"]
 [connection signal="pressed" from="User/MarginContainer/VBoxContainer/Logout" to="." method="_on_Logout_pressed"]
 [connection signal="timeout" from="UpdateInfo" to="." method="_on_UpdateInfo_timeout"]
+[connection signal="button_down" from="InfoPopup" to="InfoPopup" method="_on_InfoPopup_button_down"]
+[connection signal="pressed" from="InfoPopup/PanelContainer/Control/Back" to="InfoPopup" method="_on_Back_pressed"]

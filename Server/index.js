@@ -112,6 +112,18 @@ server.on("connection", client => {
 
                 break;
 
+            case "playerStats":
+
+                if (!("username" in data)) {
+                    return
+                }
+
+                database.retrievePlayerStats(data.username).then((stats) => {
+                    client.sendData({type:"playerStats", stats:stats})
+                })
+
+                break;
+
             default:
 
                 if (debug) {
