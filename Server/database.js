@@ -4,7 +4,8 @@ var database = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: process.env.DBPASS,
-    database: "janken"
+    database: "janken",
+    multipleStatements: true,
   });
 
 function retrieveAccount(username) {
@@ -57,6 +58,51 @@ async function loginPlayer(username, password) {
     })
 
 }
+
+async function saveGame(map, team1Score, team2Score, players) {
+
+    return new Promise((resolve, reject) => {
+
+        database.query(`INSERT INTO games (
+            
+            map, 
+            team1Score, 
+            team2Score, 
+            team1Rock, 
+            team1Paper, 
+            team1Scissors, 
+            team2Rock, 
+            team2Paper, 
+            team2Scissors
+        )
+
+        VALUES (
+
+            ${map},
+            ${team1Score},
+            ${team2Score},
+            '${players.team1[0]}',
+            '${players.team1[1]}',
+            '${players.team1[2]}',
+            '${players.team2[0]}',
+            '${players.team2[1]}',
+            '${players.team2[2]}'
+            
+        )
+            
+        `, (err, result) => {
+            if (err) {
+                reject(err)
+            }
+            console.log("Inserted Game Into Table")
+            resolve()
+
+        })
+
+    })
+
+
+}
   
 database.connect(function(err) {
     if (err) {
@@ -65,21 +111,43 @@ database.connect(function(err) {
     } else {
         console.log("Connected to Database");
 
-        var setup = "CREATE TABLE IF NOT EXISTS accounts (username VARCHAR(255) PRIMARY KEY, password VARCHAR(255))"
+        var setup = `
+        
+        CREATE TABLE IF NOT EXISTS accounts (
+
+            username VARCHAR(255) PRIMARY KEY,
+            password VARCHAR(255),
+            currentRank INT,
+            highestRank INT
+
+        );
+        
+        CREATE TABLE IF NOT EXISTS games (
+
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            endTime DATETIME DEFAULT CURRENT_TIMESTAMP, 
+            map INT,
+
+            team1Score INT,
+            team2Score INT,
+
+            team1Rock VARCHAR(255),
+            team1Paper VARCHAR(255),
+            team1Scissors VARCHAR(255),
+            team2Rock VARCHAR(255),
+            team2Paper VARCHAR(255),
+            team2Scissors VARCHAR(255)
+
+        );
+        
+        `
 
         database.query(setup, (err, result) => {
             if (err) throw err;
             console.log("Database Setup Complete")
         })
 
-
-        // database.query("INSERT INTO accounts (username, password) VALUES ('iddmeister', 'password')", (err, result) => {
-        //     if (err) {
-        //         console.log(err)
-        //     }
-        // })
-
     }
   });
 
-module.exports = {loginPlayer, registerPlayer}
+module.exports = {loginPlayer, registerPlayer, saveGame}

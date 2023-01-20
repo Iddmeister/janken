@@ -14,7 +14,7 @@ var isServer:bool = false
 var gameID:String
 var map
 
-var maps:Dictionary = {"main":"res://Maps/Main/MainMap.tscn"}
+var maps:Dictionary = {0:"res://Maps/Main/MainMap.tscn"}
 
 #Contains map and port
 var matchInfo:Dictionary = {}
@@ -46,7 +46,7 @@ remote func playerInput(dir:Vector2):
 	var username:String = playerIDs[get_tree().get_rpc_sender_id()]
 	map.playerInput(username, dir)
 	
-func loadMap(_map:String):
+func loadMap(_map:int):
 	
 	print("Loading Map %s" % _map)
 	var m = load(maps[_map]).instance()

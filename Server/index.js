@@ -1,7 +1,7 @@
 require('dotenv').config();
 const crypto = require('crypto');
 const ws = require("ws")
-var accounts = require("./accounts")
+var database = require("./database")
 var {Game, Team, Player, Queue} = require("./objects")
 
 const runArgs = process.argv.slice(2);
@@ -9,7 +9,7 @@ const debug = (runArgs.length > 0 && runArgs[0] == "debug")
 
 if (debug) console.log("Running in Debug Mode")
 
-const SERVER_IP = "139.162.200.140"
+const SERVER_IP = debug ? "127.0.0.1" : "139.162.200.140"
 const PORT = 5072
 const minPort = 10000
 const maxPort = 60000
@@ -57,7 +57,7 @@ function connectPlayer(username, client) {
 
 async function createGame(team1, team2) {
 
-    let game = new Game(generateGameID(), team1, team2, "main", reserveGamePort())
+    let game = new Game(generateGameID(), team1, team2, 0, reserveGamePort())
     games[game.id] = game
     console.log(`Attempting to Spawn Game ${game.id} on port ${game.port}`)
     let server = game.spawnGame()
@@ -168,6 +168,23 @@ server.on("connection", client => {
 
                             if (data.clean) {
                                 client.game.sendStatistics(data.stats)
+
+                                let players = {team1:{}, team2:{}}
+                                
+                                for (let player of Object.keys(client.game.players)) {
+
+                                    players[client.game.players[player].team === 0 ? "team1" : "team2"][client.game.players[player].type] = player
+
+                                }
+
+                                console.log(players)
+                                
+                                database.saveGame(client.game.map, data.stats[0], data.stats[1], players).then(() => {
+                                    console.log("Success")
+                                }).catch(err => {
+                                    console.log(`Error Saving Game to Table ${err}`)
+                                })
+
                             }
 
                             delete games[client.game.id]
@@ -181,7 +198,7 @@ server.on("connection", client => {
                     switch (data.type) {
 
                         case "login":
-                            accounts.loginPlayer(data.username, data.password).then(() => {
+                            database.loginPlayer(data.username, data.password).then(() => {
                                 connectPlayer(data.username, client)
                                 client.sendData({type:"loggedIn", username:data.username})
                             }).catch((err) => {
@@ -191,7 +208,7 @@ server.on("connection", client => {
                             break;
 
                         case "register":
-                            accounts.registerPlayer(data.username, data.password).then(() => {
+                            database.registerPlayer(data.username, data.password).then(() => {
                                 client.sendData({type:"registered"})
                             }).catch(err => {
                                 client.sendData({type:"loginError", error:err})
