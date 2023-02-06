@@ -1,0 +1,137 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Closed, clean: False
+Unable to connect to server - 139.162.200.140:5072
+Unable to connect to server - 139.162.200.140:5072
+Unable to connect to server - 139.162.200.140:5072
+Unable to connect to server - 139.162.200.140:5072
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+Running
+Connected to Web Server
+WARNING: Setting node name 'CurrentRank' to be unique within scene for '/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats/Stats/VBoxContainer/VBoxContainer/HBoxContainer/CurrentRank2/CurrentRank', but it's already claimed by '/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats/Stats/VBoxContainer/VBoxContainer/HBoxContainer/CurrentRank/CurrentRank'. This node is no longer set unique.
+     at: _acquire_unique_name_in_owner (scene/main/node.cpp:1630)
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+SCRIPT ERROR: Parse Error: Error parsing expression, misplaced: '\n'
+          at: GDScript::reload (res://PlayerStats.gd:8)
+SCRIPT ERROR: Parse Error: Error parsing expression, misplaced: '\n'
+          at: GDScript::reload (res://PlayerStats.gd:5)
+SCRIPT ERROR: Parse Error: Can't assign to an expression
+          at: GDScript::reload (res://PlayerStats.gd:9)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+SCRIPT ERROR: Parse Error: Expected indented block after "for".
+          at: GDScript::reload (res://PlayerStats.gd:20)
+SCRIPT ERROR: Parse Error: Expected indented block after "for".
+          at: GDScript::reload (res://PlayerStats.gd:22)
+SCRIPT ERROR: Parse Error: Expected indented block after "for".
+          at: GDScript::reload (res://PlayerStats.gd:22)
+SCRIPT ERROR: Parse Error: Expected indented block after "for".
+          at: GDScript::reload (res://PlayerStats.gd:22)
+SCRIPT ERROR: Parse Error: Expected indented block after "for".
+          at: GDScript::reload (res://PlayerStats.gd:22)
+SCRIPT ERROR: Parse Error: Expected indented block after "for".
+          at: GDScript::reload (res://PlayerStats.gd:22)
+SCRIPT ERROR: Parse Error: ':' expected at end of line.
+          at: GDScript::reload (res://PlayerStats.gd:19)
+SCRIPT ERROR: Parse Error: ':' expected at end of line.
+          at: GDScript::reload (res://PlayerStats.gd:19)
+SCRIPT ERROR: Parse Error: ':' expected at end of line.
+          at: GDScript::reload (res://PlayerStats.gd:19)
+SCRIPT ERROR: Parse Error: Expected an indented block after "if".
+          at: GDScript::reload (res://PlayerStats.gd:23)
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
+Async. shader compilation: OFF
+/lib/x86_64-linux-gnu/libasound.so.2: undefined symbol: snd_dlpath
+ 
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+SCRIPT ERROR: Parse Error: Indented block expected after declaration of "hide" function.
+          at: GDScript::reload (res://PlayerStats.gd:32)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+SCRIPT ERROR: Parse Error: Unexpected token: '$':
+          at: GDScript::reload (res://PlayerStats.gd:32)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+SCRIPT ERROR: Parse Error: The identifier "highest" isn't declared in the current scope.
+          at: GDScript::reload (res://PlayerStats.gd:32)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: (Node not found: "%TypeGraphics" (relative to "/root/EditorNode/@@596/@@597/@@605/@@607/@@611/@@615/@@616/@@617/@@633/@@634/@@643/@@644/@@6617/@@6449/@@6450/@@6451/@@6452/@@6453/@@6454/PlayerStats").)
+   at: get_node (scene/main/node.cpp:1465)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+ERROR: Condition "tk_rb[ofs].type != TK_IDENTIFIER" is true. Returned: StringName()
+   at: get_token_identifier (modules/gdscript/gdscript_tokenizer.cpp:1117)
+SCRIPT ERROR: Parse Error: Expected end of statement after expression, got '(' instead.
+          at: GDScript::reload (res://PlayerStats.gd:23)

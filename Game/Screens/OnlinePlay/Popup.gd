@@ -16,13 +16,14 @@ func dataRecieved(data:Dictionary):
 func requestPlayerStats(username:String):
 	Network.sendData({"type":"playerStats", "username":username})
 	show()
+	statsControl.setUsername(username)
 	statsControl.show()
 	statsControl.loading()
 	pass
 
 
 func _on_Back_pressed() -> void:
-	pass # Replace with function body.
+	hide()
 
 
 func _on_InfoPopup_button_down() -> void:
