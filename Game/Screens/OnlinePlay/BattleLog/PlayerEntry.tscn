@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Misc/Fonts/SquarleyEdited.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Screens/OnlinePlay/BattleLog/PlayerEntry.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=34]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=35]
+resource_local_to_scene = true
+default_font = SubResource( 34 )
+Label/colors/font_color = Color( 0.313726, 0.741176, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=37]
+bg_color = Color( 1, 1, 1, 0.184314 )
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[node name="PlayerEntry" type="Button" groups=["PlayerEntry"]]
+margin_right = 194.0
+margin_bottom = 26.0
+size_flags_horizontal = 3
+theme = SubResource( 35 )
+custom_styles/hover = SubResource( 37 )
+custom_styles/pressed = SubResource( 36 )
+custom_styles/focus = SubResource( 36 )
+custom_styles/disabled = SubResource( 36 )
+custom_styles/normal = SubResource( 36 )
+script = ExtResource( 2 )
+allyColour = Color( 0.313726, 0.741176, 1, 1 )
+enemyColour = Color( 1, 0.223529, 0.223529, 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_right = -5.0
+custom_constants/separation = 0
+
+[node name="Username" type="Label" parent="HBoxContainer"]
+margin_right = 92.0
+margin_bottom = 26.0
+size_flags_horizontal = 3
+text = "Username"
+uppercase = true
+
+[node name="Stats" type="Label" parent="HBoxContainer"]
+margin_left = 92.0
+margin_right = 184.0
+margin_bottom = 26.0
+size_flags_horizontal = 3
+text = "   0 0 0"
+align = 2
+uppercase = true
+
+[connection signal="pressed" from="." to="." method="_on_PlayerEntry_pressed"]

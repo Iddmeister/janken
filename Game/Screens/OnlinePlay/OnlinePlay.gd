@@ -42,4 +42,4 @@ func _on_Stats_pressed() -> void:
 
 
 func _on_BattleLog_pressed() -> void:
-	pass # Replace with function body.
+	infoPopup.requestBattleLog()

@@ -20,6 +20,10 @@ func requestPlayerStats(username:String):
 	statsControl.show()
 	statsControl.loading()
 	pass
+	
+func requestBattleLog():
+	show()
+	pass
 
 
 func _on_Back_pressed() -> void:
