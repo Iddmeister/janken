@@ -11,12 +11,9 @@ export var drawColour:Color
 #	team1 score
 #	team2 score
 #	date
-#	team1Players {
-#		(0)rock {username, kills, deaths, dots}
-#		(1)paper
-#		(2)scissors
+#	players {
+#		username {team, type, kills, deaths, dots}
 # } 
-#	team2Players {}
 #
 # }
 
@@ -41,28 +38,21 @@ func setup(stats:Dictionary, allyTeam:int=1):
 		$"%Outcome".add_color_override("font_color", Color(1, 1, 1, 1))
 		get_stylebox("panel").bg_color = drawColour
 	
-	
-	for type in $"%PlayerEntries".get_children():
-		
-		var playerStats:Dictionary = stats.team1Players[int(type.name)]
-		type.get_node("Players/Player1").setup(playerStats.username, playerStats.kills, playerStats.deaths, playerStats.dots, allyTeam == 1) 
-		
-		playerStats= stats.team2Players[int(type.name)]
-		type.get_node("Players/Player2").setup(playerStats.username, playerStats.kills, playerStats.deaths, playerStats.dots, allyTeam == 2) 
-	
-#	setup({
-#
-#		"team1Score":600,
-#		"team2Score":600,
-#		"team1Players":{
-#			0:{"username":"idd", "kills":10, "deaths":5, "dots":56},
-#			1:{"username":"idd", "kills":10, "deaths":5, "dots":56},
-#			2:{"username":"idd", "kills":10, "deaths":5, "dots":56},
-#		},
-#		"team2Players":{
-#			0:{"username":"idd", "kills":10, "deaths":5, "dots":56},
-#			1:{"username":"idd", "kills":10, "deaths":5, "dots":56},
-#			2:{"username":"idd", "kills":10, "deaths":5, "dots":56},
-#		}
-#
-#	}, 2)
+	for player in stats.players.keys():
+		var playerStats = stats.players[player]
+		$"%PlayerEntries".get_node(String(playerStats.type)).get_node("Players/Player%s" % playerStats.team).setup(player, playerStats.kills, playerStats.deaths, playerStats.dots, allyTeam == playerStats.team)
+func _ready() -> void:
+	setup({
+
+		"team1Score":600,
+		"team2Score":600,
+		"players":{
+			"idd":{"team":1, "type":0, "kills":10, "deaths":56, "dots":2},
+			"idd2":{"team":1, "type":1, "kills":10, "deaths":56, "dots":2},
+			"idd3":{"team":1, "type":2, "kills":10, "deaths":56, "dots":2},
+			"idd4":{"team":2, "type":0, "kills":10, "deaths":56, "dots":2},
+			"idd5":{"team":2, "type":1, "kills":10, "deaths":56, "dots":2},
+			"idd6":{"team":2, "type":2, "kills":10, "deaths":56, "dots":2},
+		}
+
+	}, 2)
