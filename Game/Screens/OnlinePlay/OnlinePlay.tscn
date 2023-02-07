@@ -5,7 +5,7 @@
 [ext_resource path="res://Screens/OnlinePlay/Lobby.gd" type="Script" id=3]
 [ext_resource path="res://Misc/Fonts/coolvetica rg.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://Screens/OnlinePlay/Navigation.gd" type="Script" id=5]
-[ext_resource path="res://PlayerStats.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Screens/OnlinePlay/PlayerStats.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Screens/OnlinePlay/Popup.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]

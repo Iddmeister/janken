@@ -49,6 +49,7 @@ run/main_scene="res://Main/Main.tscn"
 
 [autoload]
 
+Data="*res://Singletons/Data.gd"
 Network="*res://Singletons/Network.gd"
 
 [debug]

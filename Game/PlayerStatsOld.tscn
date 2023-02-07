@@ -4,7 +4,7 @@
 [ext_resource path="res://Misc/Circle.png" type="Texture" id=2]
 [ext_resource path="res://Player/Scissors.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Misc/Fonts/Squarely.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://PlayerStats.gd" type="Script" id=5]
+[ext_resource path="res://Screens/OnlinePlay/PlayerStats.gd" type="Script" id=5]
 
 [sub_resource type="StyleBoxEmpty" id=30]
 

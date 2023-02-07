@@ -9,6 +9,7 @@ onready var passwordBox: LineEdit = $CenterContainer/VBoxContainer/VBoxContainer
 
 signal loggedIn(username)
 signal cancelled()
+signal loginFailed()
 
 func _ready() -> void:
 	Network.connect("data_recieved", self, "dataRecieved")
@@ -26,7 +27,10 @@ func dataRecieved(data:Dictionary):
 	match data.type:
 		"loginError":
 			showStatus(data.error)
+			emit_signal("loginFailed")
 		"loggedIn":
+			Data.saveData("lastUser", data.username)
+			Data.saveData("lastPass", passwordBox.text)
 			emit_signal("loggedIn", data.username)
 		"registered":
 			showStatus("Account Created", false)
@@ -40,6 +44,12 @@ func checkDetails(username:String, password:String):
 		showStatus("Please enter a Password")
 		return false
 	return true
+	
+	
+func autoLogin(username:String, password:String):
+	usernameBox.text = username
+	passwordBox.text = password
+	#attemptLogin(username, password)
 		
 func attemptLogin(username:String, password:String):
 	if checkDetails(username, password):

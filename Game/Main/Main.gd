@@ -11,6 +11,9 @@ func connectedToServer():
 	$Screens/Loading.hide()
 	$Screens/Login.show()
 	
+	if Data.getData("lastUser") and Data.getData("lastPass"):
+		$Screens/Login.autoLogin(Data.getData("lastUser"), Data.getData("lastPass"))
+	
 func connectionFailed():
 	$Screens/Loading.failed()
 	
@@ -30,7 +33,6 @@ func _on_Login_loggedIn(username) -> void:
 	$Screens/OnlinePlay.loggedIn(username)
 	$Game.me = username
 	$Screens/OnlinePlay.show()
-	
 
 
 func _on_OnlinePlay_logout() -> void:
