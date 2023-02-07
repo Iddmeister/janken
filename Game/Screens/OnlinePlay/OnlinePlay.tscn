@@ -480,6 +480,7 @@ margin_bottom = 361.8
 visible = false
 
 [node name="BattleLog" parent="InfoPopup/PanelContainer/Control" instance=ExtResource( 8 )]
+unique_name_in_owner = true
 margin_top = 34.0
 margin_right = -0.400024
 margin_bottom = -0.799988

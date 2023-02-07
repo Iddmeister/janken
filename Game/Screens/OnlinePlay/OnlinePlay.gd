@@ -25,6 +25,8 @@ func loggedIn(username):
 	userBox.get_node("MarginContainer/VBoxContainer/Username").text = username
 	$Navigation/Lobby.myUsername = username
 	myUsername = username
+	$"%BattleLog".username = myUsername
+	
 
 func returnToMenu() -> void:
 	hide()
@@ -39,7 +41,6 @@ func _on_UpdateInfo_timeout() -> void:
 
 func _on_Stats_pressed() -> void:
 	infoPopup.requestPlayerStats(myUsername)
-
 
 func _on_BattleLog_pressed() -> void:
 	infoPopup.requestBattleLog()

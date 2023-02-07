@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Screens/OnlinePlay/BattleLog/BattleLog.gd" type="Script" id=1]
+[ext_resource path="res://Screens/OnlinePlay/BattleLog/PastBattle.tscn" type="PackedScene" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+resource_local_to_scene = true
+bg_color = Color( 0.121569, 0.239216, 0.352941, 1 )
 
 [node name="BattleLog" type="Control"]
 anchor_right = 1.0
@@ -15,6 +20,80 @@ margin_top = 5.0
 margin_right = -5.0
 scroll_horizontal_enabled = false
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-margin_right = 598.0
+[node name="Battles" type="VBoxContainer" parent="ScrollContainer"]
+unique_name_in_owner = true
+margin_right = 586.0
+margin_bottom = 720.0
 size_flags_horizontal = 3
+
+[node name="PastBattle" parent="ScrollContainer/Battles" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 586.0
+margin_bottom = 86.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="PastBattle2" parent="ScrollContainer/Battles" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 90.0
+margin_right = 586.0
+margin_bottom = 176.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="PastBattle3" parent="ScrollContainer/Battles" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 180.0
+margin_right = 586.0
+margin_bottom = 266.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="PastBattle4" parent="ScrollContainer/Battles" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 270.0
+margin_right = 586.0
+margin_bottom = 356.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="PastBattle5" parent="ScrollContainer/Battles" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 360.0
+margin_right = 586.0
+margin_bottom = 446.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="PastBattle6" parent="ScrollContainer/Battles" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 450.0
+margin_right = 586.0
+margin_bottom = 536.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="PastBattle7" parent="ScrollContainer/Battles" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 540.0
+margin_right = 586.0
+margin_bottom = 626.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="PastBattle8" parent="ScrollContainer/Battles" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 630.0
+margin_right = 586.0
+margin_bottom = 716.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="Bottom" type="Control" parent="ScrollContainer/Battles"]
+margin_top = 720.0
+margin_right = 586.0
+margin_bottom = 720.0
+
+[node name="BottomNotifier" type="VisibilityNotifier2D" parent="ScrollContainer/Battles/Bottom"]
+
+[connection signal="screen_entered" from="ScrollContainer/Battles/Bottom/BottomNotifier" to="." method="_on_BottomNotifier_screen_entered"]

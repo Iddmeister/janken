@@ -119,79 +119,40 @@ async function retrievePlayerStats(username) {
     })
 }
 
-// async function retrievePlayersGames(username, start=0, end=5) {
+async function retrievePlayersGames(username, start=0, end=5) {
 
-//     return new Promise ((resolve, reject) => {
+    return new Promise ((resolve, reject) => {
 
-//         let limit = start == -1 ? `` : `LIMIT ${start},${end}`
+        let limit = start == -1 ? `` : `LIMIT ${start},${end}`
 
-//         database.query(`SELECT * FROM games WHERE
-        
-//         (team1Rock = ${mysql.escape(username)}) OR
-//         (team1Paper = ${mysql.escape(username)}) OR
-//         (team1Scissors = ${mysql.escape(username)}) OR
-//         (team2Rock = ${mysql.escape(username)}) OR
-//         (team2Paper = ${mysql.escape(username)}) OR
-//         (team2Scissors = ${mysql.escape(username)})
-
-//         ORDER BY endTime DESC ${limit};
-        
-//         `, (err, result) => {
-//             if (err) {
-//                 reject(err)
-//             }
-//             resolve(result)
-
-//         })
-
-//     })
-
-// }
-
-// async function saveGame(map, team1Score, team2Score, players) {
-
-//     return new Promise((resolve, reject) => {
-
-//         database.query(`INSERT INTO games (
+        database.query(`SELECT * FROM gameInfo WHERE gameID IN (SELECT (gameID) FROM gameStats WHERE player = ${mysql.escape(username)}) ${limit};`, (err, result) => {
+            if (err) throw err;
             
-//             map, 
-//             team1Score, 
-//             team2Score, 
-//             team1Rock, 
-//             team1Paper, 
-//             team1Scissors, 
-//             team2Rock, 
-//             team2Paper, 
-//             team2Scissors
-//         )
+            if (result.length <= 0) {
+                reject("No Games Found")
+            }
+            let games = {}
 
-//         VALUES (
+            result.forEach(game => {
+                games[game.gameID] = {players:{}, endTime:game.endTime, map:game.map, team1Score:game.team1Score, team2Score:game.team2Score}
+            })
 
-//             ${map},
-//             ${team1Score},
-//             ${team2Score},
-//             '${players.team1[0]}',
-//             '${players.team1[1]}',
-//             '${players.team1[2]}',
-//             '${players.team2[0]}',
-//             '${players.team2[1]}',
-//             '${players.team2[2]}'
-            
-//         )
-            
-//         `, (err, result) => {
-//             if (err) {
-//                 reject(err)
-//             }
-//             console.log("Inserted Game Into Table")
-//             resolve()
+            database.query(`SELECT * FROM gameStats WHERE gameID IN (${mysql.escape(Object.keys(games))})`, (err, players) => {
+                if (err) throw err;
 
-//         })
+                for (let player of players) {
+                    games[player.gameID].players[player.player] = {team:player.team, type:player.type, kills:player.kills, deaths:player.deaths, dots:player.dots}
+                }
 
-//     })
+                resolve(games)
+            })
 
+        })
 
-// }
+    })
+
+}
+
   
 database.connect(function(err) {
     if (err) {
@@ -255,6 +216,10 @@ database.connect(function(err) {
         database.query(setup, (err, result) => {
             if (err) throw err;
             console.log("Database Setup Complete")
+        })
+
+        retrievePlayersGames("iddmeister").then(result => {
+            console.log(result)
         })
 
     }
