@@ -2,6 +2,9 @@ extends Control
 
 func setUsername(username:String):
 	$"%Username".text = username
+	
+func clearStats():
+	setStats({"currentRank":0, "highestRank":0, "games":0, "dots":0, "deaths":0, "kills":0, "types":{"0":0, "1":0, "2":0}})
 
 func setStats(stats:Dictionary):
 	

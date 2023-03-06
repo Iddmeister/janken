@@ -19,6 +19,9 @@ var maps:Dictionary = {0:"res://Maps/Main/MainMap.tscn"}
 #Contains map and port
 var matchInfo:Dictionary = {}
 
+var swipeSensitivity:float = 3
+var swiped:bool = false
+
 func _unhandled_input(event: InputEvent) -> void:
 	
 	if get_tree().network_peer and (not is_network_master()) and map and map.gameStarted:
@@ -26,13 +29,25 @@ func _unhandled_input(event: InputEvent) -> void:
 		var newDir:Vector2 = Vector2(event.get_action_strength("right")-event.get_action_strength("left"),event.get_action_strength("down")-event.get_action_strength("up"))
 		
 		if newDir == Vector2(0, 0):
+			
 			if event is InputEventScreenDrag:
-				var drag = event.relative.normalized()
-				if abs(drag.x) > abs(drag.y):
-					newDir = Vector2(ceil(drag.x), 0)
-				else:
-					newDir = Vector2(0, ceil(drag.y))
 				
+				if event.relative.length() > swipeSensitivity:
+					
+					var dir = event.relative.normalized()
+					
+					if abs(dir.x) > abs(dir.y):
+						dir.y = 0
+					else:
+						dir.x = 0
+				
+					newDir = dir.normalized()
+					swiped = true
+					
+			if event is InputEventScreenTouch:
+				if not event.pressed:
+					swiped = false
+					
 		if newDir == Vector2(0, 0):
 			return
 			

@@ -8,12 +8,8 @@ func _ready() -> void:
 func dataRecieved(data:Dictionary):
 	
 	match data.type:
-		
 		"playerStats":
 			statsControl.setStats(data.stats)
-		"battleLog":
-			for battle in data.battles:
-				$"%BattleLog".addBattle(battle)
 
 func requestPlayerStats(username:String):
 	Network.sendData({"type":"playerStats", "username":username})
@@ -25,9 +21,9 @@ func requestPlayerStats(username:String):
 	pass
 	
 func requestBattleLog(username:String):
-	Network.sendData({"type":"battleLog", "username":username})
 	show()
 	statsControl.hide()
+	$"%BattleLog".requestBattles(username)
 	$"%BattleLog".show()
 
 func _on_Back_pressed() -> void:

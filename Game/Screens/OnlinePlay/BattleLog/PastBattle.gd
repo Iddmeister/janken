@@ -41,18 +41,5 @@ func setup(stats:Dictionary, allyTeam:int=1):
 	for player in stats.players.keys():
 		var playerStats = stats.players[player]
 		$"%PlayerEntries".get_node(String(playerStats.type)).get_node("Players/Player%s" % playerStats.team).setup(player, playerStats.kills, playerStats.deaths, playerStats.dots, allyTeam == playerStats.team)
-func _ready() -> void:
-	setup({
+		$"%PlayerEntries".get_node(String(playerStats.type)).get_node("Players/Player%s" % playerStats.team).connect("selected", get_node("../../../"), "playerSelected")
 
-		"team1Score":600,
-		"team2Score":600,
-		"players":{
-			"idd":{"team":1, "type":0, "kills":10, "deaths":56, "dots":2},
-			"idd2":{"team":1, "type":1, "kills":10, "deaths":56, "dots":2},
-			"idd3":{"team":1, "type":2, "kills":10, "deaths":56, "dots":2},
-			"idd4":{"team":2, "type":0, "kills":10, "deaths":56, "dots":2},
-			"idd5":{"team":2, "type":1, "kills":10, "deaths":56, "dots":2},
-			"idd6":{"team":2, "type":2, "kills":10, "deaths":56, "dots":2},
-		}
-
-	}, 2)

@@ -80,6 +80,7 @@ async function retrievePlayerStats(username) {
         }
 
         database.query(`SELECT * FROM accounts WHERE username = ${mysql.escape(username)}`, (err, result) => {
+            
             if (err) throw err;
 
             if (result.length <= 0) {
@@ -119,7 +120,9 @@ async function retrievePlayerStats(username) {
     })
 }
 
-async function retrievePlayersGames(username, start=0, end=5) {
+
+
+async function retrievePlayerGames(username, start=0, end=5) {
 
     return new Promise ((resolve, reject) => {
 
@@ -130,6 +133,7 @@ async function retrievePlayersGames(username, start=0, end=5) {
             
             if (result.length <= 0) {
                 reject("No Games Found")
+                return
             }
             let games = {}
 
@@ -218,11 +222,7 @@ database.connect(function(err) {
             console.log("Database Setup Complete")
         })
 
-        retrievePlayersGames("iddmeister").then(result => {
-            console.log(result)
-        })
-
     }
   });
 
-module.exports = {loginPlayer, registerPlayer, retrievePlayerStats}
+module.exports = {loginPlayer, registerPlayer, retrievePlayerStats, retrievePlayerGames}

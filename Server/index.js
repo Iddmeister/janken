@@ -126,6 +126,20 @@ server.on("connection", client => {
 
                 break;
 
+            case "battleLog":
+
+                if (!("username" in data)) {
+                    return
+                }
+
+                database.retrievePlayerGames(data.username, "start" in data ? data.start : 0, "end" in data ? data.end : 5).then((games) => {
+                    client.sendData({type:"battleLog", player:data.username, battles:games})
+                }).catch(err => {
+                    client.sendData({type:"battleLogError", player:data.username, error:"No Games Found"})
+                })
+
+                break;
+
             default:
 
                 if (debug) {
@@ -193,11 +207,11 @@ server.on("connection", client => {
 
                                 console.log(players)
                                 
-                                database.saveGame(client.game.map, data.stats[0], data.stats[1], players).then(() => {
-                                    console.log("Success")
-                                }).catch(err => {
-                                    console.log(`Error Saving Game to Table ${err}`)
-                                })
+                                // database.saveGame(client.game.map, data.stats[0], data.stats[1], players).then(() => {
+                                //     console.log("Success")
+                                // }).catch(err => {
+                                //     console.log(`Error Saving Game to Table ${err}`)
+                                // })
 
                             }
 

@@ -32,6 +32,8 @@ func returnToMenu() -> void:
 	hide()
 
 func _on_Logout_pressed() -> void:
+	$"%BattleLog".clearBattles()
+	$"%PlayerStats".clearStats()
 	emit_signal("logout")
 
 
@@ -43,4 +45,4 @@ func _on_Stats_pressed() -> void:
 	infoPopup.requestPlayerStats(myUsername)
 
 func _on_BattleLog_pressed() -> void:
-	infoPopup.requestBattleLog()
+	infoPopup.requestBattleLog(myUsername)

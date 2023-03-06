@@ -454,6 +454,7 @@ text = "LOGOUT"
 autostart = true
 
 [node name="InfoPopup" type="Button" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/hover = SubResource( 33 )
@@ -477,10 +478,12 @@ margin_right = 483.4
 margin_bottom = 361.8
 
 [node name="PlayerStats" parent="InfoPopup/PanelContainer/Control" instance=ExtResource( 6 )]
+unique_name_in_owner = true
 visible = false
 
 [node name="BattleLog" parent="InfoPopup/PanelContainer/Control" instance=ExtResource( 8 )]
 unique_name_in_owner = true
+visible = false
 margin_top = 34.0
 margin_right = -0.400024
 margin_bottom = -0.799988
