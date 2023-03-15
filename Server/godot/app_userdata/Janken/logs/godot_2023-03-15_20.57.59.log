@@ -1,0 +1,22 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+ERROR: Condition "!is_connected_to_host()" is true. Returned: FAILED
+   at: put_packet (modules/websocket/wsl_peer.cpp:243) - Condition "!is_connected_to_host()" is true. Returned: FAILED
+Connected to Web Server
+Authenticating Server
+Loading Map 0
+Success
+Created server on port 10000
+Peer 322081609 Connected
+Attempting to Authorize Player DDjYTc81ksgotci+Lq0p7A==
+Peer 322081609 authorized with key DDjYTc81ksgotci+Lq0p7A==
+Peer 1985604821 Connected
+Attempting to Authorize Player UA37M9QnEbzVZy90ZY8sNA==
+Peer 1985604821 authorized with key UA37M9QnEbzVZy90ZY8sNA==
+Game Started
+Peer 1985604821 Disconnected
+Peer 322081609 Disconnected
+Game Ended

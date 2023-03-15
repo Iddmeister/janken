@@ -9,6 +9,7 @@ var gameFinished:bool = false
 var PlayerScene = preload("res://Player/Player.tscn")
 
 var teamInfo:Dictionary = {0:{"points":0}, 1:{"points":0}}
+var stats:Dictionary = {}
 
 onready var gridPath = $GridPath
 onready var regenChamber = $RegenChamber
@@ -37,7 +38,7 @@ func spawnPlayers():
 	for player in game.players.keys():
 		var startPosition = $StartPositions.get_node("%s%s" % [game.players[player].type, game.players[player].team])
 		createPlayer(player, startPosition.type, game.players[player].team, startPosition.global_position, startPosition.startDirection)
-
+		stats[player] = {"team":int(game.players[player].team)+1, "type":game.players[player].type, "kills":0, "deaths":0, "dots":0}
 
 puppetsync func spawnDots(exlude:PoolVector2Array=[]):
 	
@@ -103,11 +104,13 @@ func createPlayer(username:String, type:int, team:int, pos:Vector2, dir:Vector2=
 	if get_tree().network_peer and (not is_network_master()):
 		p.setEnemy(not game.players[game.me].team == game.players[username].team)
 	$Players.add_child(p)
-	p.connect("died", self, "playerDied", [p.name, p.team])
+	p.connect("died", self, "playerDied", [username])
 	return p
 	
-func playerDied(player:String, team:int):
-	teamInfo[0 if team == 1 else 1].points += 100
+func playerDied(killer:String, player:String):
+	teamInfo[int(game.players[killer].team)].points += 100
+	stats[killer].kills += 1
+	stats[player].deaths += 1
 	updatePoints()
 	regenChamber.regenPlayer(player)
 	
@@ -127,10 +130,12 @@ func placeDot(pos:Vector2, n:String=""):
 	d.name = n if not n == "" else d.name
 	d.global_position = pos
 	$Collectibles.add_child(d)
-	d.connect("collected", self, "addPoints")
+	d.connect("collected", self, "playerScoredPoints")
 	
-func addPoints(team:int, points:int):
-	teamInfo[team].points += points
+func playerScoredPoints(player:String, points:int):
+	teamInfo[int(game.players[player].team)].points += points
+	stats[player].dots += points
+	
 	updatePoints()
 	
 
@@ -163,4 +168,9 @@ func _on_Time_tick() -> void:
 
 
 func _on_EndDelay_timeout() -> void:
-	emit_signal("gameEnded", {0:teamInfo[0].points, 1:teamInfo[1].points})
+	emit_signal("gameEnded", {
+		"team1Score":teamInfo[0].points, 
+		"team2Score":teamInfo[1].points,
+		"map":0,
+		"players":stats,
+		})

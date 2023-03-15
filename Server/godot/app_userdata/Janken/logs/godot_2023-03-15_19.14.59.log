@@ -1,0 +1,24 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Error Loading Save Data, code: 7
+Creating Save File
+Running
+Starting Server
+Attempting to Connect to Server
+ERROR: Condition "!is_connected_to_host()" is true. Returned: FAILED
+   at: put_packet (modules/websocket/wsl_peer.cpp:243) - Condition "!is_connected_to_host()" is true. Returned: FAILED
+Connected to Web Server
+Authenticating Server
+Loading Map 0
+Success
+Created server on port 10000
+Peer 1088171646 Connected
+Peer 1654034673 Connected
+Attempting to Authorize Player BRpwsZkPLoNahMEIrdN9mg==
+Peer 1654034673 authorized with key BRpwsZkPLoNahMEIrdN9mg==
+Attempting to Authorize Player g4gbGsZX5YvUA6pFcIZisA==
+Peer 1088171646 authorized with key g4gbGsZX5YvUA6pFcIZisA==
+Game Started
+Peer 1654034673 Disconnected
+Peer 1088171646 Disconnected
+Game Ended

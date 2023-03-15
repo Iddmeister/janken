@@ -1,0 +1,23 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+ERROR: Condition "!is_connected_to_host()" is true. Returned: FAILED
+   at: put_packet (modules/websocket/wsl_peer.cpp:243) - Condition "!is_connected_to_host()" is true. Returned: FAILED
+Connected to Web Server
+Authenticating Server
+Loading Map 0
+Success
+Created server on port 10000
+Peer 1575035451 Connected
+Attempting to Authorize Player T+TlhTOqchFDsjZKhbWf9A==
+Peer 1575035451 authorized with key T+TlhTOqchFDsjZKhbWf9A==
+Peer 1479939876 Connected
+Attempting to Authorize Player jl1fv33HRW3d1S5HJNr00Q==
+Peer 1479939876 authorized with key jl1fv33HRW3d1S5HJNr00Q==
+Game Started
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerDied (res://Maps/Main/MainMap.gdc:112) - Invalid get index '0' (on base: 'Dictionary').
+Peer 1575035451 Disconnected
+Game Ended

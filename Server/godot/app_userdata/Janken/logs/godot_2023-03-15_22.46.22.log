@@ -1,0 +1,73 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+ERROR: Condition "!is_connected_to_host()" is true. Returned: FAILED
+   at: put_packet (modules/websocket/wsl_peer.cpp:243) - Condition "!is_connected_to_host()" is true. Returned: FAILED
+Connected to Web Server
+Authenticating Server
+Loading Map 0
+Success
+Created server on port 10000
+Peer 1886527119 Connected
+Peer 967032389 Connected
+Attempting to Authorize Player BhyTdk0gpxy1Dace5nUA0w==
+Peer 1886527119 authorized with key BhyTdk0gpxy1Dace5nUA0w==
+Attempting to Authorize Player wuvW7MioT1cPWGQc64kpiQ==
+Peer 967032389 authorized with key wuvW7MioT1cPWGQc64kpiQ==
+Game Started
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+{idd:{deaths:0, dots:0, kills:0}, test:{deaths:0, dots:0, kills:0}}
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+Peer 967032389 Disconnected
+Peer 1886527119 Disconnected
+Game Ended

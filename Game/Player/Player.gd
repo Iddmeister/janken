@@ -2,7 +2,7 @@ extends Area2D
 
 class_name Player
 
-signal died()
+signal died(killer)
 
 var Rock = preload("res://Player/Rock.tscn")
 var Paper = preload("res://Player/Paper.tscn")
@@ -120,8 +120,8 @@ func _physics_process(delta: float) -> void:
 	else:
 		syncPosition(delta)
 	
-puppetsync func kill():
-	emit_signal("died")
+puppetsync func kill(killer:String):
+	emit_signal("died", killer)
 	var d = DeathDebris.instance()
 	get_parent().add_child(d)
 	d.global_position = global_position
@@ -169,7 +169,7 @@ func _on_Player_area_entered(area: Area2D) -> void:
 		
 		match outcome:
 			WIN:
-				area.rpc("kill")
+				area.rpc("kill", name)
 			DRAW:
 				if not (area in knockedBy):
 					knockedBy.append(area)

@@ -1,0 +1,210 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+ERROR: Condition "!is_connected_to_host()" is true. Returned: FAILED
+   at: put_packet (modules/websocket/wsl_peer.cpp:243) - Condition "!is_connected_to_host()" is true. Returned: FAILED
+Connected to Web Server
+Authenticating Server
+Loading Map 0
+Success
+Created server on port 10000
+Peer 1830015223 Connected
+Peer 1168669488 Connected
+Attempting to Authorize Player ruAvmDh4f2UDP5V5e4PmMA==
+Peer 1830015223 authorized with key ruAvmDh4f2UDP5V5e4PmMA==
+Attempting to Authorize Player s0q4Gv+2QZs8pWtF1WsaqQ==
+Peer 1168669488 authorized with key s0q4Gv+2QZs8pWtF1WsaqQ==
+Game Started
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+ERROR: rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+   at: rpcp (core/io/multiplayer_api.cpp:686) - rpc() aborted in script local call:  - 'Area2D(Collectible.gd)::collected': Cannot convert argument 1 from String to int..
+Game Ended

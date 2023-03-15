@@ -195,23 +195,13 @@ server.on("connection", client => {
                             availablePorts.push(client.game.port)
 
                             if (data.clean) {
+
+                                console.log(data.stats)
+
                                 client.game.sendStatistics(data.stats)
 
-                                let players = {team1:{}, team2:{}}
-                                
-                                for (let player of Object.keys(client.game.players)) {
+                                database.saveGame(data.stats)
 
-                                    players[client.game.players[player].team === 0 ? "team1" : "team2"][client.game.players[player].type] = player
-
-                                }
-
-                                console.log(players)
-                                
-                                // database.saveGame(client.game.map, data.stats[0], data.stats[1], players).then(() => {
-                                //     console.log("Success")
-                                // }).catch(err => {
-                                //     console.log(`Error Saving Game to Table ${err}`)
-                                // })
 
                             }
 

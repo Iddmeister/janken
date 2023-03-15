@@ -1,0 +1,54 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+ERROR: Condition "!is_connected_to_host()" is true. Returned: FAILED
+   at: put_packet (modules/websocket/wsl_peer.cpp:243) - Condition "!is_connected_to_host()" is true. Returned: FAILED
+Connected to Web Server
+Authenticating Server
+Loading Map 0
+Success
+Created server on port 10000
+Peer 301384005 Connected
+Attempting to Authorize Player CiwWG/6/1qXuJ5O2kRsQOg==
+Peer 301384005 authorized with key CiwWG/6/1qXuJ5O2kRsQOg==
+Peer 471078859 Connected
+Attempting to Authorize Player AkIpHPp1upHcPg7zJ79PJA==
+Peer 471078859 authorized with key AkIpHPp1upHcPg7zJ79PJA==
+Game Started
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '1' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '1' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '0' (on base: 'Dictionary').
+   at: playerScoredPoints (res://Maps/Main/MainMap.gdc:137) - Invalid get index '0' (on base: 'Dictionary').
+Game Ended

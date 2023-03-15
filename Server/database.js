@@ -157,6 +157,30 @@ async function retrievePlayerGames(username, start=0, end=5) {
 
 }
 
+async function saveGame(stats) {
+
+    return new Promise((resolve, reject) => {
+        database.query(`INSERT INTO gameInfo (map, team1Score, team2Score) VALUES (${stats.map}, ${stats.team1Score}, ${stats.team2Score}); SELECT LAST_INSERT_ID();`, (err, result) => {
+            if (err) throw err;
+            
+            let gameID = result[1][0]["LAST_INSERT_ID()"]
+
+            for (let player of Object.keys(stats.players)) {
+
+                let playerStats = ""
+
+                Object.keys(stats.players[player]).forEach((stat, index) => {
+                    playerStats += `${stat}=${stats.players[player][stat]}${index == Object.keys(stats.players[player]).length-1 ? "" : ","}`
+                })
+
+                database.query(`INSERT INTO gameStats SET gameID = ${gameID}, player = "${player}", ${playerStats}`)
+
+            }
+        })
+    })
+
+}
+
   
 database.connect(function(err) {
     if (err) {
@@ -219,10 +243,9 @@ database.connect(function(err) {
 
         database.query(setup, (err, result) => {
             if (err) throw err;
-            console.log("Database Setup Complete")
-        })
+            console.log("Database Setup Complete")        })
 
     }
   });
 
-module.exports = {loginPlayer, registerPlayer, retrievePlayerStats, retrievePlayerGames}
+module.exports = {loginPlayer, registerPlayer, retrievePlayerStats, retrievePlayerGames, saveGame}
