@@ -351,3 +351,17 @@ margin_right = 357.0
 margin_bottom = 321.0
 text = "LOADING..."
 uppercase = true
+
+[node name="Error" type="CenterContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Message" type="Label" parent="Error"]
+margin_left = 182.0
+margin_top = 287.0
+margin_right = 426.0
+margin_bottom = 321.0
+custom_colors/font_color = Color( 1, 0.121569, 0.121569, 1 )
+text = "No Player Statistics"
+uppercase = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Screens/OnlinePlay/BattleLog/BattleLog.gd" type="Script" id=1]
 [ext_resource path="res://Misc/Fonts/SquarleyEdited.otf" type="DynamicFontData" id=2]
@@ -6,6 +6,16 @@
 [sub_resource type="DynamicFont" id=1]
 size = 32
 font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.203922, 0.368627, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0.203922, 1, 1 )
 
 [node name="BattleLog" type="Control"]
 anchor_right = 1.0
@@ -40,11 +50,21 @@ scroll_horizontal_enabled = false
 [node name="Battles" type="VBoxContainer" parent="ScrollContainer"]
 unique_name_in_owner = true
 margin_right = 598.0
+margin_bottom = 26.0
 size_flags_horizontal = 3
 
-[node name="Bottom" type="Control" parent="ScrollContainer/Battles"]
-margin_right = 598.0
+[node name="ShowMore" type="Button" parent="ScrollContainer/Battles"]
+margin_left = 199.0
+margin_right = 399.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 200, 0 )
+focus_mode = 0
+size_flags_horizontal = 4
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 4 )
+text = "SHOW MORE"
 
-[node name="BottomNotifier" type="VisibilityNotifier2D" parent="ScrollContainer/Battles/Bottom"]
-
-[connection signal="screen_entered" from="ScrollContainer/Battles/Bottom/BottomNotifier" to="." method="_on_BottomNotifier_screen_entered"]
+[connection signal="pressed" from="ScrollContainer/Battles/ShowMore" to="." method="_on_ShowMore_pressed"]

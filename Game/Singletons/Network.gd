@@ -68,7 +68,8 @@ func connection_established(_proto = ""):
 	emit_signal("connection_established")
 	
 func sendData(data:Dictionary):
-	client.get_peer(1).put_packet(JSON.print(data).to_utf8())
+	if connected:
+		client.get_peer(1).put_packet(JSON.print(data).to_utf8())
 
 func data_recieved():
 	emit_signal("data_recieved", JSON.parse(client.get_peer(1).get_packet().get_string_from_utf8()).result)

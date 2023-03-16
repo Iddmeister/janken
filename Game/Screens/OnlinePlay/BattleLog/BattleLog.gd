@@ -3,7 +3,7 @@ extends Control
 var PastBattle = preload("res://Screens/OnlinePlay/BattleLog/PastBattle.tscn")
 var username:String
 
-signal reachedBottom()
+signal showMore()
 
 func _ready() -> void:
 	Network.connect("data_recieved", self, "dataRecieved")
@@ -23,7 +23,7 @@ func requestBattles(_username:String):
 	
 func clearBattles():
 	for battle in $ScrollContainer/Battles.get_children():
-		if battle.name != "Bottom":
+		if battle.name != "ShowMore":
 			battle.queue_free()
 	
 func dataRecieved(data:Dictionary):
@@ -39,16 +39,18 @@ func dataRecieved(data:Dictionary):
 
 func addBattle(id:String, stats:Dictionary):
 	print(stats)
-	if $ScrollContainer/Battles.has_node(id):
+	if $"%Battles".has_node(id):
 		return
 	var b = PastBattle.instance()
 	b.name = id
 	$"%Battles".add_child(b)
 	b.setup(stats, stats.players[username].team)
+	$"%Battles".move_child($"%Battles/ShowMore", $"%Battles".get_child_count()-1)
 
-func _on_BottomNotifier_screen_entered() -> void:
-	emit_signal("reachedBottom")
-	Network.sendData({"type":"battleLog", "username":username, "start":$ScrollContainer/Battles.get_child_count()-1, "end":$ScrollContainer/Battles.get_child_count()+4})
+func playerSelected(_username:String):
+	$"../../../".requestPlayerStats(_username)
 
-func playerSelected(username:String):
-	$"../../../".requestPlayerStats(username)
+
+func _on_ShowMore_pressed() -> void:
+	emit_signal("showMore")
+	Network.sendData({"type":"battleLog", "username":username, "start":$"%Battles".get_child_count()-1, "end":$"%Battles".get_child_count()+4})

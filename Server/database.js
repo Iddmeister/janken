@@ -93,7 +93,7 @@ async function retrievePlayerStats(username) {
                     if (err) throw err;
         
                     if (result.length <= 0) {
-                        reject("No Games Found")
+                        reject("No Games Played")
                     } else {
         
                         for (let game of result) {
@@ -190,18 +190,6 @@ database.connect(function(err) {
         console.log("Connected to Database");
 
         var setup = `
-
-        CREATE TABLE IF NOT EXISTS types (
-
-            type INT AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(255)
-
-        );
-
-        INSERT INTO types (name) VALUES ('rock');
-        INSERT INTO types (name) VALUES ('paper');
-        INSERT INTO types (name) VALUES ('scissors');
-
         
         CREATE TABLE IF NOT EXISTS accounts (
 

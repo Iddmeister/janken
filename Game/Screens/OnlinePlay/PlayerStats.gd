@@ -1,5 +1,12 @@
 extends Control
 
+func showError(error:String):
+	$CenterContainer.hide()
+	$Stats.hide()
+	$Error/Message.text = error
+	$Error.show()
+	
+
 func setUsername(username:String):
 	$"%Username".text = username
 	
@@ -8,6 +15,7 @@ func clearStats():
 
 func setStats(stats:Dictionary):
 	
+	$Error.hide()
 	$CenterContainer.hide()
 	$Stats.show()
 	$"%CurrentRank".text = String(stats.currentRank if stats.currentRank else 0)
@@ -15,7 +23,7 @@ func setStats(stats:Dictionary):
 	$"%GamesPlayed".text = String(stats.games if stats.games else 0)
 	$"%Winrate".text = String(floor(float(stats.wins)/stats.games*100))
 	$"%AverageDots".text = String(floor(float(stats.dots)/stats.games))
-	$"%KillVDeath".value = float(stats.kills)/stats.deaths
+	$"%KillVDeath".value = float(stats.kills)/(stats.deaths if stats.deaths != 0 else 1)
 	
 	var highest:String = "0"
 	

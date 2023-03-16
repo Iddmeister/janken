@@ -10,6 +10,8 @@ func dataRecieved(data:Dictionary):
 	match data.type:
 		"playerStats":
 			statsControl.setStats(data.stats)
+		"playerStatsFailed":
+			statsControl.showError(data.error)
 
 func requestPlayerStats(username:String):
 	Network.sendData({"type":"playerStats", "username":username})

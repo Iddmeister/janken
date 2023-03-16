@@ -121,7 +121,7 @@ server.on("connection", client => {
                 database.retrievePlayerStats(data.username).then((stats) => {
                     client.sendData({type:"playerStats", stats:stats})
                 }).catch(err => {
-                    client.sendData({type:"playerStatsFailed", reason:err})
+                    client.sendData({type:"playerStatsFailed", error:err})
                 })
 
                 break;
