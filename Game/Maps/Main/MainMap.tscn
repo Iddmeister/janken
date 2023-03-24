@@ -10,7 +10,7 @@
 
 [node name="MainMap" instance=ExtResource( 1 )]
 script = ExtResource( 7 )
-matchTime = 3
+matchTime = 5
 
 [node name="Line2" type="Line2D" parent="GridPath" index="0"]
 show_behind_parent = true

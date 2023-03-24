@@ -42,12 +42,13 @@ class Game {
         this.port = port
         this.server = null
         this.client = null
+
     }
 
     sendStatistics(stats) {
 
-        this.team1.sendData({type:"matchStats", allyPoints:stats[0], enemyPoints:stats[1], rankChange:10, newRank:500})
-        this.team2.sendData({type:"matchStats", allyPoints:stats[1], enemyPoints:stats[0], rankChange:10, newRank:500})
+        this.team1.sendData({type:"matchStats", allyPoints:stats.team1Score, enemyPoints:stats.team2Score, rankChange:10, newRank:500})
+        this.team2.sendData({type:"matchStats", allyPoints:stats.team2Score, enemyPoints:stats.team1Score, rankChange:10, newRank:500})
 
     }
 
@@ -284,8 +285,6 @@ class Queue {
 
         }, delay)
     }
-
-
 
     addTeam(team) {
 

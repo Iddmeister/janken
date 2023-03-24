@@ -181,6 +181,17 @@ async function saveGame(stats) {
 
 }
 
+async function changeRank(username, rankChange) {
+
+    return new Promise((resolve, reject) => {
+        database.query(`UPDATE accounts SET currentRank = GREATEST(currentRank + ${rankChange}, 0) WHERE username = '${username}'`, (err, result) => {
+            if (err) throw err
+            console.log(result)
+            resolve()
+        })
+    })
+
+}
   
 database.connect(function(err) {
     if (err) {
@@ -236,4 +247,4 @@ database.connect(function(err) {
     }
   });
 
-module.exports = {loginPlayer, registerPlayer, retrievePlayerStats, retrievePlayerGames, saveGame}
+module.exports = {loginPlayer, registerPlayer, retrievePlayerStats, retrievePlayerGames, saveGame, changeRank}

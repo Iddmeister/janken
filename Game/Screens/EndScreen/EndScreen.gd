@@ -35,6 +35,5 @@ func setup(allyPoints:int, enemyPoints:int, change:int, new:int):
 func _on_Rematch_toggled(button_pressed: bool) -> void:
 	pass # Replace with function body.
 
-
 func _on_Continue_pressed() -> void:
 	emit_signal("returnToLobby")

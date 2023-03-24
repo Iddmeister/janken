@@ -1,0 +1,20 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Error Loading Save Data, code: 7
+Creating Save File
+Running
+Starting Server
+Attempting to Connect to Server
+Connected to Web Server
+Authenticating Server
+Loading Map 0
+Success
+Created server on port 10000
+Peer 776640639 Connected
+Peer 751299359 Connected
+Attempting to Authorize Player KJvwjgu2YgSw/SvD9mVf/g==
+Peer 751299359 authorized with key KJvwjgu2YgSw/SvD9mVf/g==
+Attempting to Authorize Player XU6Qu0pkY8m4k3t2NPUXoA==
+Peer 776640639 authorized with key XU6Qu0pkY8m4k3t2NPUXoA==
+Game Started
+Game Ended
