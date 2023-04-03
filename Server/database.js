@@ -2,7 +2,6 @@ var mysql = require("mysql")
 
 var database = mysql.createConnection({
     host: "localhost",
-    port: 33060,
     user: "root",
     password: process.env.DBPASS,
     database: "janken",
