@@ -195,9 +195,6 @@ server.on("connection", client => {
                             availablePorts.push(client.game.port)
 
                             if (data.clean) {
-
-                                console.log(data.stats)
-
                                 client.game.sendStatistics(data.stats)
 
                                 database.saveGame(data.stats)
