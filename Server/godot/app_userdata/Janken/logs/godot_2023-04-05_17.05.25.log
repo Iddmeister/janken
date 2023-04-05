@@ -1,0 +1,2182 @@
+Godot Engine v3.5.stable.official.991bb6ac7 - https://godotengine.org
+ 
+Running
+Starting Server
+Attempting to Connect to Server
+Connected to Web Server
+Authenticating Server
+Loading Map 0
+Success
+Created server on port 10000
+Peer 860526345 Connected
+Attempting to Authorize Player qnoOwOnyF+kRAW21z9YY6w==
+Peer 860526345 authorized with key qnoOwOnyF+kRAW21z9YY6w==
+Game Started
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(1, 0)' (on base: 'Dictionary').
+SCRIPT ERROR: Invalid get index '(-1, 0)' (on base: 'Dictionary').
+   at: Player.movement (res://Player/Player.gdc:61) - Invalid get index '(-1, 0)' (on base: 'Dictionary').

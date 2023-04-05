@@ -19,7 +19,7 @@ var maps:Dictionary = {0:"res://Maps/Main/MainMap.tscn"}
 #Contains map and port
 var matchInfo:Dictionary = {}
 
-var swipeSensitivity:float = 3
+var swipeSensitivity:float = 20
 var swiped:bool = false
 
 func _unhandled_input(event: InputEvent) -> void:

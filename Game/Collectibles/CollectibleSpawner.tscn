@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Collectibles/CollectibleSpawner.gd" type="Script" id=1]
 [ext_resource path="res://Misc/Loop.png" type="Texture" id=2]
-[ext_resource path="res://Collectibles/Dot/Dot.tscn" type="PackedScene" id=3]
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -127,10 +126,6 @@ script = ExtResource( 1 )
 [node name="Animation" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
 anims/Spawn = SubResource( 1 )
-
-[node name="Dot" type="Node2D" parent="."]
-
-[node name="Dot" parent="Dot" instance=ExtResource( 3 )]
 
 [node name="Circles" type="Node2D" parent="."]
 

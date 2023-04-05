@@ -189,9 +189,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Navigation/TeamOptions"]
-margin_left = 233.0
+margin_left = 217.0
 margin_top = 260.0
-margin_right = 375.0
+margin_right = 359.0
 margin_bottom = 348.0
 theme = SubResource( 18 )
 custom_constants/separation = 20
@@ -219,9 +219,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Navigation/JoinDialog/CenterContainer"]
-margin_left = 204.0
+margin_left = 188.0
 margin_top = 287.0
-margin_right = 404.0
+margin_right = 388.0
 margin_bottom = 321.0
 
 [node name="Status" type="Label" parent="Navigation/JoinDialog/CenterContainer/VBoxContainer"]
@@ -273,9 +273,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Players" type="HBoxContainer" parent="Navigation/Lobby/CenterContainer"]
-margin_left = 304.0
+margin_left = 288.0
 margin_top = 304.0
-margin_right = 304.0
+margin_right = 288.0
 margin_bottom = 304.0
 custom_constants/separation = 40
 alignment = 1
@@ -339,8 +339,8 @@ text = "READY"
 anchor_right = 1.0
 
 [node name="Panel" type="PanelContainer" parent="Navigation/Lobby/TeamCode"]
-margin_left = 301.0
-margin_right = 307.0
+margin_left = 285.0
+margin_right = 291.0
 margin_bottom = 6.0
 custom_styles/panel = SubResource( 23 )
 

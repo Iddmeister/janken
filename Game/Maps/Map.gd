@@ -21,7 +21,6 @@ var game
 signal gameEnded(stats)
 
 func _ready() -> void:
-	
 	updateClock()
 	regenChamber.map = self
 	
@@ -33,6 +32,7 @@ func _ready() -> void:
 	spawnDots(placed)
 	
 	get_tree().set_group("Spawner", "map", self)
+	
 	
 func spawnPlayers():
 	for player in game.players.keys():

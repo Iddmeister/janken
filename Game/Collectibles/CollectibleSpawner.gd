@@ -23,8 +23,6 @@ func _ready() -> void:
 puppetsync func spawn():
 	if $Collectible.get_child_count() > 0:
 		return
-	if $Dot.get_child_count() > 0:
-		$Dot.get_child(0).queue_free()
 	$Animation.play("Spawn")
 	
 puppetsync func addCollectible():
