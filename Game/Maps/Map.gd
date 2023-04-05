@@ -129,7 +129,7 @@ func playerDied(killer:String, player:String):
 	regenChamber.regenPlayer(player)
 	
 puppetsync func respawnPlayer(username:String):
-	var player = createPlayer(username, game.players[username].type, game.players[username].team, regenChamber.get_node(String(game.players[username].team)).global_position, Vector2(-1, 0), game.players[username].bot)
+	var _player = createPlayer(username, game.players[username].type, game.players[username].team, regenChamber.get_node(String(game.players[username].team)).global_position, Vector2(-1, 0), game.players[username].bot)
 
 func updatePoints():
 	if not is_network_master():

@@ -117,7 +117,7 @@ func _physics_process(delta: float) -> void:
 		if bot:
 			bot.update(delta)
 		movement(delta)
-		rpc_unreliable("updatePosition", position, moveDir)
+		rpc("updatePosition", position, moveDir)
 	else:
 		syncPosition(delta)
 	
