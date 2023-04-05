@@ -15,6 +15,9 @@ onready var gridPath = $GridPath
 onready var regenChamber = $RegenChamber
 onready var pointContainer = $UI/Info/Points
 onready var clock = $UI/Info/Time
+onready var loading: Label = $RegenChamber/Loading
+onready var gameOver: Label = $RegenChamber/GameOver
+onready var readyText: Label = $RegenChamber/Ready
 
 var game
 
@@ -68,21 +71,21 @@ puppetsync func spawnDots(exlude:PoolVector2Array=[]):
 puppetsync func gameReady():
 	if is_network_master():
 		$StartStall.start()
-	$Loading.hide()
-	$Ready.show()
+	loading.hide()
+	readyText.show()
 	
 puppetsync func startGame():
 	print("Game Started")
-	$Ready.text = "Start"
+	readyText.text = "Start"
 	gameStarted = true
 	$ReadyDelay.start()
 	$Time.start()
 	
 puppetsync func endGame():
 	gameFinished = true
-	$Loading.hide()
-	$Ready.hide()
-	$GameOver.show()
+	loading.hide()
+	readyText.hide()
+	gameOver.show()
 	$EndDelay.start()
 	#get_tree().paused = true
 	
@@ -159,7 +162,7 @@ func _on_StartStall_timeout() -> void:
 
 
 func _on_ReadyDelay_timeout() -> void:
-	$Ready.hide()
+	readyText.hide()
 
 func updateClock():
 	clock.text = "%02d:%02d" % [floor(matchTime/60), matchTime-(60*floor(matchTime/60))]

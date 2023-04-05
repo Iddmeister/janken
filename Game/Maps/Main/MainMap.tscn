@@ -253,4 +253,5 @@ points = PoolVector2Array( 336, 256, 320, 256, 304, 256, 288, 256, 272, 256 )
 default_color = Color( 1, 1, 1, 0.435294 )
 
 [node name="Camera" parent="." index="10"]
-zoom = Vector2( 0.7, 0.7 )
+position = Vector2( 304, 288 )
+zoom = Vector2( 0.75, 0.75 )
