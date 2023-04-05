@@ -101,8 +101,16 @@ func createPlayer(username:String, type:int, team:int, pos:Vector2, dir:Vector2=
 	p.map = self
 	p.startDirection = dir
 	p.global_position = pos
-	if get_tree().network_peer and (not is_network_master()):
-		p.setEnemy(not game.players[game.me].team == game.players[username].team)
+	
+	if (get_tree().network_peer and (not is_network_master())):
+
+		if game.me == username:
+			p.get_node("Indicator").color = p.selfColour
+		elif game.players[game.me].team == game.players[username].team:
+			p.get_node("Indicator").color = p.allyColour
+		else:
+			p.get_node("Indicator").color = p.enemyColour
+		
 	$Players.add_child(p)
 	p.connect("died", self, "playerDied", [username])
 	return p

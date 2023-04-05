@@ -1,6 +1,21 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Game/RespawningPlayer.gd" type="Script" id=1]
 
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/Square.png-379fa46459a7ec70b4397e1bd2f7910d.stex"
+
 [node name="RespawningPlayer" type="Node2D"]
 script = ExtResource( 1 )
+enemyColour = Color( 1, 0.160784, 0.160784, 1 )
+allyColour = Color( 0.129412, 0.592157, 1, 1 )
+selfColour = Color( 0.164706, 1, 0.176471, 1 )
+
+[node name="Graphics" type="Node2D" parent="."]
+
+[node name="Indicator" type="Polygon2D" parent="."]
+position = Vector2( 0, -16 )
+scale = Vector2( 0.2, 0.1 )
+texture = SubResource( 1 )
+polygon = PoolVector2Array( -40, -40, -40, -60, 40, -60, 40, -40, 0, 40 )

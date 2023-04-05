@@ -21,12 +21,15 @@ onready var moveDir:Vector2 = startDirection
 export var speed:float = 150
 export var drawKnockPower:float = 800
 export var knockDeceleration:float = 0.2
-export var enemyColour:Color = Color("fe6d6d")
+export var enemyColour:Color
+export var allyColour:Color
+export var selfColour:Color
 var currentKnockSpeed:float = 0
 var knockedBy:Array = []
 
 var gridPath
 var map
+var bot:bool = false
 
 # Last router you passed through
 onready var lastRouter:Vector2 = position
@@ -39,7 +42,7 @@ export var syncSpeed:float = 0.5
 var validMoveDirections = [Vector2(-1, 0), Vector2(1, 0), Vector2(0, 1), Vector2(0, -1)]
 
 func _ready() -> void:
-	global_rotation = startDirection.angle()
+	$Graphics.global_rotation = startDirection.angle()
 	match type:
 		ROCK:
 			$Graphics.add_child(Rock.instance())
@@ -47,11 +50,6 @@ func _ready() -> void:
 			$Graphics.add_child(Paper.instance())
 		SCISSORS:
 			$Graphics.add_child(Scissors.instance())
-			
-func setEnemy(isEnemy:bool=false):
-	modulate = enemyColour if isEnemy else Color(1, 1, 1, 1)
-	pass
-			
 			
 func changeAimDirection(dir:Vector2):
 	if dir in validMoveDirections:
@@ -79,7 +77,7 @@ func movement(delta:float):
 			moveDir = aimDir
 			lastRouter = nextRouter
 			nextRouter = gridPath.paths[lastRouter][moveDir]
-			global_rotation = moveDir.angle()
+			$Graphics.global_rotation = moveDir.angle()
 	
 	if (nextRouter-position).length() <= nextMove:
 		nextMove -= (nextRouter-position).length()
@@ -95,19 +93,19 @@ func movement(delta:float):
 			
 	position += nextMove*moveDir
 	
-	rotation = lerp_angle(rotation, moveDir.angle(), 0.35*delta*60)
+	$Graphics.global_rotation = lerp_angle($Graphics.global_rotation, moveDir.angle(), 0.35*delta*60)
 	
 	
 puppet func updatePosition(pos:Vector2, dir:Vector2):
 	
 	actualPos = pos
 	if dir == moveDir*-1:
-			rotation = dir.angle()
+			$Graphics.global_rotation = dir.angle()
 	moveDir = dir
 	
 func syncPosition(delta:float):
 	position = position.linear_interpolate(actualPos, syncSpeed*delta*60)
-	rotation = lerp_angle(rotation, moveDir.angle(), 0.35*delta*60)
+	$Graphics.global_rotation = lerp_angle($Graphics.global_rotation, moveDir.angle(), 0.35*delta*60)
 
 func _physics_process(delta: float) -> void:
 	

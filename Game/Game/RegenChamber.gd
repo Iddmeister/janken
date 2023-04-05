@@ -53,8 +53,17 @@ puppetsync func regenPlayer(player:String):
 	p.speed = moveSpeed
 	p.path = path
 	p.position = path[0]
-	if (not is_network_master()):
-		p.setEnemy(not (map.game.players[map.game.me].team == map.game.players[player].team))
+	
+	
+	if (get_tree().network_peer and (not is_network_master())):
+
+		if map.game.me == player:
+			p.get_node("Indicator").color = p.selfColour
+		elif map.game.players[map.game.me].team == map.game.players[player].team:
+			p.get_node("Indicator").color = p.allyColour
+		else:
+			p.get_node("Indicator").color = p.enemyColour
+	
 	$Players.add_child(p)
 	
 	if map:

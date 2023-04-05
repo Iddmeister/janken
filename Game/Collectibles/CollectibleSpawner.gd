@@ -6,7 +6,6 @@ export var collectible:PackedScene setget setCollectible
 export var customColour:Color = Color(1, 1, 1, 1)
 var map
 		
-
 func setCollectible(val):
 	collectible = val
 	if collectible and Engine.is_editor_hint():
@@ -30,7 +29,7 @@ puppetsync func spawn():
 	
 puppetsync func addCollectible():
 	var c = collectible.instance()
-	c.connect("collected", map, "addPoints")
+	c.connect("collected", map, "playerScoredPoints")
 	$Collectible.add_child(c)
 	
 func finishedTell():

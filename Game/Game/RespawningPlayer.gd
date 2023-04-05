@@ -7,7 +7,9 @@ var graphics:Dictionary = {
 }
 
 var speed:float = 200
-export var enemyColour:Color = Color("fe6d6d")
+export var enemyColour:Color
+export var allyColour:Color
+export var selfColour:Color
 
 var exiting:bool = false
 var exitAngle:float
@@ -16,17 +18,13 @@ signal finished()
 
 var path:PoolVector2Array
 
-func setEnemy(isEnemy:bool=false):
-	modulate = enemyColour if isEnemy else Color(1, 1, 1, 1)
-	pass
-
 func setType(type:int):
-	add_child(graphics[type].instance())
+	$Graphics.add_child(graphics[type].instance())
 
 func _physics_process(delta: float) -> void:
 	
 	if exiting:
-		rotation = lerp_angle(rotation, exitAngle, 0.3*delta*60)
+		$Graphics.global_rotation = lerp_angle($Graphics.global_rotation, exitAngle, 0.3*delta*60)
 	
 	if path.empty():
 		return
@@ -41,4 +39,4 @@ func _physics_process(delta: float) -> void:
 			position += (path[0]-position).normalized()*remainingDist
 	else:
 		position += (path[0]-position).normalized()*speed*delta
-		rotation = lerp_angle(rotation, (path[0]-position).angle(), 0.3*delta*60)
+		$Graphics.global_rotation = lerp_angle($Graphics.global_rotation, (path[0]-position).angle(), 0.3*delta*60)
