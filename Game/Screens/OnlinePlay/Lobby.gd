@@ -66,6 +66,9 @@ func _on_Copy_pressed() -> void:
 
 
 func _on_LeaveTeam_pressed() -> void:
+	leaveTeam()
+	
+func leaveTeam():
 	for player in playersContainer.get_children():
 		player.queue_free()
 	queueStatus.get_node("Queue").hide()

@@ -38,7 +38,6 @@ func dataRecieved(data:Dictionary):
 			$Error.show()
 
 func addBattle(id:String, stats:Dictionary):
-	print(stats)
 	if $"%Battles".has_node(id):
 		return
 	var b = PastBattle.instance()

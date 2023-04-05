@@ -107,7 +107,11 @@ func dataRecieved(data:Dictionary):
 			
 			var newPlayers = data.matchInfo.players
 			for player in newPlayers.keys():
-				players[player] = {"team":newPlayers[player].team, "type":newPlayers[player].type, "id":-1, "key":newPlayers[player].key}
+				players[player] = {"team":newPlayers[player].team, "type":newPlayers[player].type, "bot":newPlayers[player].bot}
+				
+				if not players[player].bot:
+					players[player].id = -1
+					players[player].key = newPlayers[player].key
 			
 			loadMap(matchInfo.map)
 			map.spawnPlayers()
@@ -204,7 +208,7 @@ func playerAuthorized(player:String, id:int):
 			#Send all player data
 			var data = {"players":{}, "map":matchInfo.map}
 			for p in players.keys():
-				data.players[p] = {"team":players[p].team, "type":players[p].type}
+				data.players[p] = {"team":players[p].team, "type":players[p].type, "bot":players[p].bot}
 			rpc_id(playerID, "playerJoined", player, data)
 		else:
 			#Only send player who joined data
@@ -214,6 +218,8 @@ func playerAuthorized(player:String, id:int):
 	var test:int = 0
 	
 	for p in players.keys():
+		if players[p].bot:
+			continue
 		if not players[p].id == -1:
 			test += 1
 	if test >= 2:

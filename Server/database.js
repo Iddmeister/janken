@@ -1,4 +1,5 @@
 var mysql = require("mysql")
+var objects = require("./objects")
 
 var database = mysql.createConnection({
     host: "127.0.0.1",
@@ -13,7 +14,7 @@ function retrieveAccount(username) {
         database.query(`SELECT * FROM accounts WHERE username = ${mysql.escape(username)}`, (err, result) => {
             if (err) throw err;
             if (result.length <= 0) {
-                reject()
+                reject("Account Doesn't Exist")
             } else {
                 resolve(result[0])
             }
@@ -24,6 +25,12 @@ function retrieveAccount(username) {
 async function registerPlayer(username, password) {
     return new Promise((resolve, reject) => {
         
+        console.log(objects.botUsernames)
+        if (objects.botUsernames.includes(username)) {
+             reject("Username Taken")
+             return
+        }
+
         database.query(`SELECT 1 FROM accounts WHERE username = ${mysql.escape(username)}`, (err, result) => {
             if (err) throw err;
             if (result.length > 0) {

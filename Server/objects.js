@@ -11,6 +11,8 @@ const serverPCK = "GameServer/server.pck"
 const runArgs = process.argv.slice(2);
 const debug = (runArgs.length > 0 && runArgs[0] == "debug")
 
+botUsernames = ["Alex", "Gloria", "Marty", "Melman", "Julien", "Maurice"]
+
 class Game {
 
     generatePlayerKey() {
@@ -23,6 +25,21 @@ class Game {
         return id
     }
 
+    addBots(team, tNumber=1) {
+
+        let types = [0, 1, 2]
+
+        for (let player of Object.keys(team.players)) {
+            types.splice(types.indexOf(team.players[player].type), 1)
+        }
+
+        for (let missingType of types) {
+            let index = Math.floor(Math.random()*this.botUsernames.length)
+            this.players[this.botUsernames[index]] = {type:missingType, team:tNumber, bot:true}
+            this.botUsernames.splice(index, 1)
+        }
+    }
+
     constructor(id, team1, team2, map, port) {
         this.id = id
         this.team1 = team1
@@ -30,13 +47,20 @@ class Game {
         this.team2 = team2
         team2.game = this
         this.players = {}
+        this.botUsernames = botUsernames.splice(0)
+
 
         for (let player of Object.keys(team1.players)) {
-            this.players[player] = {type:team1.players[player].type, team:0, key:this.generatePlayerKey()}
+            this.players[player] = {type:team1.players[player].type, team:0, key:this.generatePlayerKey(), bot:false}
         }
         for (let player of Object.keys(team2.players)) {
-            this.players[player] = {type:team2.players[player].type, team:1, key:this.generatePlayerKey()}
+            this.players[player] = {type:team2.players[player].type, team:1, key:this.generatePlayerKey(), bot:false}
         }
+
+        this.addBots(team1, 0)
+        this.addBots(team2, 1)
+
+        console.log(this.players)
 
         this.map = map
         this.port = port
@@ -297,4 +321,4 @@ class Queue {
     }
 }
 
-module.exports = {Game, Player, Team, Queue}
+module.exports = {Game, Player, Team, Queue, botUsernames}

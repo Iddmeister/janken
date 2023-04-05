@@ -37,7 +37,7 @@ func _ready() -> void:
 func spawnPlayers():
 	for player in game.players.keys():
 		var startPosition = $StartPositions.get_node("%s%s" % [game.players[player].type, game.players[player].team])
-		createPlayer(player, startPosition.type, game.players[player].team, startPosition.global_position, startPosition.startDirection)
+		createPlayer(player, startPosition.type, game.players[player].team, startPosition.global_position, startPosition.startDirection, game.players[player].bot)
 		stats[player] = {"team":int(game.players[player].team)+1, "type":game.players[player].type, "kills":0, "deaths":0, "dots":0}
 
 puppetsync func spawnDots(exlude:PoolVector2Array=[]):
@@ -92,7 +92,7 @@ func playerInput(username:String, dir:Vector2):
 	if $Players.has_node(username):
 		$Players.get_node(username).changeAimDirection(dir)
 
-func createPlayer(username:String, type:int, team:int, pos:Vector2, dir:Vector2=Vector2(-1, 0)) -> Player:
+func createPlayer(username:String, type:int, team:int, pos:Vector2, dir:Vector2=Vector2(-1, 0), bot:bool=false) -> Player:
 	var p:Player = PlayerScene.instance()
 	p.name = username
 	p.team = team
@@ -101,6 +101,9 @@ func createPlayer(username:String, type:int, team:int, pos:Vector2, dir:Vector2=
 	p.map = self
 	p.startDirection = dir
 	p.global_position = pos
+	
+	if bot:
+		p.bot = Bot.new(p)
 	
 	if (get_tree().network_peer and (not is_network_master())):
 
@@ -123,7 +126,7 @@ func playerDied(killer:String, player:String):
 	regenChamber.regenPlayer(player)
 	
 puppetsync func respawnPlayer(username:String):
-	var player = createPlayer(username, game.players[username].type, game.players[username].team, regenChamber.get_node(String(game.players[username].team)).global_position)
+	var player = createPlayer(username, game.players[username].type, game.players[username].team, regenChamber.get_node(String(game.players[username].team)).global_position, Vector2(-1, 0), game.players[username].bot)
 
 func updatePoints():
 	if not is_network_master():

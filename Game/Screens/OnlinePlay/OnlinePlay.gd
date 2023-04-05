@@ -32,6 +32,7 @@ func returnToMenu() -> void:
 	hide()
 
 func _on_Logout_pressed() -> void:
+	$Navigation/Lobby.leaveTeam()
 	$"%BattleLog".clearBattles()
 	$"%PlayerStats".clearStats()
 	emit_signal("logout")

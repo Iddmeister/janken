@@ -206,6 +206,7 @@ server.on("connection", client => {
                                 let winningTeam = data.stats.team1Score > data.stats.team2Score ? 1 : 2
 
                                 Object.keys(client.game.players).forEach(player => {
+                                    if (client.game.players[player].bot) return
                                     database.changeRank(player, winningTeam == data.stats.players[player].team ? 10 : -5)
                                 })
 

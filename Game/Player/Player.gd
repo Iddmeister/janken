@@ -29,7 +29,7 @@ var knockedBy:Array = []
 
 var gridPath
 var map
-var bot:bool = false
+var bot:Bot
 
 # Last router you passed through
 onready var lastRouter:Vector2 = position
@@ -94,7 +94,7 @@ func movement(delta:float):
 	position += nextMove*moveDir
 	
 	$Graphics.global_rotation = lerp_angle($Graphics.global_rotation, moveDir.angle(), 0.35*delta*60)
-	
+
 	
 puppet func updatePosition(pos:Vector2, dir:Vector2):
 	
@@ -102,6 +102,7 @@ puppet func updatePosition(pos:Vector2, dir:Vector2):
 	if dir == moveDir*-1:
 			$Graphics.global_rotation = dir.angle()
 	moveDir = dir
+	
 	
 func syncPosition(delta:float):
 	position = position.linear_interpolate(actualPos, syncSpeed*delta*60)
@@ -113,6 +114,8 @@ func _physics_process(delta: float) -> void:
 		return
 	
 	if is_network_master():
+		if bot:
+			bot.update(delta)
 		movement(delta)
 		rpc_unreliable("updatePosition", position, moveDir)
 	else:
