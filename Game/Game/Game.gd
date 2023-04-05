@@ -216,13 +216,15 @@ func playerAuthorized(player:String, id:int):
 			rpc_id(playerID, "playerJoined", player, data)
 	
 	var test:int = 0
+	var total:int = 0
 	
 	for p in players.keys():
 		if players[p].bot:
 			continue
+		total += 1
 		if not players[p].id == -1:
 			test += 1
-	if test >= 2:
+	if test >= total:
 		map.rpc("gameReady")
 		
 puppet func playerJoined(player:String, data:Dictionary={}):

@@ -307,6 +307,13 @@ class Queue {
 
             }
 
+            if (Object.keys(this.queue).length == 1) {
+                if (Object.keys(this.queue[Object.keys(this.queue)[0]].team.players)[0] == "solo") {
+                    gameFoundCallback(this.queue[Object.keys(this.queue)[0]].team, new Team("hmmm"))
+                }
+            }
+            
+
         }, delay)
     }
 

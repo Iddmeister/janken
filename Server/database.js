@@ -25,7 +25,6 @@ function retrieveAccount(username) {
 async function registerPlayer(username, password) {
     return new Promise((resolve, reject) => {
         
-        console.log(objects.botUsernames)
         if (objects.botUsernames.includes(username)) {
              reject("Username Taken")
              return
@@ -193,7 +192,6 @@ async function changeRank(username, rankChange) {
     return new Promise((resolve, reject) => {
         database.query(`UPDATE accounts SET currentRank = GREATEST(currentRank + ${rankChange}, 0) WHERE username = '${username}'`, (err, result) => {
             if (err) throw err
-            console.log(result)
             resolve()
         })
     })
