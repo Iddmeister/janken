@@ -1,8 +1,13 @@
 require('dotenv').config();
 const crypto = require('crypto');
 const ws = require("ws")
+
 var database = require("./database")
-var {Game, Team, Player, Queue} = require("./objects")
+var {Queue} = require("./queue")
+var {Team} = require("./team")
+var {Player} = require("./player")
+var {Game} = require("./game")
+
 
 const runArgs = process.argv.slice(2);
 const debug = (runArgs.length > 0 && runArgs[0] == "debug")

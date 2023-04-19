@@ -1,5 +1,7 @@
 var mysql = require("mysql")
-var objects = require("./objects")
+var {botUsernames} = require("./game")
+const crypto = require('crypto');
+const salt = "iqCVu2hPXaZSJcYzapUXj+NVxplUHPv4GQiNGaqxYeCuihVaD2HIRFe9Bnk+Je+aIwoUBN9uKl8FVNuG/W693EnQSO7NKEs9LHkWS1lCR9klJFX5NykU7aLxGvwOGX7y6o7vvUljL/kO2GJBwwWTfnDzrPXjA+e/nWdpdRUkSkw="
 
 var database = mysql.createConnection({
     host: "127.0.0.1",
@@ -8,6 +10,10 @@ var database = mysql.createConnection({
     database: "janken",
     multipleStatements: true,
   });
+
+async function hashPassword(password) {
+    return crypto.pbkdf2Sync(password, salt, 1000, 64, "sha512").toString()
+}
 
 function retrieveAccount(username) {
     return new Promise((resolve, reject) => {
@@ -23,9 +29,12 @@ function retrieveAccount(username) {
 }
 
 async function registerPlayer(username, password) {
+
+    let hash = await hashPassword(password)
+
     return new Promise((resolve, reject) => {
         
-        if (objects.botUsernames.includes(username)) {
+        if (botUsernames.includes(username)) {
              reject("Username Taken")
              return
         }
@@ -36,7 +45,7 @@ async function registerPlayer(username, password) {
                 reject("Username Taken")
             } else {
                 //Username and Password Checks
-                database.query(`INSERT INTO accounts (username, password) VALUES ('${username}', '${password}')`, (err, result) => {
+                database.query(`INSERT INTO accounts (username, password) VALUES (${mysql.escape(username)}, ${mysql.escape(hash)})`, (err, result) => {
                     if (err) throw err;
                     console.log(`Account ${username} Created`)
                     resolve()
@@ -49,10 +58,13 @@ async function registerPlayer(username, password) {
 
 async function loginPlayer(username, password) {
 
+    let hash = await hashPassword(password)
+
     return new Promise((resolve, reject) => {
 
         retrieveAccount(username).then((account) => {
-            if (password === account.password) {
+
+            if (hash === account.password) {
                 resolve()
             } else {
                 reject("Incorrect Password")
