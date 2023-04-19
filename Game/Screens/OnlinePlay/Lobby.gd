@@ -35,6 +35,11 @@ func dataRecieved(data:Dictionary):
 						return
 						
 				queueStatus.get_node("Queue").show()
+		
+		"typeTakenError":
+			$"%TypeTaken".show()
+			$"%TypeTaken/Delay".start()
+			$"%Ready".pressed = false
 
 func addPlayer(username:String, ready:bool=false, type:int=0):
 	var p = PlayerIcon.instance()

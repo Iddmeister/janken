@@ -37,6 +37,9 @@ class Team {
     }
 
     playerChangeType(player, type) {
+
+        if (this.players[player].ready) return
+
         if (this.players[player]) {
             this.players[player].type = type
             this.sendTeamData({type:"playerChangedType", player:player, newType:type})
@@ -44,21 +47,35 @@ class Team {
     }
 
     playerChangeReady(player, ready) {
-        if (this.players[player]) {
-            this.players[player].ready = ready
-            this.sendTeamData({type:"playerChangedReady", player:player, ready:ready})
-        }
 
-        //Need to change this to check for types of players (1 Rock, 1 Paper and 1 Scissors)
+        if (!this.players[player]) return
 
-        for (let player of Object.keys(this.players)) {
-            if (!this.players[player].ready) {
-                this.leaveQueue()
-                return
+        this.players[player].ready = ready
+
+        if (ready) {
+
+            let types = {0:false, 1:false, 2:false}
+            let allGood = true
+
+            for (let p of Object.keys(this.players))  {
+                if (types[this.players[p].type]) {
+                    this.players[player].ready = false
+                    allGood = false
+                    this.players[player].object.client.sendData({type:"typeTakenError"})
+                    break
+                } else {
+                    types[this.players[p].type] = true
+                }
             }
-        }
 
-        this.joinQueue()
+            if (allGood) this.joinQueue()
+
+        } else {
+            this.leaveQueue()
+        }
+        
+        this.sendTeamData({type:"playerChangedReady", player:player, ready:this.players[player].ready})
+
 
     }
 

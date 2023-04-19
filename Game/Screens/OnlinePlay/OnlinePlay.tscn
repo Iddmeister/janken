@@ -340,8 +340,9 @@ anchor_right = 1.0
 
 [node name="Panel" type="PanelContainer" parent="Navigation/Lobby/TeamCode"]
 margin_left = 301.0
+margin_top = 34.0
 margin_right = 307.0
-margin_bottom = 6.0
+margin_bottom = 40.0
 custom_styles/panel = SubResource( 23 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Navigation/Lobby/TeamCode/Panel"]
@@ -380,6 +381,27 @@ margin_bottom = 68.0
 theme = SubResource( 26 )
 custom_colors/font_color = Color( 1, 0.121569, 0.121569, 1 )
 text = "LEAVE TEAM"
+
+[node name="TypeTaken" type="CenterContainer" parent="Navigation/Lobby"]
+unique_name_in_owner = true
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -237.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="Navigation/Lobby/TypeTaken"]
+margin_left = 167.0
+margin_top = 172.0
+margin_right = 440.0
+margin_bottom = 198.0
+custom_colors/font_color = Color( 1, 0.121569, 0.121569, 1 )
+text = "Error - Type Already Taken"
+uppercase = true
+
+[node name="Delay" type="Timer" parent="Navigation/Lobby/TypeTaken"]
+wait_time = 2.0
+one_shot = true
 
 [node name="Options" type="VBoxContainer" parent="."]
 anchor_left = 1.0
@@ -503,6 +525,7 @@ text = "BACK"
 [connection signal="toggled" from="Navigation/Lobby/VBoxContainer/Ready" to="Navigation/Lobby" method="_on_Ready_toggled"]
 [connection signal="pressed" from="Navigation/Lobby/TeamCode/Panel/VBoxContainer/HBoxContainer/Copy" to="Navigation/Lobby" method="_on_Copy_pressed"]
 [connection signal="pressed" from="Navigation/Lobby/TeamCode/Panel/VBoxContainer/LeaveTeam" to="Navigation/Lobby" method="_on_LeaveTeam_pressed"]
+[connection signal="timeout" from="Navigation/Lobby/TypeTaken/Delay" to="Navigation/Lobby/TypeTaken" method="hide"]
 [connection signal="pressed" from="Options/Stats" to="." method="_on_Stats_pressed"]
 [connection signal="pressed" from="Options/BattleLog" to="." method="_on_BattleLog_pressed"]
 [connection signal="pressed" from="User/MarginContainer/VBoxContainer/Logout" to="." method="_on_Logout_pressed"]
