@@ -22,6 +22,7 @@ function retrieveAccount(username) {
             if (result.length <= 0) {
                 reject("Account Doesn't Exist")
             } else {
+                // Will return an object containing all columns in the row
                 resolve(result[0])
             }
         })
@@ -70,8 +71,8 @@ async function loginPlayer(username, password) {
                 reject("Incorrect Password")
             }
 
-        }).catch(() => {
-            reject("Account Does Not Exist")
+        }).catch((err) => {
+            reject(err)
         })
     })
 
@@ -138,8 +139,6 @@ async function retrievePlayerStats(username) {
     })
 }
 
-
-
 async function retrievePlayerGames(username, start=0, end=5) {
 
     return new Promise ((resolve, reject) => {
@@ -202,14 +201,21 @@ async function saveGame(stats) {
 async function changeRank(username, rankChange) {
 
     return new Promise((resolve, reject) => {
-        database.query(`UPDATE accounts SET currentRank = GREATEST(currentRank + ${rankChange}, 0) WHERE username = '${username}'`, (err, result) => {
-            if (err) throw err
-            resolve()
+        database.query(`
+            UPDATE accounts SET 
+
+            currentRank = GREATEST(currentRank + ${rankChange}, 0), 
+            highestRank = GREATEST(currentRank, highestRank)
+
+            WHERE username = '${username}';`,
+            (err, result) => {
+                if (err) throw err
+                resolve()
         })
     })
 
 }
-  
+
 database.connect(function(err) {
     if (err) {
         console.log(err)
@@ -259,7 +265,8 @@ database.connect(function(err) {
 
         database.query(setup, (err, result) => {
             if (err) throw err;
-            console.log("Database Setup Complete")        })
+            console.log("Database Setup Complete")
+        })
 
     }
   });
