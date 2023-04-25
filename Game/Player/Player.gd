@@ -67,7 +67,6 @@ func movement(delta:float):
 			currentKnockSpeed = 0
 		nextMove = currentKnockSpeed*delta
 	else:
-		
 		if not knockedBy.empty():
 			knockedBy.clear()
 		

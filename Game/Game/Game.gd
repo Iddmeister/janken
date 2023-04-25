@@ -212,7 +212,7 @@ func playerAuthorized(player:String, id:int):
 			rpc_id(playerID, "playerJoined", player, data)
 		else:
 			#Only send player who joined data
-			var data = {"team":players[player].team, "type":players[player].type}
+			var data = {"team":players[player].team, "type":players[player].type, "bot":players[player].bot}
 			rpc_id(playerID, "playerJoined", player, data)
 	
 	var test:int = 0

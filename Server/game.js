@@ -10,7 +10,6 @@ const debug = (runArgs.length > 0 && runArgs[0] == "debug")
 
 const botUsernames = ["Alex", "Gloria", "Marty", "Melman", "Julien", "Maurice"]
 
-
 class Game {
 
     generatePlayerKey() {
@@ -57,8 +56,6 @@ class Game {
 
         this.addBots(team1, 0)
         this.addBots(team2, 1)
-
-        console.log(this.players)
 
         this.map = map
         this.port = port

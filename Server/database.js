@@ -95,7 +95,6 @@ async function retrievePlayerStats(username) {
                 1: 0,
                 2: 0,
             }
-
         }
 
         database.query(`SELECT * FROM accounts WHERE username = ${mysql.escape(username)}`, (err, result) => {
@@ -145,7 +144,7 @@ async function retrievePlayerGames(username, start=0, end=5) {
 
         let limit = start == -1 ? `` : `LIMIT ${start},${end}`
 
-        database.query(`SELECT * FROM gameInfo WHERE gameID IN (SELECT (gameID) FROM gameStats WHERE player = ${mysql.escape(username)}) ${limit};`, (err, result) => {
+        database.query(`SELECT * FROM gameInfo WHERE gameID IN (SELECT (gameID) FROM gameStats WHERE player = ${mysql.escape(username)}) ORDER BY endTime DESC ${limit};`, (err, result) => {
             if (err) throw err;
             
             if (result.length <= 0) {
@@ -207,13 +206,24 @@ async function changeRank(username, rankChange) {
             currentRank = GREATEST(currentRank + ${rankChange}, 0), 
             highestRank = GREATEST(currentRank, highestRank)
 
-            WHERE username = '${username}';`,
+            WHERE username = '${username}'; 
+
+            SELECT currentRank FROM accounts WHERE username = '${username}'`,
             (err, result) => {
                 if (err) throw err
-                resolve()
+                resolve(result[1][0].currentRank)
         })
     })
 
+}
+
+async function retrieveRank(username) {
+    return new Promise((resolve, reject) => {
+        database.query(`SELECT currentRank FROM accounts WHERE username = '${username}'`, (err, result) => {
+            if (err) throw err
+            resolve(result[0].currentRank)
+        })
+    })
 }
 
 database.connect(function(err) {

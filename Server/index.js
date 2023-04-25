@@ -200,7 +200,6 @@ server.on("connection", client => {
                             availablePorts.push(client.game.port)
 
                             if (data.clean) {
-                                client.game.sendStatistics(data.stats)
 
                                 database.saveGame(data.stats)
 
@@ -212,9 +211,18 @@ server.on("connection", client => {
 
                                 Object.keys(client.game.players).forEach(player => {
                                     if (client.game.players[player].bot) return
-                                    database.changeRank(player, winningTeam == data.stats.players[player].team ? 10 : -5)
-                                })
 
+                                    let rankChange = winningTeam == data.stats.players[player].team ? 10 : -5
+                                    
+                                    database.changeRank(player, rankChange).then(newRank => {
+
+                                        let allyScore = client.game.players[player].team == 0 ? data.stats.team1Score : data.stats.team2Score
+                                        let enemyScore = client.game.players[player].team == 1 ? data.stats.team1Score : data.stats.team2Score
+                                        
+                                        players[player].client.sendData({type:"matchStats", allyScore:allyScore, enemyScore:enemyScore, rankChange:rankChange, newRank:newRank})
+                                    
+                                    })
+                                })
 
                             }
 

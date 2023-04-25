@@ -40,6 +40,10 @@ func _ready() -> void:
 	updatePaths()
 
 
+# Takes a path (array of points) and creates a router dictionary
+# with every point as a key to a sub dictionary which contains
+# every direction (Vector2) which can be travelled from the point
+# as keys with the point to travel to as the value (Vector2)
 func generateRouters(path:PoolVector2Array):
 	
 	var routers:Dictionary
@@ -57,6 +61,12 @@ func generateRouters(path:PoolVector2Array):
 	
 	return routers
 	
+	
+	
+# Takes an array of generated routers and combines them
+# into a giant dictionary containing all points in the path
+# and all the directions which can be travelled from each
+# point to other points
 func compoundRouters(allRouters:Array):
 	
 	var final:Dictionary
@@ -67,14 +77,14 @@ func compoundRouters(allRouters:Array):
 			final = routers
 			continue
 		
-		for router in routers.keys():
+		for point in routers.keys():
 			
-			if final.has(router):
-				for direction in routers[router].keys():
-					if not final[router].has(direction):
-						final[router][direction] = routers[router][direction]
+			if final.has(point):
+				for direction in routers[point].keys():
+					if not final[point].has(direction):
+						final[point][direction] = routers[point][direction]
 			else:
-				final[router] = routers[router]
+				final[point] = routers[point]
 				
 	return final
 	

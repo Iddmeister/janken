@@ -165,7 +165,7 @@ func _on_ReadyDelay_timeout() -> void:
 	readyText.hide()
 
 func updateClock():
-	clock.text = "%02d:%02d" % [floor(matchTime/60), matchTime-(60*floor(matchTime/60))]
+	clock.text = "%02d:%02d" % [floor(float(matchTime)/60), matchTime-(60*floor(float(matchTime)/60))]
 
 func tick():
 	pass

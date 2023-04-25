@@ -15,14 +15,15 @@ func dataRecieved(data:Dictionary):
 	match data.type:
 		
 		"matchStats":
-			setup(data.allyPoints, data.enemyPoints, data.rankChange, data.newRank)
+			print(data)
+			setup(data.allyScore, data.enemyScore, data.rankChange, data.newRank)
 
 func setup(allyPoints:int, enemyPoints:int, change:int, new:int):
 	
 	pointContainer.get_node("Ally").text = String(allyPoints)
 	pointContainer.get_node("Enemy").text = String(enemyPoints)
 	
-	rankChange.get_node("Amount").text = String(change)+" RANK" if allyPoints != enemyPoints else "DRAW"
+	rankChange.get_node("Amount").text = String(abs(change))+" RANK" if allyPoints != enemyPoints else "DRAW"
 	rankChange.get_node("Sign").text = "-" if allyPoints < enemyPoints else ("+" if allyPoints > enemyPoints else "")
 	
 	rankChange.theme.set_color("font_color", "Label", Color(1, 0.74902, 0) if allyPoints > enemyPoints else (Color(1, 0.121569, 0.121569) if allyPoints < enemyPoints else Color(1, 1, 1)))
