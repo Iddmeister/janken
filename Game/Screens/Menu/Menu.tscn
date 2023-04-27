@@ -47,9 +47,9 @@ custom_constants/separation = 30
 alignment = 1
 
 [node name="Title" type="Label" parent="Main/VBoxContainer"]
-margin_top = 180.0
+margin_top = 199.0
 margin_right = 608.0
-margin_bottom = 257.0
+margin_bottom = 276.0
 custom_colors/font_color = Color( 1, 0.74902, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Janken"
@@ -58,9 +58,9 @@ valign = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Main/VBoxContainer"]
 margin_left = 244.0
-margin_top = 287.0
+margin_top = 306.0
 margin_right = 364.0
-margin_bottom = 287.0
+margin_bottom = 306.0
 size_flags_horizontal = 4
 custom_constants/separation = 60
 
@@ -81,9 +81,9 @@ margin_right = 120.0
 [node name="Scissors" parent="Main/VBoxContainer/HBoxContainer/Scissors" instance=ExtResource( 3 )]
 
 [node name="Buttons" type="VBoxContainer" parent="Main/VBoxContainer"]
-margin_top = 317.0
+margin_top = 336.0
 margin_right = 608.0
-margin_bottom = 427.0
+margin_bottom = 408.0
 theme = SubResource( 3 )
 
 [node name="PlayOnline" type="Button" parent="Main/VBoxContainer/Buttons"]
@@ -93,19 +93,11 @@ margin_bottom = 34.0
 size_flags_horizontal = 4
 text = "PLAY ONLINE"
 
-[node name="Options" type="Button" parent="Main/VBoxContainer/Buttons"]
-margin_left = 259.0
-margin_top = 38.0
-margin_right = 348.0
-margin_bottom = 72.0
-size_flags_horizontal = 4
-text = "OPTIONS"
-
 [node name="Quit" type="Button" parent="Main/VBoxContainer/Buttons"]
 margin_left = 279.0
-margin_top = 76.0
+margin_top = 38.0
 margin_right = 328.0
-margin_bottom = 110.0
+margin_bottom = 72.0
 size_flags_horizontal = 4
 text = "QUIT"
 
