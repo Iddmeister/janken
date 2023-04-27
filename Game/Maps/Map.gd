@@ -67,7 +67,6 @@ puppetsync func spawnDots(exlude:PoolVector2Array=[]):
 					number += 1
 					placed.append(pos)
 					
-					
 puppetsync func gameReady():
 	if is_network_master():
 		$StartStall.start()

@@ -12,6 +12,36 @@ const botUsernames = ["Alex", "Gloria", "Marty", "Melman", "Julien", "Maurice"]
 
 class Game {
 
+    constructor(id, team1, team2, map, port) {
+        this.id = id
+        this.team1 = team1
+        team1.game = this
+        this.team2 = team2
+        team2.game = this
+
+        this.map = map
+        this.port = port
+        this.server = null
+        this.client = null
+
+
+        this.players = {}
+
+        for (let player of Object.keys(team1.players)) {
+            this.players[player] = {type:team1.players[player].type, team:0, key:this.generatePlayerKey(), bot:false}
+        }
+        for (let player of Object.keys(team2.players)) {
+            this.players[player] = {type:team2.players[player].type, team:1, key:this.generatePlayerKey(), bot:false}
+        }
+
+        this.botUsernames = botUsernames.splice(0)
+
+        this.addBots(team1, 0)
+        this.addBots(team2, 1)
+
+
+    }
+
     generatePlayerKey() {
         let id = crypto.randomBytes(16).toString('base64')
         for (let player of Object.keys(this.players)) {
@@ -35,40 +65,6 @@ class Game {
             this.players[this.botUsernames[index]] = {type:missingType, team:tNumber, bot:true}
             this.botUsernames.splice(index, 1)
         }
-    }
-
-    constructor(id, team1, team2, map, port) {
-        this.id = id
-        this.team1 = team1
-        team1.game = this
-        this.team2 = team2
-        team2.game = this
-        this.players = {}
-        this.botUsernames = botUsernames.splice(0)
-
-
-        for (let player of Object.keys(team1.players)) {
-            this.players[player] = {type:team1.players[player].type, team:0, key:this.generatePlayerKey(), bot:false}
-        }
-        for (let player of Object.keys(team2.players)) {
-            this.players[player] = {type:team2.players[player].type, team:1, key:this.generatePlayerKey(), bot:false}
-        }
-
-        this.addBots(team1, 0)
-        this.addBots(team2, 1)
-
-        this.map = map
-        this.port = port
-        this.server = null
-        this.client = null
-
-    }
-
-    sendStatistics(stats) {
-
-        this.team1.sendTeamData({type:"matchStats", allyPoints:stats.team1Score, enemyPoints:stats.team2Score, rankChange:10, newRank:500})
-        this.team2.sendTeamData({type:"matchStats", allyPoints:stats.team2Score, enemyPoints:stats.team1Score, rankChange:10, newRank:500})
-
     }
 
     async endGame() {
@@ -98,6 +94,7 @@ class Game {
         console.log(`Spawning Game: ${id}`)
 
         try {
+            
             let game = spawn(`./${debug ? debugServerBinary : serverBinary}`, ["--main-pack", serverPCK, "--server", id], {env:{"GODOT_SILENCE_ROOT_WARNING":1}})
             
             game.stdout.on("data", data => {

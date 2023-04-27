@@ -101,6 +101,7 @@ func authenticateServer():
 func dataRecieved(data:Dictionary):
 	match data.type:
 		"matchInfo":
+			
 			matchInfo = {}
 			matchInfo.port = data.matchInfo.port
 			matchInfo.map = data.matchInfo.map
@@ -161,11 +162,9 @@ func joinServer(address:String, port:int):
 func connection_succeeded():
 	print("Connected to Server")
 	rpc("authorizePlayer", privateKey)
-	pass
 	
 func connection_failed():
 	print("Failed to connect to server")
-	pass
 	
 func server_disconnected():
 	print("Server Disconnected")
@@ -215,7 +214,7 @@ func playerAuthorized(player:String, id:int):
 			var data = {"team":players[player].team, "type":players[player].type, "bot":players[player].bot}
 			rpc_id(playerID, "playerJoined", player, data)
 	
-	var test:int = 0
+	var connected:int = 0
 	var total:int = 0
 	
 	for p in players.keys():
@@ -223,12 +222,11 @@ func playerAuthorized(player:String, id:int):
 			continue
 		total += 1
 		if not players[p].id == -1:
-			test += 1
-	if test >= total:
+			connected += 1
+	if connected >= total:
 		map.rpc("gameReady")
 		
 puppet func playerJoined(player:String, data:Dictionary={}):
-	
 	if player == me:
 		players = data.players
 		matchInfo.map = data.map
