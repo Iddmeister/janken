@@ -53,7 +53,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			
 		if newDir.abs().length() > 1:
 			newDir.y = 0
-		rpc_unreliable("playerInput", newDir)
+		rpc("playerInput", newDir)
 		
 remote func playerInput(dir:Vector2):
 	if not get_tree().get_rpc_sender_id() in playerIDs:

@@ -105,7 +105,6 @@ server.on("connection", client => {
     })
 
     client.on("message", raw => {
-        //Production code should be wrapped in a try catch statement
 
         let data = JSON.parse(raw)
 
@@ -239,7 +238,6 @@ server.on("connection", client => {
                         case "login":
                             database.loginPlayer(data.username, data.password).then(() => {
                                 connectPlayer(data.username, client)
-                                client.sendData({type:"loggedIn", username:data.username})
                             }).catch((err) => {
                                 client.sendData({type:"loginError", error:err})
                             })

@@ -49,7 +49,6 @@ __meta__ = {
 }
 
 [node name="GridPath" parent="." instance=ExtResource( 3 )]
-visible = true
 
 [node name="RegenChamber" parent="." instance=ExtResource( 4 )]
 position = Vector2( 304, 304 )

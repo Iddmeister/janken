@@ -17,7 +17,7 @@ async function hashPassword(password) {
 
 function retrieveAccount(username) {
     return new Promise((resolve, reject) => {
-        database.query(`SELECT * FROM accounts WHERE username = ${mysql.escape(username)}`, (err, result) => {
+        database.query(`SELECT * FROM accounts WHERE username COLLATE utf8mb4_bin = ${mysql.escape(username)}`, (err, result) => {
             if (err) throw err;
             if (result.length <= 0) {
                 reject("Account Doesn't Exist")
@@ -40,7 +40,7 @@ async function registerPlayer(username, password) {
              return
         }
 
-        database.query(`SELECT 1 FROM accounts WHERE username = ${mysql.escape(username)}`, (err, result) => {
+        database.query(`SELECT 1 FROM accounts WHERE username COLLATE utf8mb4_bin = ${mysql.escape(username)}`, (err, result) => {
             if (err) throw err;
             if (result.length > 0) {
                 reject("Username Taken")
@@ -97,7 +97,7 @@ async function retrievePlayerStats(username) {
             }
         }
 
-        database.query(`SELECT * FROM accounts WHERE username = ${mysql.escape(username)}`, (err, result) => {
+        database.query(`SELECT * FROM accounts WHERE username COLLATE utf8mb4_bin = ${mysql.escape(username)}`, (err, result) => {
             
             if (err) throw err;
 
@@ -107,7 +107,7 @@ async function retrievePlayerStats(username) {
                 stats.highestRank = result[0].highestRank
                 stats.currentRank = result[0].currentRank
 
-                database.query(`SELECT * FROM gameStats WHERE player = ${mysql.escape(username)}`, (err, result) => {
+                database.query(`SELECT * FROM gameStats WHERE player COLLATE utf8mb4_bin = ${mysql.escape(username)}`, (err, result) => {
                     if (err) throw err;
         
                     if (result.length <= 0) {
@@ -189,7 +189,15 @@ async function saveGame(stats) {
                     playerStats += `${stat}=${stats.players[player][stat]}${index == Object.keys(stats.players[player]).length-1 ? "" : ","}`
                 })
 
-                database.query(`INSERT INTO gameStats SET gameID = ${gameID}, player = "${player}", ${playerStats}`)
+                let won = false
+
+                if (stats.players[player].team == 1) {
+                    if (stats.team1Score > stats.team2Score) {
+                        won = true
+                    }
+                }
+
+                database.query(`INSERT INTO gameStats SET gameID = ${gameID}, player = "${player}", ${playerStats}, won = ${won}`)
 
             }
         })
@@ -208,7 +216,7 @@ async function changeRank(username, rankChange) {
 
             WHERE username = '${username}'; 
 
-            SELECT currentRank FROM accounts WHERE username = '${username}'`,
+            SELECT currentRank FROM accounts WHERE username COLLATE utf8mb4_bin = '${username}'`,
             (err, result) => {
                 if (err) throw err
                 resolve(result[1][0].currentRank)
@@ -219,7 +227,7 @@ async function changeRank(username, rankChange) {
 
 async function retrieveRank(username) {
     return new Promise((resolve, reject) => {
-        database.query(`SELECT currentRank FROM accounts WHERE username = '${username}'`, (err, result) => {
+        database.query(`SELECT currentRank FROM accounts WHERE username COLLATE utf8mb4_bin = '${username}'`, (err, result) => {
             if (err) throw err
             resolve(result[0].currentRank)
         })
@@ -269,8 +277,8 @@ database.connect(function(err) {
             won BOOLEAN
 
 
-        );
-        
+        );     
+
         `
 
         database.query(setup, (err, result) => {

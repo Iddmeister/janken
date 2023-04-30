@@ -40,6 +40,8 @@ func dataRecieved(data:Dictionary):
 func addBattle(id:String, stats:Dictionary):
 	if $"%Battles".has_node(id):
 		return
+	if stats.empty():
+		return
 	var b = PastBattle.instance()
 	b.name = id
 	$"%Battles".add_child(b)
